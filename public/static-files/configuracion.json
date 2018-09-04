@@ -7,7 +7,7 @@
   },
   {
     "key": "logoTitle",
-    "value": "Elección Contralor",
+    "value": "Congreso",
     "tags": "",
     "observaciones": ""
   },
@@ -19,13 +19,13 @@
   },
   {
     "key": "facebookShareLink",
-    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcongreso.redciudadana.org",
+    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcontralor.redciudadana.org",
     "tags": "",
     "observaciones": ""
   },
   {
     "key": "siteMainTitle",
-    "value": "<div class=\"row text-center\" style=\"padding: 30px 5px;\">\n  <h1 style=\"font-weight: 600; font-size: 38px;\">Conoce todo sobre el proceso de elección del Contralor General de Cuentas</h1>\n</div>",
+    "value": "<div class=\"row text-center\" style=\"padding: 30px 5px;\">\n  <h1 style=\"font-weight: 600; font-size: 38px;\">Conoce todo sobre el proceso del Congreso</h1>\n</div>",
     "tags": "",
     "observaciones": "Permite HTML"
   },
@@ -103,7 +103,7 @@
   },
   {
     "key": "useFrontFilterWidget",
-    "value": "1",
+    "value": "0",
     "tags": "",
     "observaciones": ""
   },

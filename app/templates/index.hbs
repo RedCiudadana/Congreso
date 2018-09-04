@@ -63,7 +63,7 @@
                 (action 'applyFilter')
               )
             }}
-            Todo
+            Ley 1
           </label>
 
           <label>
@@ -74,7 +74,7 @@
                 (action 'applyFilter')
               )
             }}
-            Mujer
+            Ley 2
           </label>
 
           <label>
@@ -85,30 +85,9 @@
                 (action 'applyFilter')
               )
             }}
-            Hombre
+            Ley 3
          </label>
 
-          <label>
-            {{one-way-checkbox
-              estaEnProceso
-              update=(queue
-                (action (mut estaEnProceso))
-                (action 'applyFilter')
-              )
-            }}
-            En proceso
-         </label>
-
-          <label>
-            {{one-way-checkbox
-              estaDescalificado
-              update=(queue
-                (action (mut estaDescalificado))
-                (action 'applyFilter')
-              )
-            }}
-            Descalificado
-         </label>
        </div>
       </div>
     </div>
@@ -173,10 +152,3 @@
     </div>
   {{/if}}
 </div>
-
-  <div class="row text-center">
-    <div class="col-xs-12" style="margin-bottom: 30px;">
-      <a href="http://www.movimientoprojusticia.org.gt/" target="_blank"><img src="/app/img/logo-mpj-color.jpg" style="margin-left:auto;margin-right:auto;" width="500px"></a>
-      <a href="https://www.facebook.com/AlianzaRgt/" target="_blank"><img src="/app/img/logo-alianza-reforma.png" style="margin-left:auto;margin-right:auto;" height="100px"></a>
-    </div>
-  </div>
