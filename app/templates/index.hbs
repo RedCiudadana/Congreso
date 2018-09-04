@@ -1,11 +1,36 @@
-<div class="container-fluid">
+{{!-- <div class="container-fluid">
   <div id="banner" class="row">
     <img src="/app/img/slider-texto.png" width="100%" height="auto">
   </div>
-</div>
+</div> --}}
+{{#if model.config.siteMainTitle}}
+  {{{model.config.siteMainTitle}}}
+{{/if}}
+
+  {{#if model.config.banner1Title}}
+    {{{model.config.banner1Title}}}
+  {{/if}}
+
+  {{#if model.config.banner1Link}}
+    <img src="{{model.config.banner1Link}}" />
+  {{/if}}
+
+  {{!-- {{#if model.config.banner1Slider}}
+    {{#slick-slider
+      autoplay=true
+      autoplaySpeed=model.config.sliderAutoplaySpeed
+      adaptiveHeight=false
+      arrows=false
+    }}
+      {{#each model.config.mainPageSliderData as |link|}}
+        <img src="{{link.imageLink}}" alt="{{link.caption}}" />
+      {{/each}}
+    {{/slick-slider}}
+  {{/if}} --}}
+
 <div class="container content-container">
   {{!-- Status banner --}}
-  <div class="row status-banner text-center" style="padding-bottom: 0px;">
+  {{!-- <div class="row status-banner text-center" style="padding-bottom: 0px;">
     <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
       <div style="background-color: #1b2b3a; color: #ffffff; padding: 18px; font-weight: 600;">
         <span style="font-size: 34px;">
@@ -23,9 +48,9 @@
     <div class="col-xs-12 col-md-6 visible-xs" style="background-color: #75bbcc; color: #ffffff; padding: 18px;">
       {{{model.config.procesoEleccionSiguientePaso}}}
     </div>
-  </div>
+  </div> --}}
   {{!-- Siguiente paso --}}
-  <div class="row row-eq-height status-banner text-center hidden-xs" style="padding-top: 0px;">
+  {{!-- <div class="row row-eq-height status-banner text-center hidden-xs" style="padding-top: 0px;">
     <div class="col-xs-12 col-md-6" style="background-color: #ffc80f; color: #ffffff; padding: 18px;">
       <div class="col-md-12">
         {{{model.config.procesoEleccionPasoActual}}}
@@ -35,7 +60,8 @@
     <div class="col-xs-12 col-md-6" style="background-color: #75bbcc; color: #ffffff; padding: 18px;">
       {{{model.config.procesoEleccionSiguientePaso}}}
     </div>
-  </div>
+  </div> --}}
+
   {{#if model.config.useFrontFilterWidget}}
     <div class="row search-container-row">
       <div class="search-container search-and-filter">

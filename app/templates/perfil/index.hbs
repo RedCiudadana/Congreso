@@ -117,7 +117,7 @@
     </div>
   </div>
 
-  <div class="col-md-6">
+  {{!-- <div class="col-md-6">
     <div class="row perfil-container" style="height: auto; margin-left: 2px; border: 1px solid #ddd;">
       <div class="col-md-12" style="display:flex;">
           <img
@@ -130,7 +130,7 @@
         <p class="justify">{{model.perfil.planTrabajo}}</p>
       </div>
     </div>
-  </div>
+  </div> --}}
 
 </div>
 
@@ -145,127 +145,6 @@
     </div>
   {{/each-in}}
 </div>
-
-<div class="row">
-    {{!-- Tabla de gradación --}}
-    <div class="col-md-6 perfil-container">
-      <div class="panel panel-default">
-        <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Tabla de gradación</h3>
-
-        <div class="panel-body tabla-gradacion-content no-padding-top-bottom">
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-graduation-cap"></i> --}}
-              <img src="app/img/logo-aspectos-academicos.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
-              Aspectos académicos
-            </div>
-            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge">{{model.perfil.notaAreaEvaluada1}}</span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-suitcase"></i> --}}
-              <img src="app/img/logo-aspectos-profesionales.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
-              Aspectos profesionales
-            </div>
-            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge">{{model.perfil.notaAreaEvaluada2}}</span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-check"></i> --}}
-              <img src="app/img/logo-proyeccion-humana.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
-              Proyección humana e idoneidad
-            </div>
-            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge">{{model.perfil.notaAreaEvaluada3}}</span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-handshake-o"></i> --}}
-              <img src="app/img/logo-cualidades-eticas.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
-              Cualidades éticas y de probidad
-            </div>
-            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge">
-                {{#if model.perfil.notaAreaEvaluada4}}
-                  <li class="fa fa-check"></li>
-                {{else}}
-                  <li class="fa fa-times"></li>
-                {{/if}}
-              </span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-7 col-xs-offset-3 text-container">
-              Puntaje total
-            </div>
-            <div class="col-xs-2" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge">{{model.perfil.resultadosEvaluacion}}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {{!-- Tachas --}}
-    <div class="col-md-6 perfil-container">
-      <div class="panel panel-default">
-        <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Tachas</h3>
-
-        <div class="panel-body no-padding-top-bottom tabla-tachas">
-          {{#if (eq 0 tachasLength)}}
-            <div class="row tabla-tachas-header">
-              <div class="col-xs-12 text-center">No se encontraron tachas asociadas al candidato</div>
-            </div>
-          {{else}}
-            <div class="row tabla-tachas-header hidden-xs">
-              <div class="col-xs-1 col-md-1 text-center icon-container">
-                No.
-              </div>
-              <div class="col-xs-6 col-md-7 col-md-offset-0 text-container">
-                Tacha
-              </div>
-              <div class="col-xs-4 col-md-4">
-                Presentada por
-              </div>
-            </div>
-
-            {{#each model.tachas as |tacha index|}}
-              <a href={{tacha.tachaUrl}} target="_blank" style="display: block" class="row">
-                <div class="hidden-xs col-md-1 text-center icon-container">
-                  {{add index 1}}
-                </div>
-
-                <div class="col-xs-8 col-md-7 col-md-offset-0 text-container">
-                  <span class="hidden-md">{{add index 1}}.</span> {{{tacha.tacha}}}
-                </div>
-
-                <div class="col-xs-4 col-md-4">
-                  {{{tacha.presentadoPor}}}
-                </div>
-              </a>
-            {{/each}}
-          {{/if}}
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 {{#if disqusShortname}}

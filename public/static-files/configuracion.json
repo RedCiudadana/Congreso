@@ -13,13 +13,13 @@
   },
   {
     "key": "twitterShareLink",
-    "value": "Conoce todo sobre la elección del Contralor General de Cuentas",
+    "value": "Conoce todo sobre el Congreso General de la Republica",
     "tags": "",
     "observaciones": ""
   },
   {
     "key": "facebookShareLink",
-    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcontralor.redciudadana.org",
+    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcongreso.redciudadana.org",
     "tags": "",
     "observaciones": ""
   },
@@ -31,7 +31,7 @@
   },
   {
     "key": "banner1Link",
-    "value": "https://raw.githubusercontent.com/RedCiudadana/Fotos-EleccionMP/master/slider/fiscal%20general.jpg",
+    "value": "",
     "tags": "",
     "observaciones": ""
   },
@@ -79,7 +79,7 @@
   },
   {
     "key": "useFrontPortfolioVisualization",
-    "value": "1",
+    "value": "0",
     "tags": "",
     "observaciones": ""
   },
