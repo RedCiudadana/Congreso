@@ -67,7 +67,7 @@ module.exports = function(environment) {
       webPropertyId: 'UA-113727052-1'
     };
 
-    ENV.APP.staticFilesUrl = 'https://contralor.redciudadana.org/static-files/';
+    ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
   }
 
   return ENV;
