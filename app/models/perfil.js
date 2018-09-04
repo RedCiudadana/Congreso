@@ -5,7 +5,11 @@ import attr from 'ember-data/attr';
 export default Model.extend({
   nombre: attr(),
 
+  partidoactual: attr(),
+
   fotoUrl: attr(),
+
+  fotoUrlPartido: attr(),
 
   cargoNombreCompleto: attr(),
 

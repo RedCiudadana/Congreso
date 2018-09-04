@@ -29,44 +29,7 @@
       </div>
 
       <div class="col-md-4 social-side" style="padding-left: 40px; padding-right: 40px;">
-        {{#each documentosDisponibles as |documento|}}
-          <p class="datos-abiertos">
-            <a
-              href="{{documento.urlDocumento}}"
-              class="btn btn-{{documento.cssClasses}} width-full"
-              target="_blank"
-              style="font-weight: 400;"
-            >
-              {{documento.nombreDocumento}}
-            </a>
-          </p>
-        {{/each}}
-
-        <ul class="list-inline text-center" style="font-size: 16px;display:flex;">
-          {{#if model.perfil.tw}}
-            <li style="display:flex;">
-              <i class="fa fa-twitter" style="font-size: 20px;"></i>
-              <a
-                href="https://twitter.com/{{model.perfil.tw}}"
-                class="social-link-candidate"
-                target="_blank">@{{model.perfil.tw}}
-              </a>
-            </li>
-          {{/if}}
-
-          {{#if model.perfil.fb}}
-            <li style="display:flex;">
-              <i class="fa fa-facebook-official" style="font-size: 20px;"></i>
-              <a
-                href="{{model.perfil.fb}}"
-                class="social-link-candidate"
-                target="_blank"
-              >
-                {{model.perfil.nombre}}
-              </a>
-            </li>
-          {{/if}}
-        </ul>
+        <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}" style="width: 80%; height: auto; margin-top: 10px;">
       </div>
     </div>
   </div>
