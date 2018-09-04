@@ -22,7 +22,7 @@ module.exports = function(deployTarget) {
 
     // configure other plugins for production deploy target here
     ENV.git = {
-      repo: 'https://github.com/RedCiudadana/EleccionCGC.git',
+      repo: 'https://github.com/RedCiudadana/Congreso.git',
       branch: 'gh-pages',
       worktreePath: '/tmp/deploy'
     };
