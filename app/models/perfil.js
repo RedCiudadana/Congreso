@@ -114,15 +114,15 @@ export default Model.extend({
   selector: Ember.computed('ley1', 'ley2', 'ley3', function() {
     let returnValue = '';
 
-    if (this.get('ley1') === 'Favor') {
+    if (this.get('ley1') === 'favor') {
       returnValue += ' ley1';
     }
 
-    if (this.get('ley2') === 'Favor') {
+    if (this.get('ley2') === 'favor') {
       returnValue += ' ley2';
     }
 
-    if (this.get('ley3') === 'Favor') {
+    if (this.get('ley3') === 'favor') {
       returnValue += ' ley3';
     }
 
