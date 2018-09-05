@@ -510,3 +510,13 @@ a:focus {
     padding: 10px;
 }
 
+.pie-chart {
+    height: 500px;
+    width: 500px;
+}
+
+.pie-chart canvas {
+}
+
+
+

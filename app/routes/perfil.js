@@ -5,6 +5,7 @@ export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
   _routing: Ember.inject.service('-routing'),
 
+
   model(params) {
     const spreadsheet = this.get('spreadsheets');
     const _routing = this.get('_routing');
@@ -13,6 +14,7 @@ export default Ember.Route.extend({
     const partidoActual = perfil.get('partidoActual');
 
     return Ember.RSVP.hash({
+      options: { responsive: false },
       config: {},
       perfil: perfil,
       institucion: institucion,
@@ -63,17 +65,17 @@ export default Ember.Route.extend({
           return Ember.A(registros)
             .filterBy('perfilId', perfil.get('id'));
         }),
-      asistencia: spreadsheet
-        .fetch('asistencia')
-        .then((registros) => {
-          return Ember.A(registros)
-            .filterBy('perfilId', perfil.get('id'));
-        }),
       votaciones: spreadsheet
         .fetch('votaciones')
         .then((registros) => {
           return Ember.A(registros)
             .filterBy('perfilId', perfil.get('id'));
+        }),
+      asistencia: spreadsheet
+        .fetch('asistencia')
+        .then((registros) => {
+          return Ember.A(registros)
+            .findBy('perfilId', perfil.get('id'));
         })
     });
   },

@@ -6,6 +6,10 @@ export function checkOrTimes(value/*, hash*/) {
     return "fa fa-check"
   }
 
+  if(value == "ausente") {
+    return "fa fa-question"
+  }
+
   return "fa fa-times";
 }
 

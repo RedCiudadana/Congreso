@@ -128,6 +128,20 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-xs-12">
+      {{!-- Gráfica de asistencia --}}
+      <div class="perfil-container">
+        <div class="panel panel-default">
+          <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Gráfica de asistencia</h3>
+          <div class="pie-chart">
+            {{ember-chart type='pie' data=( pie-data model.asistencia.porcentaje) options=model.options}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   {{!-- <div class="col-md-6">
     <div class="row perfil-container" style="height: auto; margin-left: 2px; border: 1px solid #ddd;">
       <div class="col-md-12" style="display:flex;">
