@@ -62,6 +62,18 @@ export default Ember.Route.extend({
         .then((registros) => {
           return Ember.A(registros)
             .filterBy('perfilId', perfil.get('id'));
+        }),
+      asistencia: spreadsheet
+        .fetch('asistencia')
+        .then((registros) => {
+          return Ember.A(registros)
+            .filterBy('perfilId', perfil.get('id'));
+        }),
+      votaciones: spreadsheet
+        .fetch('votaciones')
+        .then((registros) => {
+          return Ember.A(registros)
+            .filterBy('perfilId', perfil.get('id'));
         })
     });
   },

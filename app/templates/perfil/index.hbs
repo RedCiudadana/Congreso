@@ -80,6 +80,54 @@
     </div>
   </div>
 
+  <div class="row">
+    {{!-- Tabla de votacion --}}
+    <div class="col-md-6 perfil-container">
+      <div class="panel panel-default">
+        <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Tabla de votación</h3>
+
+        <div class="panel-body tabla-gradacion-content no-padding-top-bottom">
+          <div class="row">
+            <div class="col-xs-3 col-md-2 text-center icon-container">
+              {{!-- <i class="fa fa-graduation-cap"></i> --}}
+              <img src="app/img/logo-aspectos-academicos.png" class="img-responsive center" />
+            </div>
+            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
+              Reformas Materia Antejuicio
+            </div>
+            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
+              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley1}}"></i></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 col-md-2 text-center icon-container">
+              {{!-- <i class="fa fa-graduation-cap"></i> --}}
+              <img src="app/img/logo-aspectos-academicos.png" class="img-responsive center" />
+            </div>
+            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
+              Financiamiento Ilícito
+            </div>
+            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
+              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley2}}"></i></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 col-md-2 text-center icon-container">
+              {{!-- <i class="fa fa-graduation-cap"></i> --}}
+              <img src="app/img/logo-aspectos-academicos.png" class="img-responsive center" />
+            </div>
+            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container">
+              Reformas al Código Penal
+            </div>
+            <div class="col-xs-2 col-md-2" style="padding-left: 5px; padding-right: 5px;">
+              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley3}}"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   {{!-- <div class="col-md-6">
     <div class="row perfil-container" style="height: auto; margin-left: 2px; border: 1px solid #ddd;">
       <div class="col-md-12" style="display:flex;">
