@@ -1,2342 +1,1532 @@
 [
   {
-    "perfilId": "candidato-1",
-    "Ley1": "44"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "70"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "71"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-1",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-2",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-3",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-4",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-5",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-6",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-7",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-8",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-9",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-10",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-11",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-12",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-13",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-14",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-15",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-16",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-17",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-18",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-19",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-20",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-21",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-22",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-23",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-24",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-25",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-26",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-27",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-28",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-29",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-30",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-31",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-32",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-33",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-34",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-35",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-36",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-37",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-38",
-    "Ley1": "0"
-  },
-  {
-    "perfilId": "candidato-39",
-    "Ley1": "0"
+    "id": "diputado-1",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-2",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-3",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-4",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-5",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-6",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-7",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-8",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-9",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-10",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-11",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-12",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-13",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-14",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-15",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-16",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-17",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-18",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-19",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-20",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-21",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-22",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-23",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-24",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-25",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-26",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-27",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-28",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-29",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-30",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-31",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-32",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-33",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-34",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-35",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-36",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-37",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-38",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-39",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-40",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-41",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-42",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-43",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-44",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-45",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-46",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-47",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-48",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-49",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-50",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-51",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-52",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-53",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-54",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-55",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-56",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-57",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-58",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-59",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-60",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-61",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-62",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-63",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-64",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-65",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-66",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-67",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-68",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-69",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-70",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-71",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-72",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-73",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-74",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-75",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-76",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-77",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-78",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-79",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-80",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-81",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-82",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-83",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-84",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-85",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-86",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-87",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-88",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-89",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-90",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-91",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-92",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-93",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-94",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-95",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-96",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-97",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-98",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-99",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-100",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-101",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-102",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-103",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-104",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-105",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-106",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-107",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-108",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-109",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-110",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-111",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-112",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-113",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-114",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-115",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-116",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-117",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-118",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-119",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-120",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-121",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-122",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-123",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-124",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-125",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-126",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-127",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-128",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-129",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-130",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-131",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-132",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-133",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-134",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-135",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-136",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-137",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-138",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-139",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-140",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-141",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-142",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-143",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-144",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-145",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-146",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-147",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-148",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-149",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-150",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-151",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-152",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-153",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-154",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-155",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-156",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-157",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-158",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-159",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-160",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-161",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-162",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-163",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-164",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-165",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-166",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-167",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "id": "diputado-168",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "id": "diputado-169",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "id": "diputado-170",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
   }
 ]

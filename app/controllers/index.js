@@ -3,45 +3,33 @@ import Ember from 'ember';
 const { computed } = Ember;
 
 export default Ember.Controller.extend({
-  esTodo: true,
 
   currentSelector: computed(
-    'esMujer',
-    'esHombre',
-    'estaEnProceso',
-    'estaDescalificado',
-    'esTodo',
+    'ley1',
+    'ley2',
+    'ley3',
     function() {
       if (
-        !this.get('esMujer')
-            && !this.get('esHombre')
-            && !this.get('estaEnProceso')
-            && !this.get('estaDescalificado')
-            && !this.get('esTodo')
+        !this.get('ley1')
+            && !this.get('ley2')
+            && !this.get('ley3')
       ) {
-        return '.nothing';
+        return '*';
       }
 
       let selectors = [];
 
-      if (this.get('esTodo')) {
-        return '*';
+
+      if (this.get('ley1')) {
+        selectors.push('.ley1');
       }
 
-      if (this.get('esMujer')) {
-        selectors.push('.mujer');
+      if (this.get('ley2')) {
+        selectors.push('.ley2');
       }
 
-      if (this.get('esHombre')) {
-        selectors.push('.hombre');
-      }
-
-      if (this.get('estaEnProceso')) {
-        selectors.push('.enProceso');
-      }
-
-      if (this.get('estaDescalificado')) {
-        selectors.push('.descalificado');
+      if (this.get('ley3')) {
+        selectors.push('.ley3');
       }
 
       return selectors.join(', ');

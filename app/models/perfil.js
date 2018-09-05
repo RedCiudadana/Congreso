@@ -61,6 +61,12 @@ export default Model.extend({
 
   resultadosEvaluacion: attr(),
 
+  ley1: attr(),
+
+  ley2: attr(),
+
+  ley3: attr(),
+
   resultadosEvaluacionInt: Ember.computed('resultadosEvaluacion', function() {
     return parseInt(this.get('resultadosEvaluacion'));
   }),
@@ -83,23 +89,41 @@ export default Model.extend({
     return this.get('estado') === 'Descalificado';
   }),
 
-  selector: Ember.computed('sexo', 'estado', function() {
+  // selector: Ember.computed('sexo', 'estado', function() {
+  //   let returnValue = '';
+
+  //   if (this.get('sexo') === 'Masculino') {
+  //     returnValue += ' hombre';
+  //   }
+
+  //   if (this.get('sexo') === 'Femenino') {
+  //     returnValue += ' mujer';
+  //   }
+
+  //   if (this.get('estado') === 'Descalificado') {
+  //     returnValue += ' descalificado';
+  //   }
+
+  //   if (this.get('estado') === 'En proceso') {
+  //     returnValue += ' enProceso';
+  //   }
+
+  //   return returnValue;
+  // }),
+
+  selector: Ember.computed('ley1', 'ley2', 'ley3', function() {
     let returnValue = '';
 
-    if (this.get('sexo') === 'Masculino') {
-      returnValue += ' hombre';
+    if (this.get('ley1') === 'Favor') {
+      returnValue += ' ley1';
     }
 
-    if (this.get('sexo') === 'Femenino') {
-      returnValue += ' mujer';
+    if (this.get('ley2') === 'Favor') {
+      returnValue += ' ley2';
     }
 
-    if (this.get('estado') === 'Descalificado') {
-      returnValue += ' descalificado';
-    }
-
-    if (this.get('estado') === 'En proceso') {
-      returnValue += ' enProceso';
+    if (this.get('ley3') === 'Favor') {
+      returnValue += ' ley3';
     }
 
     return returnValue;

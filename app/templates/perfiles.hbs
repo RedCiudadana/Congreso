@@ -1,5 +1,5 @@
 <div class="container">
-{{#if model.config.useFrontFilterWidget}}
+  {{#if model.config.useFrontFilterWidget}}
     <div class="row search-container-row">
       <div class="search-container search-and-filter">
         <div class="search-container" style="text-align: center;">
@@ -8,7 +8,7 @@
             options=model.perfiles
             onchange=(route-action 'selectPerfil')
             searchField='nombre'
-            placeholder='Busca tu candidato'
+            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
             noMatchesMessage='Sin resultados'
               as |candidato|
           }}
@@ -17,62 +17,40 @@
         </div>
 
         <div class="filters-container">
-          <strong>Filtrar por: </strong>
-
+          <strong>Filtrar por a favor de: </strong>
           <label>
             {{one-way-checkbox
-              esTodo
+              ley1
               update=(queue
-                (action (mut esTodo))
+                (action (mut ley1))
                 (action 'applyFilter')
               )
             }}
-            Todo
+            Reformas Materia Antejuicio
           </label>
 
           <label>
             {{one-way-checkbox
-              esMujer
+              ley2
               update=(queue
-                (action (mut esMujer))
+                (action (mut ley2))
                 (action 'applyFilter')
               )
             }}
-            Mujer
+            Financiamiento Ilícito
           </label>
 
           <label>
             {{one-way-checkbox
-              esHombre
+              ley3
               update=(queue
-                (action (mut esHombre))
+                (action (mut ley3))
                 (action 'applyFilter')
               )
             }}
-            Hombre
+            Reformas al Código Penal
          </label>
 
-          <label>
-            {{one-way-checkbox
-              estaEnProceso
-              update=(queue
-                (action (mut estaEnProceso))
-                (action 'applyFilter')
-              )
-            }}
-            En proceso
-         </label>
-
-          <label>
-            {{one-way-checkbox
-              estaDescalificado
-              update=(queue
-                (action (mut estaDescalificado))
-                (action 'applyFilter')
-              )
-            }}
-            Descalificado
-         </label>
        </div>
       </div>
     </div>

@@ -19,9 +19,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "1",
-    "ley2": "0",
-    "ley3": "1"
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-2",
@@ -43,9 +43,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Contra",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-3",
@@ -67,9 +67,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-4",
@@ -91,9 +91,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-5",
@@ -115,9 +115,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-6",
@@ -139,9 +139,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-7",
@@ -163,9 +163,9 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
-    "ley2": "",
-    "ley3": ""
+    "ley1": "Favor",
+    "ley2": "Contra",
+    "ley3": "Favor"
   },
   {
     "id": "diputado-8",
@@ -187,7 +187,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Contra",
     "ley2": "",
     "ley3": ""
   },
@@ -211,7 +211,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Ausente",
     "ley2": "",
     "ley3": ""
   },
@@ -235,7 +235,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Favor",
     "ley2": "",
     "ley3": ""
   },
@@ -259,7 +259,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Contra",
     "ley2": "",
     "ley3": ""
   },
@@ -283,7 +283,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Ausente",
     "ley2": "",
     "ley3": ""
   },
@@ -307,7 +307,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Favor",
     "ley2": "",
     "ley3": ""
   },
@@ -331,7 +331,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Contra",
     "ley2": "",
     "ley3": ""
   },
@@ -355,7 +355,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Ausente",
     "ley2": "",
     "ley3": ""
   },
@@ -379,7 +379,7 @@
     "telefono": "",
     "direccion": "",
     "web": "",
-    "ley1": "",
+    "ley1": "Favor",
     "ley2": "",
     "ley3": ""
   },

@@ -71,7 +71,7 @@
             options=model.perfiles
             onchange=(route-action 'selectPerfil')
             searchField='nombre'
-            placeholder='Busca tu candidato'
+            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
             noMatchesMessage='Sin resultados'
               as |candidato|
           }}
@@ -80,38 +80,38 @@
         </div>
 
         <div class="filters-container">
-          <strong>Filtrar por: </strong>
+          <strong>Filtrar por a favor de: </strong>
           <label>
             {{one-way-checkbox
-              esTodo
+              ley1
               update=(queue
-                (action (mut esTodo))
+                (action (mut ley1))
                 (action 'applyFilter')
               )
             }}
-            Ley 1
+            Reformas Materia Antejuicio
           </label>
 
           <label>
             {{one-way-checkbox
-              esMujer
+              ley2
               update=(queue
-                (action (mut esMujer))
+                (action (mut ley2))
                 (action 'applyFilter')
               )
             }}
-            Ley 2
+            Financiamiento Ilícito
           </label>
 
           <label>
             {{one-way-checkbox
-              esHombre
+              ley3
               update=(queue
-                (action (mut esHombre))
+                (action (mut ley3))
                 (action 'applyFilter')
               )
             }}
-            Ley 3
+            Reformas al Código Penal
          </label>
 
        </div>
