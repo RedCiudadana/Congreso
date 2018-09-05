@@ -1,180 +1,127 @@
-{{!-- <div class="container-fluid">
-  <div id="banner" class="row">
-    <img src="/app/img/slider-texto.png" width="100%" height="auto">
-  </div>
-</div> --}}
 {{#if model.config.siteMainTitle}}
-  {{{model.config.siteMainTitle}}}
+{{{model.config.siteMainTitle}}}
 {{/if}}
 
-  {{#if model.config.banner1Title}}
-    {{{model.config.banner1Title}}}
-  {{/if}}
+{{#if model.config.banner1Title}}
+  {{{model.config.banner1Title}}}
+{{/if}}
 
-  {{#if model.config.banner1Link}}
-    <img src="{{model.config.banner1Link}}" />
-  {{/if}}
+{{#if model.config.banner1Link}}
+  <img src="{{model.config.banner1Link}}" />
+{{/if}}
 
-  {{!-- {{#if model.config.banner1Slider}}
-    {{#slick-slider
-      autoplay=true
-      autoplaySpeed=model.config.sliderAutoplaySpeed
-      adaptiveHeight=false
-      arrows=false
-    }}
-      {{#each model.config.mainPageSliderData as |link|}}
-        <img src="{{link.imageLink}}" alt="{{link.caption}}" />
-      {{/each}}
-    {{/slick-slider}}
-  {{/if}} --}}
-
-<div class="container content-container">
-  {{!-- Status banner --}}
-  {{!-- <div class="row status-banner text-center" style="padding-bottom: 0px;">
-    <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-      <div style="background-color: #1b2b3a; color: #ffffff; padding: 18px; font-weight: 600;">
-        <span style="font-size: 34px;">
-          {{{model.config.procesoEleccionTitulo}}}
-        </span>
+{{#if model.config.useFrontFilterWidget}}
+  <div class="row search-container-row">
+    <div class="search-container search-and-filter">
+      <div class="search-container" style="text-align: center;">
+        {{#power-select
+          selected=currentCandidato
+          options=model.perfiles
+          onchange=(route-action 'selectPerfil')
+          searchField='nombre'
+          placeholder='Escriba el nombre del diputado o diputada que desea buscar'
+          noMatchesMessage='Sin resultados'
+            as |candidato|
+        }}
+          <strong>{{candidato.nombre}}</strong>
+        {{/power-select}}
       </div>
-    </div>
 
-    <div class="col-xs-12 col-md-6 visible-xs" style="background-color: #ffc80f; color: #ffffff; padding: 18px;">
-      <div class="col-md-12">
-        {{{model.config.procesoEleccionPasoActual}}}
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 visible-xs" style="background-color: #75bbcc; color: #ffffff; padding: 18px;">
-      {{{model.config.procesoEleccionSiguientePaso}}}
-    </div>
-  </div> --}}
-  {{!-- Siguiente paso --}}
-  {{!-- <div class="row row-eq-height status-banner text-center hidden-xs" style="padding-top: 0px;">
-    <div class="col-xs-12 col-md-6" style="background-color: #ffc80f; color: #ffffff; padding: 18px;">
-      <div class="col-md-12">
-        {{{model.config.procesoEleccionPasoActual}}}
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6" style="background-color: #75bbcc; color: #ffffff; padding: 18px;">
-      {{{model.config.procesoEleccionSiguientePaso}}}
-    </div>
-  </div> --}}
-
-  {{#if model.config.useFrontFilterWidget}}
-    <div class="row search-container-row">
-      <div class="search-container search-and-filter">
-        <div class="search-container" style="text-align: center;">
-          {{#power-select
-            selected=currentCandidato
-            options=model.perfiles
-            onchange=(route-action 'selectPerfil')
-            searchField='nombre'
-            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
-            noMatchesMessage='Sin resultados'
-              as |candidato|
+      <div class="filters-container">
+        <strong>Filtrar por a favor de: </strong>
+        <label>
+          {{one-way-checkbox
+            ley1
+            update=(queue
+              (action (mut ley1))
+              (action 'applyFilter')
+            )
           }}
-            <strong>{{candidato.nombre}}</strong>
-          {{/power-select}}
-        </div>
+          Reformas Materia Antejuicio
+        </label>
 
-        <div class="filters-container">
-          <strong>Filtrar por a favor de: </strong>
-          <label>
-            {{one-way-checkbox
-              ley1
-              update=(queue
-                (action (mut ley1))
-                (action 'applyFilter')
-              )
-            }}
-            Reformas Materia Antejuicio
-          </label>
+        <label>
+          {{one-way-checkbox
+            ley2
+            update=(queue
+              (action (mut ley2))
+              (action 'applyFilter')
+            )
+          }}
+          Financiamiento Ilícito
+        </label>
 
-          <label>
-            {{one-way-checkbox
-              ley2
-              update=(queue
-                (action (mut ley2))
-                (action 'applyFilter')
-              )
-            }}
-            Financiamiento Ilícito
-          </label>
+        <label>
+          {{one-way-checkbox
+            ley3
+            update=(queue
+              (action (mut ley3))
+              (action 'applyFilter')
+            )
+          }}
+          Reformas al Código Penal
+       </label>
 
-          <label>
-            {{one-way-checkbox
-              ley3
-              update=(queue
-                (action (mut ley3))
-                (action 'applyFilter')
-              )
-            }}
-            Reformas al Código Penal
-         </label>
-
-       </div>
-      </div>
+     </div>
     </div>
-  {{/if}}
+  </div>
+{{/if}}
 
-  {{#if model.config.useFrontPortfolioVisualization}}
-    {{front-porfolio-visualization
-      perfiles=model.perfiles
-      onDidInsertElement=(action 'applyFilter')
-    }}
-  {{/if}}
+{{#if model.config.useFrontPortfolioVisualization}}
+  {{front-porfolio-visualization
+    perfiles=model.perfiles
+    onDidInsertElement=(action 'applyFilter')
+  }}
+{{/if}}
 
-  {{#if model.config.useFrontTableVisualization}}
-    <table class="table">
+{{#if model.config.useFrontTableVisualization}}
+  <table class="table">
+    <tr>
+      {{#each model.frontTableVisualizationConfig as |field|}}
+        <th>{{field.tableTitle}}</th>
+      {{/each}}
+    </tr>
+
+    {{#each model.perfiles as |perfil|}}
       <tr>
         {{#each model.frontTableVisualizationConfig as |field|}}
-          <th>{{field.tableTitle}}</th>
+          <td>
+            {{#if field.isLink}}
+              {{#link-to 'perfil' perfil.id}}
+                {{get perfil field.fieldName}}
+              {{/link-to}}
+            {{else}}
+              {{get perfil field.fieldName}}
+            {{/if}}
+          </td>
         {{/each}}
       </tr>
+    {{/each}}
+  </table>
+{{/if}}
 
-      {{#each model.perfiles as |perfil|}}
-        <tr>
-          {{#each model.frontTableVisualizationConfig as |field|}}
-            <td>
-              {{#if field.isLink}}
-                {{#link-to 'perfil' perfil.id}}
-                  {{get perfil field.fieldName}}
-                {{/link-to}}
-              {{else}}
-                {{get perfil field.fieldName}}
-              {{/if}}
-            </td>
-          {{/each}}
-        </tr>
-      {{/each}}
-    </table>
-  {{/if}}
-
-  {{#if model.config.mainPageLinks}}
-    <div class="row main-page-links bg-color-gray" style="margin-top: 20px; padding: 20px 5px;">
-      {{#each model.config.mainPageLinks as |link|}}
-        <div class="col-sm-6">
-          {{#if link.link}}
-            <a href="{{link.link}}">
-              {{#if link.imageLink}}
-                <img src="{{link.imageLink}}" title="{{link.title}}" class="img-responsive center"/>
-              {{else}}
-                {{link.title}}
-              {{/if}}
-            </a>
-          {{else}}
-            {{#link-to link.route}}
-              {{#if link.imageLink}}
-                <img src="{{link.imageLink}}" title="{{link.title}}" class="img-responsive center"/>
-              {{else}}
-                {{link.title}}
-              {{/if}}
-            {{/link-to}}
-          {{/if}}
-        </div>
-      {{/each}}
-    </div>
-  {{/if}}
-</div>
+{{#if model.config.mainPageLinks}}
+  <div class="row main-page-links bg-color-gray" style="margin-top: 20px; padding: 20px 5px;">
+    {{#each model.config.mainPageLinks as |link|}}
+      <div class="col-sm-6">
+        {{#if link.link}}
+          <a href="{{link.link}}">
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}" class="img-responsive center"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          </a>
+        {{else}}
+          {{#link-to link.route}}
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}" class="img-responsive center"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          {{/link-to}}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

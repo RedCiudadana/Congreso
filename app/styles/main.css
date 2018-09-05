@@ -7,18 +7,36 @@
     margin: 0 -12px -12px 0;
 }
 
-.portfolio-5 .portfolio-item {
+.portafolio .portfolio-item {
+    width: 100%;
+}
+
+@media (max-width: 479px) {
+    .portfolio .portfolio-item {
+        width: 100%;
+    }
+}
+@media (min-width: 991px) {
+    .portfolio .portfolio-item {
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .portfolio-5 .portfolio-item {
     width: 20%;
     padding: 0 10px 10px 0;
 }
-
 .portfolio-item {
-    float: left;
-    position: relative;
-    width: 25%;
-    height: auto;
-    padding: 0 12px 12px 0;
+        float: left;
+        position: relative;
+        width: 25%;
+        height: auto;
+        padding: 0 12px 12px 0;
+    }
 }
+
 
 .portfolio-item .portfolio-image, .portfolio-item .portfolio-image a, .portfolio-item .portfolio-image img {
     display: block;
