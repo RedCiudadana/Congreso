@@ -63,17 +63,17 @@ html, body {
 /*Menu*/
 
 .nav-candidator .list-inline>li.active a, .nav-candidator .list-inline>li:hover a {
-  background: #f6921eff;
+  background: #00a6aaff;
 }
 
 .nav-candidator .list-inline>li.active a:after {
-  border-top-color: #f6921eff;
+  border-top-color: #00a6aaff;
 }
 
 /*Perfiles*/
 
 .container-profile {
-  background: #f6921eff;
+  background: #00a6aaff;
 }
 
 .profile-candidate {

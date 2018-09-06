@@ -1,0 +1,9 @@
+Before
+
+primary #f7941eff
+secundary #1b2b3a
+
+Now
+
+primary #00a6aaff
+secundary #475059ff

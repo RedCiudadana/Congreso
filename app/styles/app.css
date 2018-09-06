@@ -42,9 +42,40 @@ Color de la font: 475059ff;
     margin-right: auto;
 }
 
-.search-container-row {
-    margin-bottom: 10px;
-    padding: 30px 75px;
+#s-filters-main {
+    background-image: url('/app/img/banner-congreso.png');
+    background-attachment: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+
+.search-and-filter {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 15rem;
+    text-align: center;
+    color: white;
+}
+
+.search-and-filter h1 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+.search-and-filter label {
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+
+.filters-container {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5rem;
 }
 
 .search-container .ember-power-select-status-icon {
@@ -74,11 +105,6 @@ th.header {
     padding: 15px;
 }
 
-.search-and-filter label {
-    margin-left: 15px;
-    font-weight: normal;
-}
-
 html, body {
     background-color: #ffffff;
     color: #475059ff;
@@ -89,9 +115,9 @@ body.perfil .container.content-container {
 }
 
 .navbar-inverse {
-    background-color: #f7941eff;
+    background-color: #fff;
     border: none;
-    color: white;
+    color: #f7941eff;
 }
 
 .nav > li > a {
@@ -101,15 +127,15 @@ body.perfil .container.content-container {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+    color: #00a6aaff;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: white;
+    color: #00a6aaff;
 }
 
 .navbar-inverse .navbar-brand {
-    color: white;
+    color: #00a6aaff;
 }
 
 .navbar-brand img {
@@ -118,12 +144,10 @@ body.perfil .container.content-container {
 
 .navbar-header {
     padding: 15px 20px;
-    /* Anaranjado */
-    background-color: #f7941eff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: white;
+    color: #00a6aaff;
 }
 
 @media (min-width: 768px) {
@@ -140,7 +164,7 @@ body.perfil .container.content-container {
 }
 
 #footer {
-    background-color: #1b2b3a;
+    background-color: #475059ff;
     color: #ffffff;
     padding-bottom: 40px;
     line-height: 26px;
@@ -186,7 +210,7 @@ body.perfil .container.content-container {
 #descarga-app-title {
     font-weight: bold;
     font-size: 36px;
-    color: #1b2b3a;
+    color: #475059ff;
 }
 
 .img-responsive.center {
@@ -206,7 +230,7 @@ nav > .container {
 .nav-candidator .list-inline > li a {
     padding: 15px;
     font-size: 16px;
-    color: #f6921eff;
+    color: #00a6aaff;
 }
 
 .nav-candidator .list-inline > li a i.fa {
@@ -222,7 +246,7 @@ nav > .container {
     background-color: #e6e7e8;
 }
 
-.bg-color-white {
+.bg-color-#00a6aaff {
     background-color: #ffffff;
 }
 
@@ -239,12 +263,12 @@ nav > .container {
  /* Perfiles */
 .container-profile {
     background: #FFFFFF;
-    color: #1b2b3a;
+    color: #475059ff;
 }
 
 .profile-candidate {
     background-color: #FFFFFF;
-    color: #1b2b3a;
+    color: #475059ff;
 }
 
 .profile-candidate .table tbody > tr > td span {
@@ -257,7 +281,7 @@ p.datos-abiertos {
 }
 
 .social-link-candidate {
-    color: #1b2b3a;
+    color: #475059ff;
 }
 
 .perfil-container {
@@ -267,7 +291,7 @@ p.datos-abiertos {
 }
 
 .nav-candidator {
-    color: white;
+    color: #00a6aaff;
 }
 
 .nav-candidator .list-inline > li.social-media {
@@ -290,7 +314,7 @@ p.datos-abiertos {
     font-weight: 600;
     padding-top: 0px;
     padding-bottom: 0px;
-    color: #1b2b3a;
+    color: #475059ff;
 }
 
 .panel-body.no-padding-top-bottom {
@@ -320,7 +344,7 @@ p.datos-abiertos {
 .tabla-gradacion-content .badge {
     font-size: 14px;
     padding: 11px 13px;
-    background-color: #f6921eff;
+    background-color: #00a6aaff;
     margin-top: 10px;
 }
 
@@ -331,12 +355,6 @@ p.datos-abiertos {
 
 .buffer-top-30 {
     margin-top: 30px;
-}
-
-.filters-container {
-    margin-top: 20px;
-    color: #1b2b3a;
-    font-size: 18px;
 }
 
 #compare-candidates div.col-md-12:first-child {
@@ -362,11 +380,11 @@ p.datos-abiertos {
 
 .postulador-paneles .panel-default > .panel-heading {
     font-weight: 900;
-    background-color: #f6921eff;
+    background-color: #00a6aaff;
 }
 
 .panel-default>.panel-heading {
-    background-color: #f6921eff;
+    background-color: #00a6aaff;
 }
 
 .justify {
@@ -486,7 +504,7 @@ a:focus {
 }
 
 .btn-light-blue {
-    background-color: #f6921eff;
+    background-color: #00a6aaff;
 }
 
 .profile-candidate .table tbody > tr > td {
@@ -502,7 +520,7 @@ a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+    color: #00a6aaff;
     font-size: 16px;
 }
 
@@ -518,5 +536,25 @@ a:focus {
 .pie-chart canvas {
 }
 
+/*HELPERS*/
+.w-100 {
+    width: 100%;
+    height: auto;
+}
 
+#s-total-count {
+    background-color: #00a6aaff;
+    color: white !important;
+    margin-bottom: 30px;
+}
 
+#s-total-count .badge {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: white;
+    color: gray;
+    width: 60%;
+    height: 4rem;
+    font-size: x-large;
+    border-radius: 5px;
+}

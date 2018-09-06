@@ -1,19 +1,16 @@
-{{#if model.config.siteMainTitle}}
-{{{model.config.siteMainTitle}}}
-{{/if}}
+{{!-- {{#if model.config.siteMainTitle}}
+  {{{model.config.siteMainTitle}}}
+{{/if}} --}}
 
 {{#if model.config.banner1Title}}
   {{{model.config.banner1Title}}}
 {{/if}}
 
-{{#if model.config.banner1Link}}
-  <img src="{{model.config.banner1Link}}" />
-{{/if}}
-
 {{#if model.config.useFrontFilterWidget}}
-  <div class="row search-container-row">
-    <div class="search-container search-and-filter">
-      <div class="search-container" style="text-align: center;">
+<div id="s-filters-main">
+  <div class="search-and-filter">
+      <h1>Conoce todo sobre el proceso del congreso</h1>
+      <div class="search-container">
         {{#power-select
           selected=currentCandidato
           options=model.perfiles
@@ -26,7 +23,6 @@
           <strong>{{candidato.nombre}}</strong>
         {{/power-select}}
       </div>
-
       <div class="filters-container">
         <strong>Filtrar por a favor de: </strong>
         <label>
@@ -39,7 +35,6 @@
           }}
           Reformas Materia Antejuicio
         </label>
-
         <label>
           {{one-way-checkbox
             ley2
@@ -50,7 +45,6 @@
           }}
           Financiamiento Ilícito
         </label>
-
         <label>
           {{one-way-checkbox
             ley3
@@ -61,18 +55,39 @@
           }}
           Reformas al Código Penal
        </label>
-
      </div>
-    </div>
   </div>
+</div>
 {{/if}}
 
-{{#if model.config.useFrontPortfolioVisualization}}
-  {{front-porfolio-visualization
-    perfiles=model.perfiles
-    onDidInsertElement=(action 'applyFilter')
-  }}
+{{!-- SECTION TOTAL COUNT --}}
+<div id="s-total-count" class="row" class="text-center">
+  <div class="col-xs-12 col-md-4">
+    <h3>A favor</h3>
+    <span class="badge">--</span>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <h3>En contra</h3>
+    <span class="badge">--</span>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <h3>Ausente</h3>
+    <span class="badge">--</span>
+  </div>
+</div>
+
+{{#if model.config.banner1Link}}
+  <img src="{{model.config.banner1Link}}" />
 {{/if}}
+
+<div class="container">
+  {{#if model.config.useFrontPortfolioVisualization}}
+    {{front-porfolio-visualization
+      perfiles=model.perfiles
+      onDidInsertElement=(action 'applyFilter')
+    }}
+  {{/if}}
+</div>
 
 {{#if model.config.useFrontTableVisualization}}
   <table class="table">
