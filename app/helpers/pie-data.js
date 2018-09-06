@@ -10,8 +10,8 @@ export function pieData(value/*, hash*/) {
                 (100 - value),
                 value
               ],
-              backgroundColor: ["#F7464A","#00a6aaff"],
-              hoverBackgroundColor: ["#FF5A5E","#ffc80e"]
+              backgroundColor: ["#F7464A","#00a6aa"],
+              hoverBackgroundColor: ["#F7464A","#60d63c"]
             }
           ]
         };

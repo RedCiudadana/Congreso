@@ -42,23 +42,21 @@
   <div class="col-xs-12 panel panel-default perfil-social">
     <div>
       <i class="fa fa-phone"></i>
-      <strong>0000-0000</strong>
+      <strong>{{model.perfil.telefono}}</strong>
     </div>
     <div>
       <i class="fa fa-map-marker"></i>
-      <strong>Guatemala</strong>
+      <strong>{{model.perfil.direccion}}</strong>
     </div>
     <div>
       <i class="fa fa-envelope"></i>
-      <strong>name@domain.dd</strong>
+      <strong>{{model.perfil.email}}</strong>
     </div>
     <div>
-      <i class="fa fa-facebook"></i>
-      <strong>Candidato</strong>
+      <a href="{{model.perfil.fb}}" target="_blank"><i class="fa fa-facebook"></i></a>
     </div>
     <div>
-      <i class="fa fa-twitter"></i>
-      <strong>@Candidato</strong>
+      <a href="{{mode.perfil.tw}}" target="_blank"><i class="fa fa-twitter"></i></a>
     </div>
   </div>
 </div>
