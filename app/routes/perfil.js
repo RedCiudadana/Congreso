@@ -14,7 +14,7 @@ export default Ember.Route.extend({
     const partidoActual = perfil.get('partidoActual');
 
     return Ember.RSVP.hash({
-      options: { responsive: false },
+      options: { responsive: true, maintainAspectRatio: true },
       config: {},
       perfil: perfil,
       institucion: institucion,

@@ -1,91 +1,77 @@
-<div class="container-profile">
-  <div class="profile-candidate perfil-container" style="border: 1px solid #ddd;">
-    <div class="row">
-      <div class="col-md-3">
-        <div id="candidate-img-profile" style="padding-top: 20px;">
-          <img
-            src="{{model.perfil.fotoPerfil}}"
-            alt="{{model.perfil.nombre}}"
-            border="0"
-            class="img-responsive center-block"
-          >
-        </div>
+{{!-- Información general --}}
+<!--
+  Revisa este diseño
+-->
+<div class="profile-candidate" style="border: 1px solid #ddd;">
+  <div class="row perfil-container">
+    <div class="col-md-3">
+      <div id="candidate-img-profile" style="padding-top: 20px;">
+        <img
+          src="{{model.perfil.fotoPerfil}}"
+          alt="{{model.perfil.nombre}}"
+          border="0"
+          class="img-responsive center-block"
+        >
       </div>
+    </div>
 
-      <div class="col-md-5">
-        <h3 style="padding-left: 0px;">{{model.perfil.nombre}}</h3>
-        <table class="table">
-          <tbody>
-            {{#each-in model.perfil.informacionGeneral as |key item|}}
-              <tr>
-                <td>
-                  {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
-                  {{{item.value}}}
-                </td>
-              </tr>
-            {{/each-in}}
-          </tbody>
-        </table>
-      </div>
+    <div class="col-md-5">
+      <h3 style="padding-left: 0px;">{{model.perfil.nombre}}</h3>
+      <table class="table">
+        <tbody>
+          {{#each-in model.perfil.informacionGeneral as |key item|}}
+            <tr>
+              <td>
+                {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                {{{item.value}}}
+              </td>
+            </tr>
+          {{/each-in}}
+        </tbody>
+      </table>
+    </div>
 
-      <div class="col-md-4 social-side" style="padding-left: 40px; padding-right: 40px;">
-        <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}" style="width: auto; height: auto; margin-top: 10px;">
-      </div>
+    <div class="col-md-4 social-side" style="padding-left: 40px; padding-right: 40px;">
+      <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}" style="width: auto; height: auto; margin-top: 10px;">
     </div>
   </div>
 </div>
 
-<div class="row perfil-container" style="border: 1px solid #ddd;">
-  <div class="col-md-12" style="display:flex;">
-      <img
-      src="/app/img/logo-documento.png"
-      alt="Biografía"
-      style="width: 60px; height:60px; margin: 10px 30px 10px 10px;">
-      <h3 style="margin-top:auto;margin-bottom:auto;">Biografía</h3>
-  </div>
-  <div class="col-md-12" style="margin-top: 10px;">
-    <p class="justify">{{model.perfil.biografia}}</p>
+{{!-- Social --}}
+<div class="row perfil-container">
+  <div class="col-xs-12 panel panel-default perfil-social">
+    <div>
+      <i class="fa fa-phone"></i>
+      <strong>0000-0000</strong>
+    </div>
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <strong>Guatemala</strong>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <strong>name@domain.dd</strong>
+    </div>
+    <div>
+      <i class="fa fa-facebook"></i>
+      <strong>Candidato</strong>
+    </div>
+    <div>
+      <i class="fa fa-twitter"></i>
+      <strong>@Candidato</strong>
+    </div>
   </div>
 </div>
 
-<div class="buffer-top-30 row" style="margin-bottom: 30px;">
-
+{{!-- Votaciones y Asistencia --}}
+<div class="row">
+  {{!-- Votaciones --}}
   <div class="col-md-6">
-    <div class="row perfil-container" style="height: auto;  margin-right: 2px; border: 1px solid #ddd;">
-      <div class="col-md-12" style="display:flex;">
-          <img
-          src="/app/img/logo-libro.png"
-          alt="Experiencia academica"
-          style="width: 60px; height:60px; margin: 10px 30px 10px 10px;">
-          <h3 style="margin-top:auto;margin-bottom:auto;">Experiencia academica</h3>
-      </div>
-      <div class="col-md-12" style="margin-top: 10px;">
-        <p class="justify">{{model.perfil.experienciaAcademica}}</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="row perfil-container" style="height: auto; margin-left: 2px; border: 1px solid #ddd;">
-      <div class="col-md-12" style="display:flex;">
-          <img
-          src="/app/img/logo-portafolio.png"
-          alt="Experiencia profesional"
-          style="width: 60px; height:60px; margin: 10px 30px 10px 10px;">
-          <h3 style="margin-top:auto;margin-bottom:auto;">Experiencia profesional</h3>
-      </div>
-      <div class="col-md-12" style="margin-top: 10px;">
-        <p class="justify">{{model.perfil.experienciaProfesional}}</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    {{!-- Tabla de votacion --}}
-    <div class="col-md-6 perfil-container">
+    <div class="perfil-container">
       <div class="panel panel-default">
-        <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Tabla de votación</h3>
-
+        <div class="header">
+          <strong>Votaciones</strong>
+        </div>
         <div class="panel-body tabla-gradacion-content no-padding-top-bottom">
           <div class="row">
             <div class="col-xs-3 col-md-2 text-center icon-container">
@@ -127,51 +113,18 @@
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-12">
-      {{!-- Gráfica de asistencia --}}
-      <div class="perfil-container">
-        <div class="panel panel-default">
-          <h3 style="margin-top:auto;margin-bottom:auto; padding: 30px">Gráfica de asistencia</h3>
-          <div class="pie-chart">
-            {{ember-chart type='pie' data=( pie-data model.asistencia.porcentaje) options=model.options}}
-          </div>
+  {{!-- Asistencia --}}
+  <div class="col-md-6">
+    {{!-- Gráfica de asistencia --}}
+    <div class="perfil-container">
+      <div class="panel panel-default">
+        <div class="header">
+          <strong>Asistencia</strong>
+        </div>
+        <div class="pie-chart">
+          {{ember-chart type='doughnut' data=( pie-data model.asistencia.porcentaje) options=model.options width=200 height=80}}
         </div>
       </div>
     </div>
   </div>
-
-  {{!-- <div class="col-md-6">
-    <div class="row perfil-container" style="height: auto; margin-left: 2px; border: 1px solid #ddd;">
-      <div class="col-md-12" style="display:flex;">
-          <img
-          src="/app/img/logo-portafolio.png"
-          alt="Experiencia profesional"
-          style="width: 60px; height:60px; margin: 10px 30px 10px 10px;">
-          <h3 style="margin-top:auto;margin-bottom:auto;">Plan de Trabajo</h3>
-      </div>
-      <div class="col-md-12" style="margin-top: 10px;">
-        <p class="justify">{{model.perfil.planTrabajo}}</p>
-      </div>
-    </div>
-  </div> --}}
-
 </div>
-
-<div>
-  {{#each-in model.perfil.recuadros as |key item|}}
-    <div class="panel panel-default">
-      {{#if item.label}}<div class="panel-heading font-weight-600">{{{item.label}}}</div>{{/if}}
-
-      <div class="panel-body">
-        {{{item.value}}}
-      </div>
-    </div>
-  {{/each-in}}
-</div>
-
-
-{{#if disqusShortname}}
-  {{disqus-comments identifier=model.perfil.disqusIdentifier}}
-{{/if}}
