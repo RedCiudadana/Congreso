@@ -1528,5 +1528,77 @@
     "ley4": "contra",
     "ley5": "contra",
     "ley6": "contra"
+  },
+  {
+    "perfilId": "diputado-171",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "perfilId": "diputado-172",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "perfilId": "diputado-173",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "perfilId": "diputado-174",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "perfilId": "diputado-175",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
+  },
+  {
+    "perfilId": "diputado-176",
+    "ley1": "ausente",
+    "ley2": "ausente",
+    "ley3": "ausente",
+    "ley4": "ausente",
+    "ley5": "ausente",
+    "ley6": "ausente"
+  },
+  {
+    "perfilId": "diputado-177",
+    "ley1": "favor",
+    "ley2": "favor",
+    "ley3": "favor",
+    "ley4": "favor",
+    "ley5": "favor",
+    "ley6": "favor"
+  },
+  {
+    "perfilId": "diputado-178",
+    "ley1": "contra",
+    "ley2": "contra",
+    "ley3": "contra",
+    "ley4": "contra",
+    "ley5": "contra",
+    "ley6": "contra"
   }
 ]
