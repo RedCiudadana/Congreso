@@ -36,6 +36,87 @@ export default Ember.Controller.extend({
     }
   ),
 
+  favor: computed(
+    'ley1',
+    'ley2',
+    'ley3',
+    function() {
+      let perfiles = this.get('model').perfiles;
+      let ley1 = this.get('ley1');
+      let ley2 = this.get('ley2');
+      let ley3 = this.get('ley3');
+      return perfiles
+        .filter((element) => {
+          if(ley1 && element.get('ley1') == 'favor') {
+            return true
+          }
+
+          if(ley2 && element.get('ley2') == 'favor') {
+            return true
+          }
+
+          if(ley3 && element.get('ley3') == 'favor') {
+            return true
+          }
+
+        }).length;
+    }
+  ),
+
+  contra: computed(
+    'ley1',
+    'ley2',
+    'ley3',
+    function() {
+      let perfiles = this.get('model').perfiles;
+      let ley1 = this.get('ley1');
+      let ley2 = this.get('ley2');
+      let ley3 = this.get('ley3');
+      return perfiles
+        .filter((element) => {
+          if(ley1 && element.get('ley1') == 'contra') {
+            return true
+          }
+
+          if(ley2 && element.get('ley2') == 'contra') {
+            return true
+          }
+
+          if(ley3 && element.get('ley3') == 'contra') {
+            return true
+          }
+
+        }).length;
+    }
+  ),
+
+  ausente: computed(
+    'ley1',
+    'ley2',
+    'ley3',
+    function() {
+      let perfiles = this.get('model').perfiles;
+      let ley1 = this.get('ley1');
+      let ley2 = this.get('ley2');
+      let ley3 = this.get('ley3');
+      return perfiles
+        .filter((element) => {
+          if(ley1 && element.get('ley1') == 'ausente') {
+            return true
+          }
+
+          if(ley2 && element.get('ley2') == 'ausente') {
+            return true
+          }
+
+          if(ley3 && element.get('ley3') == 'ausente') {
+            return true
+          }
+
+        }).length;
+    }
+  ),
+
   _applyFilter() {
     var $container = Ember.$('#portfolio');
 
