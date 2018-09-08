@@ -1,19 +1,14 @@
-@import 'fonts.css'
-@import 'responsive.css';
-@import 'ember-power-select-bootstrap.css';
-@import 'ember-cli-spinner.css';
-@import 'main.css';
+@import "ember-bootstrap/bootstrap";
+@import "fonts";
+@import "responsive";
+@import "ember-power-select-bootstrap";
+@import "ember-cli-spinner";
+@import "main";
 
-/*Colores*/
-/*
-Anaranjado-header: f7941eff;
-Anaranjado de los filtros: f6921eff;
-Gris fondo del input de la busqueda: f1f1f2ff;
-Color de la font: 475059ff;
+// COLORES
 
-
-*/
-
+$primary: #00a6aa;
+$secundary: #475059;
 
 
 .main-page-links img {
@@ -107,7 +102,7 @@ th.header {
 
 html, body {
     background-color: #ffffff;
-    color: #475059ff;
+    color: $secundary;
 }
 
 body.perfil .container.content-container {
@@ -117,7 +112,7 @@ body.perfil .container.content-container {
 .navbar-inverse {
     background-color: #fff;
     border: none;
-    color: #f7941eff;
+    color: #f7941e;
 }
 
 .nav > li > a {
@@ -127,19 +122,19 @@ body.perfil .container.content-container {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #00a6aaff;
+    color: $primary;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: #00a6aaff;
+    color: $primary;
 }
 
 .navbar-inverse .navbar-brand {
-    color: #00a6aaff;
+    color: $primary;
 }
 
 .navbar-brand img {
-    max-height: 40px;
+    max-height: 50px;
 }
 
 .navbar-header {
@@ -147,7 +142,7 @@ body.perfil .container.content-container {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #00a6aaff;
+    color: $primary;
 }
 
 @media (min-width: 768px) {
@@ -164,7 +159,7 @@ body.perfil .container.content-container {
 }
 
 #footer {
-    background-color: #475059ff;
+    background-color: $secundary;
     color: #ffffff;
     padding-bottom: 40px;
     line-height: 26px;
@@ -210,7 +205,7 @@ body.perfil .container.content-container {
 #descarga-app-title {
     font-weight: bold;
     font-size: 36px;
-    color: #475059ff;
+    color: $secundary;
 }
 
 .img-responsive.center {
@@ -230,7 +225,7 @@ nav > .container {
 .nav-candidator .list-inline > li a {
     padding: 15px;
     font-size: 16px;
-    color: #00a6aaff;
+    color: $primary;
 }
 
 .nav-candidator .list-inline > li a i.fa {
@@ -246,9 +241,9 @@ nav > .container {
     background-color: #e6e7e8;
 }
 
-.bg-color-#00a6aaff {
-    background-color: #ffffff;
-}
+// .bg-color-$primaryff {
+//     background-color: #ffffff;
+// }
 
 .color-light-blue {
     /*Azul claro o celeste*/
@@ -263,12 +258,12 @@ nav > .container {
  /* Perfiles */
 .container-profile {
     background: #FFFFFF;
-    color: #475059ff;
+    color: $secundary;
 }
 
 .profile-candidate {
     background-color: #FFFFFF;
-    color: #475059ff;
+    color: $secundary;
 }
 
 .profile-candidate .table tbody > tr > td span {
@@ -281,7 +276,7 @@ p.datos-abiertos {
 }
 
 .social-link-candidate {
-    color: #475059ff;
+    color: $secundary;
 }
 
 .perfil-container {
@@ -291,7 +286,7 @@ p.datos-abiertos {
 }
 
 .nav-candidator {
-    color: #00a6aaff;
+    color: $primary;
 }
 
 .nav-candidator .list-inline > li.social-media {
@@ -314,7 +309,7 @@ p.datos-abiertos {
     font-weight: 600;
     padding-top: 0px;
     padding-bottom: 0px;
-    color: #475059ff;
+    color: $secundary;
 }
 
 .panel-body.no-padding-top-bottom {
@@ -344,7 +339,7 @@ p.datos-abiertos {
 .tabla-gradacion-content .badge {
     font-size: 14px;
     padding: 11px 13px;
-    background-color: #00a6aaff;
+    background-color: $primary;
     margin-top: 10px;
 }
 
@@ -380,11 +375,11 @@ p.datos-abiertos {
 
 .postulador-paneles .panel-default > .panel-heading {
     font-weight: 900;
-    background-color: #00a6aaff;
+    background-color: $primary;
 }
 
 .panel-default>.panel-heading {
-    background-color: #00a6aaff;
+    background-color: $primary;
 }
 
 .justify {
@@ -430,7 +425,7 @@ a:focus {
 
 /* Small devices only */
 @media (max-width: 480px) {
-    .tabla-gradacion-nombre: {
+    .tabla-gradacion-nombre {
         text-align: center;
     }
 
@@ -504,7 +499,7 @@ a:focus {
 }
 
 .btn-light-blue {
-    background-color: #00a6aaff;
+    background-color: $primary;
 }
 
 .profile-candidate .table tbody > tr > td {
@@ -520,7 +515,7 @@ a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #00a6aaff;
+    color: $primary;
     font-size: 16px;
 }
 
@@ -542,7 +537,7 @@ a:focus {
 }
 
 #s-total-count {
-    background-color: #00a6aaff;
+    background-color: $primary;
     color: white !important;
     margin-bottom: 30px;
 }
@@ -568,7 +563,7 @@ a:focus {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
-    background-color: #00a6aaff;
+    background-color: $primary;
     color: white;
 }
 
@@ -583,7 +578,7 @@ a:focus {
 }
 
 .perfil-social i {
-    color: #00a6aaff;
+    color: $primary;
     font-size: 2rem;
     margin-right: 15px;
     margin-bottom: 10px;
@@ -600,13 +595,9 @@ a:focus {
     }
 
     .perfil-social i {
-        color: #00a6aaff;
+        color: $primary;
         margin-left: 75px;
         margin-right: 15px;
         font-size: 2rem;
     }
-}
-
-.navbar-brand img {
-    max-height: 50px;
 }

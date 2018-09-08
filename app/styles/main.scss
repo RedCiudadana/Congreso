@@ -22,12 +22,12 @@
     }
 }
 
-@media (min-width: 992px) {
-
+@media screen and (min-width: 992px) {
     .portfolio-5 .portfolio-item {
     width: 20%;
     padding: 0 10px 10px 0;
 }
+
 .portfolio-item {
         float: left;
         position: relative;

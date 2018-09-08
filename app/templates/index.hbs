@@ -1,94 +1,79 @@
-{{!-- {{#if model.config.siteMainTitle}}
+{{!-- Site main title --}}
+{{#if model.config.siteMainTitle}}
   {{{model.config.siteMainTitle}}}
-{{/if}} --}}
-
+{{/if}}
+{{!-- Banner --}}
 {{#if model.config.banner1Title}}
   {{{model.config.banner1Title}}}
 {{/if}}
-
-{{#if model.config.useFrontFilterWidget}}
-<div id="s-filters-main">
-  <div class="search-and-filter">
-      <h1>Conoce todo sobre el proceso del congreso</h1>
-      <div class="search-container">
-        {{#power-select
-          selected=currentCandidato
-          options=model.perfiles
-          onchange=(route-action 'selectPerfil')
-          searchField='nombre'
-          placeholder='Escriba el nombre del diputado o diputada que desea buscar'
-          noMatchesMessage='Sin resultados'
-            as |candidato|
-        }}
-          <strong>{{candidato.nombre}}</strong>
-        {{/power-select}}
-      </div>
-      <div class="filters-container">
-        <strong>Filtrar por a favor de: </strong>
-        <label>
-          {{one-way-select
-            value=ley1
-            update=(queue
-              (action (mut ley1))
-              (action 'applyFilter')
-            )
+{{!-- Filter widget --}}
+{{#if model.config.useFrontFilterWidget2}}
+  <div id="s-filters-main">
+    <div class="search-and-filter">
+        <h1>Conoce todo sobre el proceso del congreso</h1>
+        <div class="search-container">
+          {{#power-select
+            selected=currentCandidato
+            options=model.perfiles
+            onchange=(route-action 'selectPerfil')
+            searchField='nombre'
+            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
+            noMatchesMessage='Sin resultados'
+              as |candidato|
           }}
-          Reformas Materia Antejuicio
-        </label>
-        <label>
-          {{one-way-select
-            ley2
-            update=(queue
-              (action (mut ley2))
-              (action 'applyFilter')
-            )
-          }}
-          Financiamiento Ilícito
-        </label>
-        <label>
-          {{one-way-select
-            ley3
-            update=(queue
-              (action (mut ley3))
-              (action 'applyFilter')
-            )
-          }}
-          Reformas al Código Penal
-       </label>
-     </div>
+            <strong>{{candidato.nombre}}</strong>
+          {{/power-select}}
+        </div>
+        <div class="filters-container">
+          <strong>Filtrar por a favor de: </strong>
+          <label>
+            {{one-way-select
+              value=ley1
+              update=(queue
+                (action (mut ley1))
+                (action 'applyFilter')
+              )
+            }}
+            Reformas Materia Antejuicio
+          </label>
+          <label>
+            {{one-way-select
+              ley2
+              update=(queue
+                (action (mut ley2))
+                (action 'applyFilter')
+              )
+            }}
+            Financiamiento Ilícito
+          </label>
+          <label>
+            {{one-way-select
+              ley3
+              update=(queue
+                (action (mut ley3))
+                (action 'applyFilter')
+              )
+            }}
+            Reformas al Código Penal
+         </label>
+       </div>
+    </div>
   </div>
-</div>
 {{/if}}
-
-{{!-- SECTION TOTAL COUNT --}}
-<div id="s-total-count" class="row" class="text-center">
-  <div class="col-xs-12 col-md-4">
-    <h3>A favor</h3>
-    <span class="badge">{{favor}}</span>
-  </div>
-  <div class="col-xs-12 col-md-4">
-    <h3>En contra</h3>
-    <span class="badge">{{contra}}</span>
-  </div>
-  <div class="col-xs-12 col-md-4">
-    <h3>Ausente</h3>
-    <span class="badge">{{ausente}}</span>
-  </div>
-</div>
-
+{{!-- Banner 2 --}}
 {{#if model.config.banner1Link}}
   <img src="{{model.config.banner1Link}}" />
 {{/if}}
-
-<div class="container">
-  {{#if model.config.useFrontPortfolioVisualization}}
+{{!-- Portfolio --}}
+{{#if model.config.useFrontPortfolioVisualization}}
+  <div class="container">
     {{front-porfolio-visualization
       perfiles=model.perfiles
       onDidInsertElement=(action 'applyFilter')
     }}
-  {{/if}}
-</div>
-
+  </div>
+{{/if}}
+{{!-- Portfolio mode table --}}
 {{#if model.config.useFrontTableVisualization}}
   <table class="table">
     <tr>
@@ -114,7 +99,7 @@
     {{/each}}
   </table>
 {{/if}}
-
+{{!-- Page links --}}
 {{#if model.config.mainPageLinks}}
   <div class="row main-page-links bg-color-gray" style="margin-top: 20px; padding: 20px 5px;">
     {{#each model.config.mainPageLinks as |link|}}
