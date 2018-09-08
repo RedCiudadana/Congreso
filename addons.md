@@ -1,6 +1,5 @@
-ember install ember-cli-google-analytics
+ember install ember-cli-google-analytics #update config
 ember install ember-cli-flash
-ember install ember-cli-reset-scroll
 ember install ember-cli-spinner
 ember install ember-page-title
 ember install ember-bootstrap
@@ -14,3 +13,7 @@ ember install ember-composable-helpers
 ember install ember-set-body-class
 ember install ember-cli-active-link-wrapper
 ember install ember-chart
+ember install ember-router-scroll
+
+DEPRECATED
+ember install ember-cli-reset-scroll => ember install ember-router-scroll

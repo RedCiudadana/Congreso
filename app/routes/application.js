@@ -1,7 +1,6 @@
 import config from '../config/environment';
 import EmberObject from '@ember/object';
 import injectScript from 'ember-inject-script';
-import ResetScrollMixin from 'ember-cli-reset-scroll';
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
 import { A } from '@ember/array';
@@ -11,7 +10,7 @@ import { Promise } from 'rsvp';
 import { set } from '@ember/object';
 
 
-export default Route.extend(ResetScrollMixin, {
+export default Route.extend({
 
   spreadsheets: service(),
 
