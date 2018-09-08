@@ -8,21 +8,19 @@
   <div id="compare-candidates">
     <div class="row">
       <div class="col-md-6">
-        {{ember-chosen
-          placeholder='Selecciona un candidato'
-          optionValuePath='id'
-          optionLabelPath='nombre'
-          content=model.perfiles
-          value=perfilUnoId
+        {{one-way-select perfilUnoId
+            options=model.perfiles
+            optionValuePath="id"
+            optionLabelPath="nombre"
+            update=(action (mut perfilUno))
         }}
       </div>
       <div class="col-md-6">
-        {{ember-chosen
-          placeholder='Selecciona un candidato'
-          optionValuePath='id'
-          optionLabelPath='nombre'
-          content=model.perfiles
-          value=perfilDosId
+        {{one-way-select perfilDosId
+            options=model.perfiles
+            optionValuePath="id"
+            optionLabelPath="nombre"
+             update=(action (mut perfilDos))
         }}
       </div>
     </div>
