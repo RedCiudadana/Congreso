@@ -22,7 +22,6 @@
       <nav class="col-md-12">
         <ul class="list-inline">
           {{#each model.config.institucionFuncionalidades as |link|}}
-            {{#active-link}}
               {{#if link.link}}
                 <a href="{{link.link}}" title="{{link.title}}">
                   {{#if link.iconClass}}
@@ -31,14 +30,13 @@
                   {{link.name}}
                 </a>
               {{else}}
-                {{#link-to link.route title=link.title}}
+                {{#link-to-wrapper link.route title=link.title}}
                   {{#if link.iconClass}}
                     <i class="{{link.iconClass}}"></i>
                   {{/if}}
                   {{link.name}}
-                {{/link-to}}
+                {{/link-to-wrapper}}
               {{/if}}
-            {{/active-link}}
           {{/each}}
         </ul>
       </nav>
