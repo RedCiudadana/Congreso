@@ -1,21 +1,25 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import config from '../../config/environment';
+import { inject as service } from '@ember/service';
+import { A } from '@ember/array';
+import { hash } from 'rsvp';
+import { isNone } from '@ember/utils';
 
-export default Ember.Route.extend({
-  spreadsheets: Ember.inject.service(),
-  _routing: Ember.inject.service('-routing'),
+export default Route.extend({
+  spreadsheets: service(),
+  _routing: service('-routing'),
 
   model(params) {
     const spreadsheet = this.get('spreadsheets');
     const _routing = this.get('_routing');
 
-    return Ember.RSVP.hash({
+    return hash({
       postulador: this.store.peekRecord('postulador-comision', params.id),
       postuladores: this.modelFor('comision').diputados,
       postuladorFuncionalidades: spreadsheet
         .fetch('postulador-funcionalidades', 'config')
         .then((links) => {
-          return Ember.A(links)
+          return A(links)
             .filter((link) => {
               if (link.link) {
                 return true;
@@ -31,7 +35,7 @@ export default Ember.Route.extend({
       resultadosEvaluaciones: spreadsheet
         .fetch('evaluaciones')
         .then((resultados) => {
-          return Ember.A(resultados).filterBy('postuladorId', params.id)
+          return A(resultados).filterBy('postuladorId', params.id)
         })
         .then((resultados) => {
           return resultados.map((resultado) => {
@@ -45,7 +49,7 @@ export default Ember.Route.extend({
   },
 
   afterModel(model) {
-    if (!Ember.isNone(model.postulador.get('nombre'))) {
+    if (!isNone(model.postulador.get('nombre'))) {
       this.set('breadCrumb', {
         title: model.postulador.get('nombre')
       });

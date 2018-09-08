@@ -1,9 +1,9 @@
-import Ember from 'ember';
-import Model from 'ember-data/model';
+import DS from 'ember-data';
 import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
+import { computed } from '@ember/object';
 
-export default Model.extend({
+export default DS.Model.extend({
   nombre: attr(),
   fotoUrl: attr(),
   fotoInstitucionUrl: attr(),
@@ -33,7 +33,7 @@ export default Model.extend({
   informacionGeneral: attr('informacion-general'),
   frenteAFrente: attr('frente-a-frente'),
 
-  fotoPerfil: Ember.computed('fotoUrl', function() {
+  fotoPerfil: computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
       return this.get('fotoUrl');
     }
@@ -41,15 +41,15 @@ export default Model.extend({
     return 'images/Magistrado.jpg';
   }),
 
-  fotoInstitucion: Ember.computed('fotoInstitucionUrl', function() {
+  fotoInstitucion: computed('fotoInstitucionUrl', function() {
     return this.get('fotoInstitucionUrl');
   }),
 
-  disqusIdentifier: Ember.computed('id', function() {
+  disqusIdentifier: computed('id', function() {
     return `postulador-${this.get('id')}`;
   }),
 
-    selector: Ember.computed('sexo', 'estado', function() {
+    selector: computed('sexo', 'estado', function() {
     let returnValue = '';
 
     if (this.get('sexo') === 'Masculino') {

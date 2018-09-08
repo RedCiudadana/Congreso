@@ -1,9 +1,13 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import config from '../config/environment';
+import { inject as service } from '@ember/service';
+import { A } from '@ember/array';
+import { hash } from 'rsvp';
+import { isNone } from '@ember/utils';
 
-export default Ember.Route.extend({
-  spreadsheets: Ember.inject.service(),
-  _routing: Ember.inject.service('-routing'),
+export default Route.extend({
+  spreadsheets: service(),
+  _routing: service('-routing'),
 
 
   model(params) {
@@ -13,7 +17,7 @@ export default Ember.Route.extend({
     const institucion = perfil.get('institucion');
     const partidoActual = perfil.get('partidoActual');
 
-    return Ember.RSVP.hash({
+    return hash({
       options: { responsive: true, maintainAspectRatio: true },
       config: {},
       perfil: perfil,
@@ -25,20 +29,20 @@ export default Ember.Route.extend({
       documentosDisponibles: spreadsheet
         .fetch('documentos-disponibles')
         .then((documentos) => {
-          return Ember.A(documentos)
+          return A(documentos)
             .filterBy('perfil', perfil.get('id'));
         }),
       datosTablaGradacion: spreadsheet
         .fetch('tabla-gradacion')
         .then((registros) => {
-          return Ember.A(registros)
+          return A(registros)
             .filterBy('perfil', perfil.get('id'))
             .filter((e) => e.aspecto !== 'Total');
         }),
       totalPuntajeGradacion: spreadsheet
         .fetch('tabla-gradacion')
         .then((registros) => {
-          return Ember.A(registros)
+          return A(registros)
             .filterBy('perfil', perfil.get('id'))
             .filter((e) => e.aspecto !== 'Total' && e.aspecto !== 'Cualidades Éticas y de Probidad')
             .reduce((previousValue, item) => previousValue + parseInt(item.puntaje), 0);
@@ -46,7 +50,7 @@ export default Ember.Route.extend({
       perfilFuncionalidades: spreadsheet
         .fetch('perfil-funcionalidades', 'config')
         .then((links) => {
-          return Ember.A(links)
+          return A(links)
             .filter((link) => {
               if (link.link) {
                 return true;
@@ -62,26 +66,26 @@ export default Ember.Route.extend({
       tachas: spreadsheet
         .fetch('tachas')
         .then((registros) => {
-          return Ember.A(registros)
+          return A(registros)
             .filterBy('perfilId', perfil.get('id'));
         }),
       votaciones: spreadsheet
         .fetch('votaciones')
         .then((registros) => {
-          return Ember.A(registros)
+          return A(registros)
             .filterBy('perfilId', perfil.get('id'));
         }),
       asistencia: spreadsheet
         .fetch('asistencia')
         .then((registros) => {
-          return Ember.A(registros)
+          return A(registros)
             .findBy('perfilId', perfil.get('id'));
         })
     });
   },
 
   afterModel(model) {
-    if (!Ember.isNone(model.perfil.get('nombre'))) {
+    if (!isNone(model.perfil.get('nombre'))) {
       this.set('breadCrumb', {
         title: model.perfil.get('nombre')
       });

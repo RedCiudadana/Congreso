@@ -1,6 +1,6 @@
-import Ember from 'ember';
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
+import { computed } from '@ember/object';
 
 export default Model.extend({
   nombre: attr(),
@@ -67,7 +67,7 @@ export default Model.extend({
 
   ley3: attr(),
 
-  resultadosEvaluacionInt: Ember.computed('resultadosEvaluacion', function() {
+  resultadosEvaluacionInt: computed('resultadosEvaluacion', function() {
     return parseInt(this.get('resultadosEvaluacion'));
   }),
 
@@ -77,7 +77,7 @@ export default Model.extend({
 
   frenteAFrente: attr('frente-a-frente'),
 
-  fotoPerfil: Ember.computed('fotoUrl', function() {
+  fotoPerfil: computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
       return this.get('fotoUrl');
     }
@@ -85,11 +85,11 @@ export default Model.extend({
     return 'images/Magistrado.jpg';
   }),
 
-  isDescalificado: Ember.computed('estado', function() {
+  isDescalificado: computed('estado', function() {
     return this.get('estado') === 'Descalificado';
   }),
 
-  // selector: Ember.computed('sexo', 'estado', function() {
+  // selector: computed('sexo', 'estado', function() {
   //   let returnValue = '';
 
   //   if (this.get('sexo') === 'Masculino') {
@@ -111,7 +111,7 @@ export default Model.extend({
   //   return returnValue;
   // }),
 
-  selector: Ember.computed('ley1', 'ley2', 'ley3', function() {
+  selector: computed('ley1', 'ley2', 'ley3', function() {
     let returnValue = '';
 
     if (this.get('ley1') === 'favor') {
@@ -129,7 +129,7 @@ export default Model.extend({
     return returnValue;
   }),
 
-  disqusIdentifier: Ember.computed('id', function() {
+  disqusIdentifier: computed('id', function() {
     return `perfil-${this.get('id')}`;
   })
 });

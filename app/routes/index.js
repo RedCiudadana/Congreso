@@ -1,6 +1,8 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import $ from 'jquery';
+import { scheduleOnce } from '@ember/runloop';
 
-export default Ember.Route.extend({
+export default Route.extend({
 
   model() {
     return this.modelFor('application');
@@ -9,18 +11,18 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     this._super(controller, model);
 
-    Ember.run.scheduleOnce('afterRender', this, function() {
+    scheduleOnce('afterRender', this, function() {
       // TODO: Pendiente de re-habilitar: esta sección habilita por primera vez la animación
       // de Isotope para organizar y filtrar funcionarios
-      var $container = Ember.$('#portfolio');
+      var $container = $('#portfolio');
 
-      Ember.$(window).resize(function() {
+      $(window).resize(function() {
         $container.isotope('layout');
       });
 
       if (model.config.banner1Accordion) {
-        Ember.$('#slider').gridAccordion({
-          width: Ember.$('#slider').width(),
+        $('#slider').gridAccordion({
+          width: $('#slider').width(),
           height: 250,
           captionHeight: 40,
           captionTop: 200,
@@ -42,11 +44,11 @@ export default Ember.Route.extend({
     // filtro de funcionarios
     applyFilter(selector) {
 
-      var $container = Ember.$('#portfolio');
+      var $container = $('#portfolio');
 
-      Ember.$('#portfolio-filter li').removeClass('activeFilter');
+      $('#portfolio-filter li').removeClass('activeFilter');
 
-      Ember.$('#' + selector).addClass('activeFilter');
+      $('#' + selector).addClass('activeFilter');
 
       var isotopeSelector = 'pf-todos' === selector ? '*' : '.' + selector;
 
@@ -60,7 +62,7 @@ export default Ember.Route.extend({
     // TODO: Pendiente de re-habilitar: esta función aplica un shuffle a los items
     // manejados por Isotope
     applyShuffle() {
-      var $container = Ember.$('#portfolio');
+      var $container = $('#portfolio');
 
       $container.isotope({transitionDuration: '0.65s'});
 

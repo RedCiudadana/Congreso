@@ -1,6 +1,6 @@
-import Ember from 'ember';
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
 export default Route.extend({
-  spreadsheets: Ember.inject.service(),
+  spreadsheets: service(),
 });

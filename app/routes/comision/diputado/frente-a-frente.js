@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import { A } from '@ember/array';
 
-export default Ember.Route.extend({
+export default Route.extend({
   breadCrumb: null,
 
   model() {
@@ -14,7 +15,7 @@ export default Ember.Route.extend({
 
     controller.set(
       'frenteAFrenteFuncionalidad',
-      Ember.A(model.postuladorFuncionalidades)
+      A(model.postuladorFuncionalidades)
         .findBy('route', 'comision.diputado.frente-a-frente')
     );
 

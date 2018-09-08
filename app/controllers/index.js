@@ -1,8 +1,9 @@
-import Ember from 'ember';
+import $ from 'jquery';
+import Controller from '@ember/controller';
+import { computed } from '@ember/object'
 
-const { computed } = Ember;
 
-export default Ember.Controller.extend({
+export default Controller.extend({
 
   currentSelector: computed(
     'ley1',
@@ -118,7 +119,7 @@ export default Ember.Controller.extend({
   ),
 
   _applyFilter() {
-    var $container = Ember.$('#portfolio');
+    var $container = $('#portfolio');
 
     $container.isotope({transitionDuration: '0.65s'});
 

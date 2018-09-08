@@ -1,17 +1,23 @@
-import Ember from 'ember';
 import config from '../config/environment';
-// import injectScript from 'ember-inject-script';
+import EmberObject from '@ember/object';
+import injectScript from 'ember-inject-script';
 import ResetScrollMixin from 'ember-cli-reset-scroll';
+import Route from '@ember/routing/route';
+import RSVP from 'rsvp';
+import { A } from '@ember/array';
+import { inject as service } from '@ember/service';
+import { isBlank } from '@ember/utils';
+import { Promise } from 'rsvp';
+import { set } from '@ember/object';
 
-const { isBlank, RSVP: { Promise }, set } = Ember;
 
-export default Ember.Route.extend(ResetScrollMixin, {
+export default Route.extend(ResetScrollMixin, {
 
-  spreadsheets: Ember.inject.service(),
+  spreadsheets: service(),
 
-  _routing: Ember.inject.service('-routing'),
+  _routing: service('-routing'),
 
-  ajax: Ember.inject.service(),
+  ajax: service(),
 
   // Scrolls to top
   resetScroll: undefined,
@@ -53,7 +59,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
 
         // Si config.APP.configSpreadsheetSourceUrl está definida, entonces obtener
         // también ese valor y setearlo en el spreadsheet service
-        if (!Ember.isBlank(config.APP.configSpreadsheetSourceUrl)) {
+        if (!isBlank(config.APP.configSpreadsheetSourceUrl)) {
           return this.get('ajax')
             .request(config.APP.configSpreadsheetSourceUrl, { dataType: 'text' })
             .then((response) => spreadsheetService.set('configSpreadsheetUrl', response));
@@ -62,7 +68,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
         return Promise.resolve(this);
       })
 
-      .then(() => Ember.RSVP.all([
+      .then(() => RSVP.all([
         /**
          * Setear la información general del perfil mediante la parametrización
          * proveniente de la configuración
@@ -70,9 +76,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
         spreadsheetService
           .fetchConfig('perfil-informacion-general-configuracion')
           .then((configuracionData) => {
-            let perfilDataArray = Ember.A([]);
+            let perfilDataArray = A([]);
 
-            Ember.A(configuracionData).forEach((item) => {
+            A(configuracionData).forEach((item) => {
               perfilDataArray.pushObject({
                 field: item.field,
                 label: item.label
@@ -91,9 +97,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
         spreadsheetService
           .fetchConfig('perfil-recuadros-configuracion')
           .then((configuracionData) => {
-            let perfilRecuadrosDataArray = Ember.A([]);
+            let perfilRecuadrosDataArray = A([]);
 
-            Ember.A(configuracionData).forEach((item) => {
+            A(configuracionData).forEach((item) => {
               perfilRecuadrosDataArray.pushObject({
                 field: item.field,
                 label: item.label
@@ -111,9 +117,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
         spreadsheetService
           .fetchConfig('diputado-informacion-general-configuracion')
           .then((configuracionData) => {
-            let diputadoDataArray = Ember.A([]);
+            let diputadoDataArray = A([]);
 
-            Ember.A(configuracionData).forEach((item) => {
+            A(configuracionData).forEach((item) => {
               diputadoDataArray.pushObject({
                 field: item.field,
                 label: item.label
@@ -123,15 +129,15 @@ export default Ember.Route.extend(ResetScrollMixin, {
             let serializer = this.store.serializerFor('postulador-comision');
 
             serializer.set('informacionGeneralFields', diputadoDataArray);
-            // serializer.set('frenteAFrenteFields', Ember.A());
+            // serializer.set('frenteAFrenteFields', A());
           }),
 
         spreadsheetService
           .fetchConfig('diputado-frente-a-frente-configuracion')
           .then((configuracionData) => {
-            let postuladorFrenteAFrenteDataArray = Ember.A([]);
+            let postuladorFrenteAFrenteDataArray = A([]);
 
-            Ember.A(configuracionData).forEach((item) => {
+            A(configuracionData).forEach((item) => {
               postuladorFrenteAFrenteDataArray.pushObject({
                 field: item.field,
                 label: item.label,
@@ -150,9 +156,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
         spreadsheetService
           .fetchConfig('perfil-frente-a-frente-configuracion')
           .then((configuracionData) => {
-            let perfilFrenteAFrenteDataArray = Ember.A([]);
+            let perfilFrenteAFrenteDataArray = A([]);
 
-            Ember.A(configuracionData).forEach((item) => {
+            A(configuracionData).forEach((item) => {
               perfilFrenteAFrenteDataArray.pushObject({
                 field: item.field,
                 label: item.label,
@@ -171,14 +177,14 @@ export default Ember.Route.extend(ResetScrollMixin, {
     const spreadsheet = this.get('spreadsheets');
     const _routing = this.get('_routing');
 
-    return Ember.RSVP.hash({
+    return RSVP.hash({
       perfiles: this.store.findAll('perfil'),
       diputados: this.store.findAll('postulador-comision'),
       config: spreadsheet.fetchConfig('configuracion')
         .then((configuracion) => {
-          let configObject = Ember.Object.create();
+          let configObject = EmberObject.create();
 
-          Ember.A(configuracion).forEach((item) => {
+          A(configuracion).forEach((item) => {
             configObject.set(item.key, item.value);
           });
 
@@ -196,7 +202,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
        * Header links, top right
        */
       navbarLinks: spreadsheet.fetchConfig('navbar-links').then((links) => {
-        return Ember.A(links).filter((link) => {
+        return A(links).filter((link) => {
           return _routing.hasRoute(link.route);
         });
       }),
@@ -207,7 +213,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
        * If the row does not include a link property it gets dissmissed
        */
       mainPageLinks: spreadsheet.fetchConfig('main-page-links').then((links) => {
-        return Ember.A(links).filter((link) => {
+        return A(links).filter((link) => {
           if (link.link) {
             return true;
           }
@@ -224,9 +230,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
       institucionData: spreadsheet
         .fetch('institucion-data')
         .then((institucionData) => {
-          let institucionDataObject = Ember.Object.create();
+          let institucionDataObject = EmberObject.create();
 
-          Ember.A(institucionData).forEach((item) => {
+          A(institucionData).forEach((item) => {
             institucionDataObject.set(item.key, item.value);
           });
 
