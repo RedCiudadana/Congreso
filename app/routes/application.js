@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import config from '../config/environment';
-import injectScript from 'ember-inject-script';
+// import injectScript from 'ember-inject-script';
 import ResetScrollMixin from 'ember-cli-reset-scroll';
 
 const { isBlank, RSVP: { Promise }, set } = Ember;

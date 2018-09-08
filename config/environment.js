@@ -7,7 +7,7 @@ var contentSecurityPolicy = {
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'mi-guatemala',
+    modulePrefix: 'congreso',
     environment,
     rootURL: '/',
     locationType: 'hash',

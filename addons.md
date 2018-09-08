@@ -1,0 +1,16 @@
+ember install ember-cli-google-analytics
+ember install ember-cli-flash
+ember install ember-cli-reset-scroll
+ember install ember-cli-spinner
+ember install ember-page-title
+ember install ember-bootstrap
+ember install ember-power-select
+ember install ember-font-awesome
+ember install ember-share
+ember install ember-social
+ember install ember-route-action-helper
+ember install ember-one-way-select
+ember install ember-composable-helpers
+ember install ember-set-body-class
+ember install ember-cli-active-link-wrapper
+ember install ember-chart

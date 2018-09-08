@@ -26,7 +26,7 @@
       <div class="filters-container">
         <strong>Filtrar por a favor de: </strong>
         <label>
-          {{one-way-checkbox
+          {{one-way-select
             ley1
             update=(queue
               (action (mut ley1))
@@ -36,7 +36,7 @@
           Reformas Materia Antejuicio
         </label>
         <label>
-          {{one-way-checkbox
+          {{one-way-select
             ley2
             update=(queue
               (action (mut ley2))
@@ -46,7 +46,7 @@
           Financiamiento Ilícito
         </label>
         <label>
-          {{one-way-checkbox
+          {{one-way-select
             ley3
             update=(queue
               (action (mut ley3))

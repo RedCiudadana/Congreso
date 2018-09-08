@@ -19,7 +19,7 @@
         <div class="filters-container">
           <strong>Filtrar por: </strong>
           <label>
-            {{one-way-checkbox
+            {{one-way-select
               esTodo
               update=(queue
                 (action (mut esTodo))
@@ -30,7 +30,7 @@
           </label>
 
           <label>
-            {{one-way-checkbox
+            {{one-way-select
               esMujer
               update=(queue
                 (action (mut esMujer))
@@ -41,7 +41,7 @@
           </label>
 
           <label>
-            {{one-way-checkbox
+            {{one-way-select
               esHombre
               update=(queue
                 (action (mut esHombre))
@@ -52,7 +52,7 @@
          </label>
 
           <label>
-            {{one-way-checkbox
+            {{one-way-select
               estaEnProceso
               update=(queue
                 (action (mut estaEnProceso))
@@ -63,7 +63,7 @@
          </label>
 
           <label>
-            {{one-way-checkbox
+            {{one-way-select
               estaDescalificado
               update=(queue
                 (action (mut estaDescalificado))

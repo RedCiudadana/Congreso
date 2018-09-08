@@ -1,5 +1,5 @@
 
-import { isNumeric } from 'mi-guatemala/helpers/is-numeric';
+import { isNumeric } from 'congreso/helpers/is-numeric';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | is numeric');

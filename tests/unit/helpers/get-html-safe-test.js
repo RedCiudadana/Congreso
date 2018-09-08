@@ -1,5 +1,5 @@
 
-import { getHtmlSafe } from 'mi-guatemala/helpers/get-html-safe';
+import { getHtmlSafe } from 'congreso/helpers/get-html-safe';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | get html safe');
