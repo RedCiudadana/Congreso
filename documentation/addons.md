@@ -16,10 +16,14 @@
 + ember install ember-route-action-helper
 + ember install ember-router-scroll
 + ember install ember-set-body-class
-+ ember install ember-share
 + ember install ember-social-share
++ ember install ember-cli-deploy
++ ember install ember-cli-deploy-git
 
 ## DEPRECATED
 + ember install ember-cli-active-link-wrapper => ember install ember-link-to-wrapper
 + ember install ember-cli-reset-scroll => ember install ember-router-scroll
 + ember install ember-social => ember install ember-social-share
+
+## Other
++ ember install ember-share
