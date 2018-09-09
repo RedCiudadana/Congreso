@@ -18,7 +18,7 @@
       {{/link-to}}
     </div>
 
-    {{#navbar.content style="margin:auto;"}}
+    {{#navbar.content}}
       {{#navbar.nav classNames='navbar-right' as |nav|}}
         {{#each model.config.navbarLinks as |link|}}
           {{#nav.item active=false}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/nav.item}}
