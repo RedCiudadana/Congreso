@@ -41,15 +41,17 @@
   {{outlet}}
 
   <div class="row">
-    <div class="perfil-container">
-      <div class="panel panel-default">
-        <div class="header">
-          <strong>Disqus</strong>
-        </div>
-        <div class="panel-body">
-          {{#if disqusShortname}}
-            {{disqus-comments identifier=model.perfil.disqusIdentifier}}
-          {{/if}}
+    <div class="col-12">
+      <div class="perfil-container">
+        <div class="panel panel-default">
+          <div class="header">
+            <strong>Disqus</strong>
+          </div>
+          <div class="panel-body">
+            {{#if disqusShortname}}
+              {{disqus-comments identifier=model.perfil.disqusIdentifier}}
+            {{/if}}
+          </div>
         </div>
       </div>
     </div>
