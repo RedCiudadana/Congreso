@@ -10,6 +10,11 @@
 $primary: #00a6aa;
 $secundary: #475059;
 
+$navbar-background-color: #00a6aa;
+$navbar-color: #00a6aa;
+
+$footer-background-color: $secundary;
+$footer-color: #ffffff;
 
 .main-page-links img {
     width: 100%;
@@ -159,8 +164,8 @@ body.perfil .container.content-container {
 }
 
 #footer {
-    background-color: $secundary;
-    color: #ffffff;
+    background-color: $footer-background-color;
+    color: $footer-color;
     padding-bottom: 40px;
     line-height: 26px;
 }
