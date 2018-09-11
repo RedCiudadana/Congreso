@@ -261,9 +261,20 @@ nav > .container {
     color: $primary;
 }
 
+// is-active
+.nav-candidator .list-inline > li.active a, .nav-candidator .list-inline > li:hover a {
+    background-color: $success;
+}
+
 .nav-candidator .list-inline > li a i.fa {
     margin-right: 10px;
     font-size: 18px;
+    color: $warning;
+}
+
+// is-active
+.nav-candidator .list-inline > li.active a i.fa {
+    color: white;
 }
 
 .nav-candidator .list-inline > li {
