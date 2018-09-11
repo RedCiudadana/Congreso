@@ -1,20 +1,28 @@
-@import "ember-bootstrap/bootstrap";
-@import "fonts";
-@import "responsive";
-@import "ember-power-select-bootstrap";
-@import "ember-cli-spinner";
-@import "main";
+// COLORS
 
-// COLORES
-
-$primary: #00a6aa;
+$primary: #163f7f;
 $secundary: #475059;
+$success: #00ac56;
+$warning: #f6ab40;
+$info: #26a5dc;
+$dark: #1e2b3d;
 
-$navbar-background-color: #00a6aa;
-$navbar-color: #00a6aa;
+// $navbar-background-color: blue; => Configure in component pls. 
+$navbar-color: #ffffff;
 
 $footer-background-color: $secundary;
 $footer-color: #ffffff;
+
+@import "bootstrap";
+@import "ember-power-select-bootstrap";
+@import "ember-cli-spinner";
+@import "responsive";
+@import "fonts";
+@import "main";
+
+.bg-secundary {
+    background-color: $secundary !important;
+}
 
 .main-page-links img {
     width: 100%;
@@ -27,10 +35,6 @@ $footer-color: #ffffff;
 
 .container {
     margin-bottom: 0px;
-}
-
-.btn.width-full {
-    width: 100%;
 }
 
 /**
@@ -108,34 +112,45 @@ th.header {
 html, body {
     background-color: #ffffff;
     color: $secundary;
+    padding-top: 0;
 }
 
 body.perfil .container.content-container {
     background-color: #e6e7e8;
 }
 
-.navbar-inverse {
-    background-color: #fff;
-    border: none;
-    color: #f7941e;
+// STIKCY CONTACT BANNER
+
+.sticky-contact {
+    padding: 10px;
+    font-size: medium;
+}
+
+.sticky-contact .fa-facebook-square, .fa-twitter-square {
+    font-size: 20px;
+}
+
+
+// NAVBAR
+
+.navbar {
+    color: $navbar-color;
+    border-radius: 0px;
 }
 
 .nav > li > a {
     padding-left: 35px;
     padding-right: 35px;
     font-size: 18px;
+    color: $navbar-color;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: $primary;
-}
-
-.navbar-inverse .navbar-nav > li > a:focus {
-    color: $primary;
+.navbar-inverse .navbar-nav > li > a, a:focus {
+    color: $navbar-color;
 }
 
 .navbar-inverse .navbar-brand {
-    color: $primary;
+    color: $navbar-color;
 }
 
 .navbar-brand img {
@@ -146,8 +161,17 @@ body.perfil .container.content-container {
     padding: 15px 20px;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: $primary;
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #ffc80e;
 }
 
 @media (min-width: 768px) {
@@ -162,6 +186,8 @@ body.perfil .container.content-container {
         max-width: 1140px;
     }
 }
+
+// FOOTER
 
 #footer {
     background-color: $footer-background-color;
@@ -179,12 +205,14 @@ body.perfil .container.content-container {
 }
 
 #footer a {
-    color: #ffffff;
+    color: $footer-color;;
 }
 
 #footer i {
     width: 14px;
 }
+
+// INDEX PAGE
 
 #banner img {
     max-width: 100%;
@@ -411,19 +439,6 @@ a:focus {
     text-decoration: none;
 }
 
-.navbar-inverse .navbar-toggle {
-    border-color: #fff;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #fff;
-    border-color: #fff;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #ffc80e;
-}
-
 .status-banner {
     padding: 30px 75px 0px 75px;
 }
@@ -519,27 +534,10 @@ a:focus {
     border-left: 1px solid #ddd;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: $primary;
-    font-size: 16px;
-}
-
-.container>.navbar-header {
-    padding: 10px;
-}
-
 .pie-chart {
     height: 300px;
 }
 
-.pie-chart canvas {
-}
-
-/*HELPERS*/
-.w-100 {
-    width: 100%;
-    height: auto;
-}
 
 #s-total-count {
     background-color: $primary;

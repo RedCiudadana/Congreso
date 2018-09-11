@@ -12,8 +12,19 @@ module.exports = function(defaults) {
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
+      // Dont include 'importBootstrapCSS' because it's going to be imported through Sass
       'importBootstrapCSS': false
+    },
+
+    sassOptions: {
+      // Only search in 'includedPaths'; performance.
+      onlyIncluded: true,
+      includePaths: [
+        'node_modules/bootstrap/scss',
+        'app/styles'
+      ]
     }
+
   });
 
   // Use `app.import` to add additional libraries to the generated

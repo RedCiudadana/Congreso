@@ -1041,9 +1041,6 @@
 
 @media (max-width: 767px) {
 
-    // Comentado para ser compliant con bootstrap y template de candidatos.gt
-    // body { padding: 0 !important; }
-
     #wrapper { width: 100% !important; }
 
     .container-fullwidth {
@@ -1397,7 +1394,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1541,11 +1537,6 @@
 }
 
 @media (max-width: 479px) {
-
-    // Comentado para ser compliant con bootstrap y template de candidatos.gt
-    // .container,
-    // #header.full-header .container,
-    // .container-fullwidth { width: 310px !important; }
 
     .container.vertical-middle { width: 100% !important; }
 

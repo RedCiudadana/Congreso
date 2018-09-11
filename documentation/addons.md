@@ -19,6 +19,7 @@
 + ember install ember-social-share
 + ember install ember-cli-deploy
 + ember install ember-cli-deploy-git
++ ember install ember-cli-prune-style-tree => resolve slow ember-cli-sass
 
 ## DEPRECATED
 + ember install ember-cli-active-link-wrapper => ember install ember-link-to-wrapper

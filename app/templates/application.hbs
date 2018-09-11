@@ -5,13 +5,21 @@
 {{title model.config.htmlTitle}}
 
 <div id="wrapper">
-  {{#bs-navbar type="inverse" position="fixed-top" fluid=false as |navbar|}}
+  <div class="row bg-dark sticky-contact justify-content-center">
+    <div class="col-12 col-md-8">
+        <a href="#"><i class="fa fa-envelope text-light mx-1"></i></a>
+        <a href="#" class="text-light">Info@redciudadana.org</a>
+        <a href="#"><i class="fa fa-facebook-square text-light float-right mx-2"></i></a>
+        <a href="#"><i class="fa fa-twitter-square text-light float-right mx-2"></i></a>
+    </div>
+  </div>
+  {{#bs-navbar backgroundColor="primary" position="sticky-top" fluid=false as |navbar|}}
     <div class="navbar-header">
       {{navbar.toggle}}
 
       {{#link-to "application" class="navbar-brand"}}
           <img
-            src="app/img/logo-red.png"
+            src="app/img/logo-brand.png"
             class="img-responsive"
             title="{{nombreApp}}"
             alt="Congreso">
@@ -19,7 +27,7 @@
     </div>
 
     {{#navbar.content}}
-      {{#navbar.nav classNames='navbar-right' as |nav|}}
+      {{#navbar.nav classNames='navbar-left' as |nav|}}
         {{#each model.config.navbarLinks as |link|}}
           {{#nav.item active=false}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/nav.item}}
         {{/each}}
