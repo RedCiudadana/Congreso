@@ -1,23 +1,17 @@
 @font-face {
-  font-family: "Archivo";
-  src: url("fonts/Archivo-Regular.ttf");
+  font-family: "Asap";
+  src: url("fonts/Asap-Regular.otf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Archivo";
-  src: url("fonts/Archivo-Bold.ttf");
+  font-family: "Asap";
+  src: url("fonts/Asap-Bold.otf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Archivo";
-  src: url("fonts/Archivo-SemiBold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Archivo";
-  src: url("fonts/Archivo-Medium.ttf");
+  font-family: "Asap";
+  src: url("fonts/Asap-Medium.otf");
   font-weight: medium;
 }
