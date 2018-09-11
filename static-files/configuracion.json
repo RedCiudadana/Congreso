@@ -25,7 +25,7 @@
   },
   {
     "key": "siteMainTitle",
-    "value": "<div class=\"row text-center\" style=\"padding: 30px 5px;\">\n  <h1 style=\"font-weight: 600; font-size: 38px;\">Conoce todo sobre el proceso del Congreso</h1>\n</div>",
+    "value": "",
     "tags": "",
     "observaciones": "Permite HTML"
   },
