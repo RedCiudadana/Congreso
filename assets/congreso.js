@@ -1475,8 +1475,8 @@
   });
   exports.default = Ember.Controller.extend({
 
-    currentSelector: Ember.computed('ley1', 'ley2', 'ley3', function () {
-      if (!this.get('ley1') && !this.get('ley2') && !this.get('ley3')) {
+    currentSelector: Ember.computed('ley1', 'ley2', 'ley3', 'esHombre', 'esMujer', function () {
+      if (!this.get('ley1') && !this.get('ley2') && !this.get('ley3') && !this.get('esHombre') && !this.get('esMujer')) {
         return '*';
       }
 
@@ -1494,67 +1494,15 @@
         selectors.push('.ley3');
       }
 
+      if (this.get('esHombre')) {
+        selectors.push('.hombre');
+      }
+
+      if (this.get('esMujer')) {
+        selectors.push('.mujer');
+      }
+
       return selectors.join(', ');
-    }),
-
-    favor: Ember.computed('ley1', 'ley2', 'ley3', function () {
-      var perfiles = this.get('model').perfiles;
-      var ley1 = this.get('ley1');
-      var ley2 = this.get('ley2');
-      var ley3 = this.get('ley3');
-      return perfiles.filter(function (element) {
-        if (ley1 && element.get('ley1') == 'favor') {
-          return true;
-        }
-
-        if (ley2 && element.get('ley2') == 'favor') {
-          return true;
-        }
-
-        if (ley3 && element.get('ley3') == 'favor') {
-          return true;
-        }
-      }).length;
-    }),
-
-    contra: Ember.computed('ley1', 'ley2', 'ley3', function () {
-      var perfiles = this.get('model').perfiles;
-      var ley1 = this.get('ley1');
-      var ley2 = this.get('ley2');
-      var ley3 = this.get('ley3');
-      return perfiles.filter(function (element) {
-        if (ley1 && element.get('ley1') == 'contra') {
-          return true;
-        }
-
-        if (ley2 && element.get('ley2') == 'contra') {
-          return true;
-        }
-
-        if (ley3 && element.get('ley3') == 'contra') {
-          return true;
-        }
-      }).length;
-    }),
-
-    ausente: Ember.computed('ley1', 'ley2', 'ley3', function () {
-      var perfiles = this.get('model').perfiles;
-      var ley1 = this.get('ley1');
-      var ley2 = this.get('ley2');
-      var ley3 = this.get('ley3');
-      return perfiles.filter(function (element) {
-        if (ley1 && element.get('ley1') == 'ausente') {
-          return true;
-        }
-
-        if (ley2 && element.get('ley2') == 'ausente') {
-          return true;
-        }
-
-        if (ley3 && element.get('ley3') == 'ausente') {
-          return true;
-        }
-      }).length;
     }),
 
     _applyFilter: function _applyFilter() {
@@ -3717,13 +3665,13 @@
     // selector: computed('sexo', 'estado', function() {
     //   let returnValue = '';
 
-    //   if (this.get('sexo') === 'Masculino') {
-    //     returnValue += ' hombre';
-    //   }
+    // if (this.get('sexo') === 'Masculino') {
+    //   returnValue += ' hombre';
+    // }
 
-    //   if (this.get('sexo') === 'Femenino') {
-    //     returnValue += ' mujer';
-    //   }
+    // if (this.get('sexo') === 'Femenino') {
+    //   returnValue += ' mujer';
+    // }
 
     //   if (this.get('estado') === 'Descalificado') {
     //     returnValue += ' descalificado';
@@ -3736,7 +3684,7 @@
     //   return returnValue;
     // }),
 
-    selector: Ember.computed('ley1', 'ley2', 'ley3', function () {
+    selector: Ember.computed('ley1', 'ley2', 'ley3', 'sexo', function () {
       var returnValue = '';
 
       if (this.get('ley1') === 'favor') {
@@ -3749,6 +3697,14 @@
 
       if (this.get('ley3') === 'favor') {
         returnValue += ' ley3';
+      }
+
+      if (this.get('sexo') === 'Masculino') {
+        returnValue += ' hombre';
+      }
+
+      if (this.get('sexo') === 'Femenino') {
+        returnValue += ' mujer';
       }
 
       return returnValue;
@@ -5209,7 +5165,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "abLFc+Cl", "block": "{\"symbols\":[\"link\",\"perfil\",\"field\",\"field\",\"candidato\"],\"statements\":[[4,\"if\",[[23,[\"model\",\"config\",\"siteMainTitle\"]]],null,{\"statements\":[[0,\"  \"],[1,[23,[\"model\",\"config\",\"siteMainTitle\"]],true],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"banner1Title\"]]],null,{\"statements\":[[0,\"  \"],[1,[23,[\"model\",\"config\",\"banner1Title\"]],true],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontFilterWidget2\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"id\",\"s-filters-main\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"search-and-filter\"],[9],[0,\"\\n        \"],[7,\"h1\"],[9],[0,\"Conoce todo sobre el proceso del congreso\"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"search-container\"],[9],[0,\"\\n\"],[4,\"power-select\",null,[[\"selected\",\"options\",\"onchange\",\"searchField\",\"placeholder\",\"noMatchesMessage\"],[[23,[\"currentCandidato\"]],[23,[\"model\",\"perfiles\"]],[27,\"route-action\",[\"selectPerfil\"],null],\"nombre\",\"Escriba el nombre del diputado o diputada que desea buscar\",\"Sin resultados\"]],{\"statements\":[[0,\"            \"],[7,\"strong\"],[9],[1,[22,5,[\"nombre\"]],false],[10],[0,\"\\n\"]],\"parameters\":[5]},null],[0,\"        \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"filters-container\"],[9],[0,\"\\n          \"],[7,\"strong\"],[9],[0,\"Filtrar por a favor de: \"],[10],[0,\"\\n          \"],[7,\"label\"],[9],[0,\"\\n            \"],[1,[27,\"one-way-select\",null,[[\"value\",\"update\"],[[23,[\"ley1\"]],[27,\"queue\",[[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley1\"]]],null]],null],[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],null]]]],false],[0,\"\\n            Reformas Materia Antejuicio\\n          \"],[10],[0,\"\\n          \"],[7,\"label\"],[9],[0,\"\\n            \"],[1,[27,\"one-way-select\",[[23,[\"ley2\"]]],[[\"update\"],[[27,\"queue\",[[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley2\"]]],null]],null],[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],null]]]],false],[0,\"\\n            Financiamiento Ilícito\\n          \"],[10],[0,\"\\n          \"],[7,\"label\"],[9],[0,\"\\n            \"],[1,[27,\"one-way-select\",[[23,[\"ley3\"]]],[[\"update\"],[[27,\"queue\",[[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley3\"]]],null]],null],[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],null]]]],false],[0,\"\\n            Reformas al Código Penal\\n         \"],[10],[0,\"\\n       \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"banner1Link\"]]],null,{\"statements\":[[0,\"  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"config\",\"banner1Link\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontPortfolioVisualization\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"class\",\"container\"],[9],[0,\"\\n    \"],[1,[27,\"front-porfolio-visualization\",null,[[\"perfiles\",\"onDidInsertElement\"],[[23,[\"model\",\"perfiles\"]],[27,\"action\",[[22,0,[]],\"applyFilter\"],null]]]],false],[0,\"\\n  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontTableVisualization\"]]],null,{\"statements\":[[0,\"  \"],[7,\"table\"],[11,\"class\",\"table\"],[9],[0,\"\\n    \"],[7,\"tr\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"frontTableVisualizationConfig\"]]],null,{\"statements\":[[0,\"        \"],[7,\"th\"],[9],[1,[22,4,[\"tableTitle\"]],false],[10],[0,\"\\n\"]],\"parameters\":[4]},null],[0,\"    \"],[10],[0,\"\\n\\n\"],[4,\"each\",[[23,[\"model\",\"perfiles\"]]],null,{\"statements\":[[0,\"      \"],[7,\"tr\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"frontTableVisualizationConfig\"]]],null,{\"statements\":[[0,\"          \"],[7,\"td\"],[9],[0,\"\\n\"],[4,\"if\",[[22,3,[\"isLink\"]]],null,{\"statements\":[[4,\"link-to\",[\"perfil\",[22,2,[\"id\"]]],null,{\"statements\":[[0,\"                \"],[1,[27,\"get\",[[22,2,[]],[22,3,[\"fieldName\"]]],null],false],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[27,\"get\",[[22,2,[]],[22,3,[\"fieldName\"]]],null],false],[0,\"\\n\"]],\"parameters\":[]}],[0,\"          \"],[10],[0,\"\\n\"]],\"parameters\":[3]},null],[0,\"      \"],[10],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"mainPageLinks\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"class\",\"row main-page-links bg-color-gray\"],[11,\"style\",\"margin-top: 20px; padding: 20px 5px;\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"config\",\"mainPageLinks\"]]],null,{\"statements\":[[0,\"      \"],[7,\"div\"],[11,\"class\",\"col-sm-6\"],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"link\"]]],null,{\"statements\":[[0,\"          \"],[7,\"a\"],[12,\"href\",[28,[[22,1,[\"link\"]]]]],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"imageLink\"]]],null,{\"statements\":[[0,\"              \"],[7,\"img\"],[12,\"src\",[28,[[22,1,[\"imageLink\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[22,1,[\"title\"]],false],[0,\"\\n\"]],\"parameters\":[]}],[0,\"          \"],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"link-to\",[[22,1,[\"route\"]]],null,{\"statements\":[[4,\"if\",[[22,1,[\"imageLink\"]]],null,{\"statements\":[[0,\"              \"],[7,\"img\"],[12,\"src\",[28,[[22,1,[\"imageLink\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[22,1,[\"title\"]],false],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null]],\"parameters\":[]}],[0,\"      \"],[10],[0,\"\\n\"]],\"parameters\":[1]},null],[0,\"  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/index.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "i3dmxrD+", "block": "{\"symbols\":[\"link\",\"perfil\",\"field\",\"field\",\"dd\",\"menu\",\"dd\",\"menu\",\"dd\",\"menu\",\"dd\",\"menu\",\"candidato\"],\"statements\":[[4,\"if\",[[23,[\"model\",\"config\",\"siteMainTitle\"]]],null,{\"statements\":[[0,\"  \"],[1,[23,[\"model\",\"config\",\"siteMainTitle\"]],true],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"banner1Title\"]]],null,{\"statements\":[[0,\"  \"],[1,[23,[\"model\",\"config\",\"banner1Title\"]],true],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontFilterWidget\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"search-and-filter row\"],[9],[0,\"\\n        \"],[7,\"h1\"],[9],[0,\"Conoce todo sobre el proceso del congreso\"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"search-container col-12\"],[9],[0,\"\\n\"],[4,\"power-select\",null,[[\"selected\",\"options\",\"onchange\",\"searchField\",\"placeholder\",\"noMatchesMessage\"],[[23,[\"currentCandidato\"]],[23,[\"model\",\"perfiles\"]],[27,\"route-action\",[\"selectPerfil\"],null],\"nombre\",\"Escriba el nombre del diputado o diputada que desea buscar\",\"Sin resultados\"]],{\"statements\":[[0,\"            \"],[7,\"strong\"],[9],[1,[22,13,[\"nombre\"]],false],[10],[0,\"\\n\"]],\"parameters\":[13]},null],[0,\"        \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"col-12 filter-container\"],[9],[0,\"\\n\"],[4,\"bs-dropdown\",null,[[\"class\"],[\"mx-2 rounded\"]],{\"statements\":[[0,\"            \"],[4,\"component\",[[22,11,[\"button\"]]],[[\"class\"],[\"btn-warning text-white\"]],{\"statements\":[[0,\"Votación \"],[7,\"span\"],[11,\"class\",\"caret\"],[9],[10]],\"parameters\":[]},null],[0,\"\\n\"],[4,\"component\",[[22,11,[\"menu\"]]],null,{\"statements\":[[4,\"component\",[[22,12,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley1\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley1\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Reformas Materia Antejuicio\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,12,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley2\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley2\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Financiamiento Ilícito\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,12,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley3\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley3\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Reformas al Código Penal\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[12]},null]],\"parameters\":[11]},null],[4,\"bs-dropdown\",null,[[\"class\"],[\"mx-2 rounded\"]],{\"statements\":[[0,\"            \"],[4,\"component\",[[22,9,[\"button\"]]],[[\"class\"],[\"btn-success\"]],{\"statements\":[[0,\"Distrito \"],[7,\"span\"],[11,\"class\",\"caret\"],[9],[10]],\"parameters\":[]},null],[0,\"\\n\"],[4,\"component\",[[22,9,[\"menu\"]]],null,{\"statements\":[[4,\"component\",[[22,10,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley1\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley1\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Reformas Materia Antejuicio\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,10,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley2\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley2\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Financiamiento Ilícito\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,10,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley3\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley3\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Reformas al Código Penal\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[10]},null]],\"parameters\":[9]},null],[4,\"bs-dropdown\",null,[[\"class\"],[\"mx-2 rounded\"]],{\"statements\":[[0,\"            \"],[4,\"component\",[[22,7,[\"button\"]]],[[\"class\"],[\"btn-info\"]],{\"statements\":[[0,\"Partido \"],[7,\"span\"],[11,\"class\",\"caret\"],[9],[10]],\"parameters\":[]},null],[0,\"\\n\"],[4,\"component\",[[22,7,[\"menu\"]]],null,{\"statements\":[[4,\"component\",[[22,8,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley1\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley1\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Reformas Materia Antejuicio\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,8,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"ley2\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley2\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Financiamiento Ilícito\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,8,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                  \"],[7,\"input\"],[12,\"checked\",[21,\"ley3\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"ley3\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                  Reformas al Código Penal\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[8]},null]],\"parameters\":[7]},null],[4,\"bs-dropdown\",null,[[\"class\"],[\"mx-2 rounded\"]],{\"statements\":[[0,\"            \"],[4,\"component\",[[22,5,[\"button\"]]],[[\"class\"],[\"bg-primary\"]],{\"statements\":[[0,\"Genero \"],[7,\"span\"],[11,\"class\",\"caret\"],[9],[10]],\"parameters\":[]},null],[0,\"\\n\"],[4,\"component\",[[22,5,[\"menu\"]]],null,{\"statements\":[[4,\"component\",[[22,6,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"esMujer\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"esMujer\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Femenino\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[22,6,[\"item\"]]],null,{\"statements\":[[0,\"                \"],[7,\"label\"],[9],[0,\"\\n                \"],[7,\"input\"],[12,\"checked\",[21,\"esHombre\"]],[12,\"onclick\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"esHombre\"]]],null]],[[\"value\"],[\"target.checked\"]]]],[12,\"onchange\",[27,\"action\",[[22,0,[]],\"applyFilter\"],null]],[11,\"type\",\"checkbox\"],[9],[10],[0,\"\\n                Masculino\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[6]},null]],\"parameters\":[5]},null],[0,\"        \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"banner1Link\"]]],null,{\"statements\":[[0,\"  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"config\",\"banner1Link\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontPortfolioVisualization\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"class\",\"container\"],[9],[0,\"\\n    \"],[1,[27,\"front-porfolio-visualization\",null,[[\"perfiles\",\"onDidInsertElement\"],[[23,[\"model\",\"perfiles\"]],[27,\"action\",[[22,0,[]],\"applyFilter\"],null]]]],false],[0,\"\\n  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"useFrontTableVisualization\"]]],null,{\"statements\":[[0,\"  \"],[7,\"table\"],[11,\"class\",\"table\"],[9],[0,\"\\n    \"],[7,\"tr\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"frontTableVisualizationConfig\"]]],null,{\"statements\":[[0,\"        \"],[7,\"th\"],[9],[1,[22,4,[\"tableTitle\"]],false],[10],[0,\"\\n\"]],\"parameters\":[4]},null],[0,\"    \"],[10],[0,\"\\n\\n\"],[4,\"each\",[[23,[\"model\",\"perfiles\"]]],null,{\"statements\":[[0,\"      \"],[7,\"tr\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"frontTableVisualizationConfig\"]]],null,{\"statements\":[[0,\"          \"],[7,\"td\"],[9],[0,\"\\n\"],[4,\"if\",[[22,3,[\"isLink\"]]],null,{\"statements\":[[4,\"link-to\",[\"perfil\",[22,2,[\"id\"]]],null,{\"statements\":[[0,\"                \"],[1,[27,\"get\",[[22,2,[]],[22,3,[\"fieldName\"]]],null],false],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[27,\"get\",[[22,2,[]],[22,3,[\"fieldName\"]]],null],false],[0,\"\\n\"]],\"parameters\":[]}],[0,\"          \"],[10],[0,\"\\n\"]],\"parameters\":[3]},null],[0,\"      \"],[10],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"if\",[[23,[\"model\",\"config\",\"mainPageLinks\"]]],null,{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"class\",\"row main-page-links bg-color-gray\"],[11,\"style\",\"margin-top: 20px; padding: 20px 5px;\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"config\",\"mainPageLinks\"]]],null,{\"statements\":[[0,\"      \"],[7,\"div\"],[11,\"class\",\"col-sm-6\"],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"link\"]]],null,{\"statements\":[[0,\"          \"],[7,\"a\"],[12,\"href\",[28,[[22,1,[\"link\"]]]]],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"imageLink\"]]],null,{\"statements\":[[0,\"              \"],[7,\"img\"],[12,\"src\",[28,[[22,1,[\"imageLink\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[22,1,[\"title\"]],false],[0,\"\\n\"]],\"parameters\":[]}],[0,\"          \"],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"link-to\",[[22,1,[\"route\"]]],null,{\"statements\":[[4,\"if\",[[22,1,[\"imageLink\"]]],null,{\"statements\":[[0,\"              \"],[7,\"img\"],[12,\"src\",[28,[[22,1,[\"imageLink\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"              \"],[1,[22,1,[\"title\"]],false],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null]],\"parameters\":[]}],[0,\"      \"],[10],[0,\"\\n\"]],\"parameters\":[1]},null],[0,\"  \"],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/index.hbs" } });
 });
 ;define("congreso/templates/institucion", ["exports"], function (exports) {
   "use strict";
@@ -5249,7 +5205,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "c+2bKC74", "block": "{\"symbols\":[\"link\"],\"statements\":[[1,[27,\"set-body-class\",[\"perfil\"],null],false],[0,\"\\n\\n\"],[7,\"section\"],[11,\"id\",\"election\"],[11,\"style\",\"margin-top: 35px;\"],[11,\"class\",\"container\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"model\",\"config\",\"perfilFuncionalidades\"]]],null,{\"statements\":[[0,\"    \"],[7,\"div\"],[11,\"style\",\"background-color: #ffffff; margin-bottom: 25px;\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"nav-candidator\"],[11,\"style\",\"border: 1px solid #ddd;\"],[9],[0,\"\\n        \"],[7,\"nav\"],[9],[0,\"\\n          \"],[7,\"ul\"],[11,\"class\",\"list-inline\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"config\",\"perfilFuncionalidades\"]]],null,{\"statements\":[[4,\"if\",[[22,1,[\"link\"]]],null,{\"statements\":[[0,\"                  \"],[7,\"a\"],[12,\"href\",[28,[[22,1,[\"link\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"iconClass\"]]],null,{\"statements\":[[0,\"                      \"],[7,\"i\"],[12,\"class\",[28,[[22,1,[\"iconClass\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[1,[22,1,[\"name\"]],false],[0,\"\\n                  \"],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"link-to-wrapper\",[[22,1,[\"route\"]]],[[\"title\"],[[22,1,[\"title\"]]]],{\"statements\":[[4,\"if\",[[22,1,[\"iconClass\"]]],null,{\"statements\":[[0,\"                      \"],[7,\"i\"],[12,\"class\",[28,[[22,1,[\"iconClass\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[1,[22,1,[\"name\"]],false],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[]}]],\"parameters\":[1]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n  \"],[1,[21,\"outlet\"],false],[0,\"\\n\\n  \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-disqus.png\"],[11,\"alt\",\"Disqus\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Disqus\"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"disqusShortname\"]]],null,{\"statements\":[[0,\"              \"],[1,[27,\"disqus-comments\",null,[[\"identifier\"],[[23,[\"model\",\"perfil\",\"disqusIdentifier\"]]]]],false],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\\n\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "jQ5QH1U5", "block": "{\"symbols\":[\"link\"],\"statements\":[[7,\"link\"],[11,\"rel\",\"stylesheet\"],[11,\"href\",\"//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css\"],[9],[10],[0,\"\\n\"],[1,[27,\"set-body-class\",[\"perfil\"],null],false],[0,\"\\n\\n\"],[7,\"section\"],[11,\"id\",\"election\"],[11,\"style\",\"margin-top: 35px;\"],[11,\"class\",\"container\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"model\",\"config\",\"perfilFuncionalidades\"]]],null,{\"statements\":[[0,\"    \"],[7,\"div\"],[11,\"style\",\"background-color: #ffffff; margin-bottom: 25px;\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"nav-candidator\"],[11,\"style\",\"border: 1px solid #ddd;\"],[9],[0,\"\\n        \"],[7,\"nav\"],[9],[0,\"\\n          \"],[7,\"ul\"],[11,\"class\",\"list-inline\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"model\",\"config\",\"perfilFuncionalidades\"]]],null,{\"statements\":[[4,\"if\",[[22,1,[\"link\"]]],null,{\"statements\":[[0,\"                  \"],[7,\"a\"],[12,\"href\",[28,[[22,1,[\"link\"]]]]],[12,\"title\",[28,[[22,1,[\"title\"]]]]],[9],[0,\"\\n\"],[4,\"if\",[[22,1,[\"iconClass\"]]],null,{\"statements\":[[0,\"                      \"],[7,\"i\"],[12,\"class\",[28,[[22,1,[\"iconClass\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[1,[22,1,[\"name\"]],false],[0,\"\\n                  \"],[10],[0,\"\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"link-to-wrapper\",[[22,1,[\"route\"]]],[[\"title\"],[[22,1,[\"title\"]]]],{\"statements\":[[4,\"if\",[[22,1,[\"iconClass\"]]],null,{\"statements\":[[0,\"                      \"],[7,\"i\"],[12,\"class\",[28,[[22,1,[\"iconClass\"]]]]],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[1,[22,1,[\"name\"]],false],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[]}]],\"parameters\":[1]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n  \"],[1,[21,\"outlet\"],false],[0,\"\\n\\n  \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-disqus.png\"],[11,\"alt\",\"Disqus\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Disqus\"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"disqusShortname\"]]],null,{\"statements\":[[0,\"              \"],[1,[27,\"disqus-comments\",null,[[\"identifier\"],[[23,[\"model\",\"perfil\",\"disqusIdentifier\"]]]]],false],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\\n\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil.hbs" } });
 });
 ;define("congreso/templates/perfil/fact-checking", ["exports"], function (exports) {
   "use strict";
@@ -5399,7 +5355,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+30e55866"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+8033539b"});
           }
         
 //# sourceMappingURL=congreso.map
