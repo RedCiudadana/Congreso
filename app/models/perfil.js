@@ -92,13 +92,13 @@ export default Model.extend({
   // selector: computed('sexo', 'estado', function() {
   //   let returnValue = '';
 
-  //   if (this.get('sexo') === 'Masculino') {
-  //     returnValue += ' hombre';
-  //   }
+    // if (this.get('sexo') === 'Masculino') {
+    //   returnValue += ' hombre';
+    // }
 
-  //   if (this.get('sexo') === 'Femenino') {
-  //     returnValue += ' mujer';
-  //   }
+    // if (this.get('sexo') === 'Femenino') {
+    //   returnValue += ' mujer';
+    // }
 
   //   if (this.get('estado') === 'Descalificado') {
   //     returnValue += ' descalificado';
@@ -111,7 +111,7 @@ export default Model.extend({
   //   return returnValue;
   // }),
 
-  selector: computed('ley1', 'ley2', 'ley3', function() {
+  selector: computed('ley1', 'ley2', 'ley3', 'sexo', function() {
     let returnValue = '';
 
     if (this.get('ley1') === 'favor') {
@@ -124,6 +124,14 @@ export default Model.extend({
 
     if (this.get('ley3') === 'favor') {
       returnValue += ' ley3';
+    }
+
+    if (this.get('sexo') === 'Masculino') {
+      returnValue += ' hombre';
+    }
+
+    if (this.get('sexo') === 'Femenino') {
+      returnValue += ' mujer';
     }
 
     return returnValue;

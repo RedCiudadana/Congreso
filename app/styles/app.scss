@@ -12,6 +12,7 @@ $navbar-color: #ffffff;
 
 $footer-background-color: $secundary;
 $footer-color: #ffffff;
+$border-radius: 10px;
 
 @import "bootstrap";
 @import "ember-power-select-bootstrap";
@@ -71,18 +72,27 @@ $footer-color: #ffffff;
     margin-bottom: 40px;
 }
 
-
-.search-and-filter label {
-    margin-left: 15px;
-    font-weight: normal;
+.search-and-filter .filter-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
+.search-and-filter .filter-container .btn {
+    width: 10rem;
+}
 
-.filters-container {
-    margin-top: 20px;
-    color: white;
-    font-size: 18px;
-    padding-bottom: 5rem;
+.search-and-filter .filter-container .dropdown-menu {
+    width: 15rem;
+    padding: 10px;
+}
+
+.search-and-filter .filter-container .dropdown-menu label {
+    font-weight: lighter;
+    font-size: normal;
+}
+
+.search-and-filter .filter-container .dropdown-menu label input[type=checkbox] {
+    // visibility: hidden;
 }
 
 .search-container .ember-power-select-status-icon {

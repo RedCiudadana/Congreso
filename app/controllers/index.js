@@ -9,11 +9,15 @@ export default Controller.extend({
     'ley1',
     'ley2',
     'ley3',
+    'esHombre',
+    'esMujer',
     function() {
       if (
         !this.get('ley1')
             && !this.get('ley2')
             && !this.get('ley3')
+            && !this.get('esHombre')
+            && !this.get('esMujer')
       ) {
         return '*';
       }
@@ -33,89 +37,15 @@ export default Controller.extend({
         selectors.push('.ley3');
       }
 
-      // this._applyFilter();
+      if (this.get('esHombre')) {
+        selectors.push('.hombre');
+      }
+
+      if (this.get('esMujer')) {
+        selectors.push('.mujer');
+      }
+
       return selectors.join(', ');
-    }
-  ),
-
-  favor: computed(
-    'ley1',
-    'ley2',
-    'ley3',
-    function() {
-      let perfiles = this.get('model').perfiles;
-      let ley1 = this.get('ley1');
-      let ley2 = this.get('ley2');
-      let ley3 = this.get('ley3');
-      return perfiles
-        .filter((element) => {
-          if(ley1 && element.get('ley1') == 'favor') {
-            return true
-          }
-
-          if(ley2 && element.get('ley2') == 'favor') {
-            return true
-          }
-
-          if(ley3 && element.get('ley3') == 'favor') {
-            return true
-          }
-
-        }).length;
-    }
-  ),
-
-  contra: computed(
-    'ley1',
-    'ley2',
-    'ley3',
-    function() {
-      let perfiles = this.get('model').perfiles;
-      let ley1 = this.get('ley1');
-      let ley2 = this.get('ley2');
-      let ley3 = this.get('ley3');
-      return perfiles
-        .filter((element) => {
-          if(ley1 && element.get('ley1') == 'contra') {
-            return true
-          }
-
-          if(ley2 && element.get('ley2') == 'contra') {
-            return true
-          }
-
-          if(ley3 && element.get('ley3') == 'contra') {
-            return true
-          }
-
-        }).length;
-    }
-  ),
-
-  ausente: computed(
-    'ley1',
-    'ley2',
-    'ley3',
-    function() {
-      let perfiles = this.get('model').perfiles;
-      let ley1 = this.get('ley1');
-      let ley2 = this.get('ley2');
-      let ley3 = this.get('ley3');
-      return perfiles
-        .filter((element) => {
-          if(ley1 && element.get('ley1') == 'ausente') {
-            return true
-          }
-
-          if(ley2 && element.get('ley2') == 'ausente') {
-            return true
-          }
-
-          if(ley3 && element.get('ley3') == 'ausente') {
-            return true
-          }
-
-        }).length;
     }
   ),
 
