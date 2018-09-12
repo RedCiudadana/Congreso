@@ -2123,7 +2123,7 @@ broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel-reducer/-/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
 
-broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.0.7, broccoli-funnel@^1.1.0:
+broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-1.2.0.tgz#cddc3afc5ff1685a8023488fff74ce6fb5a51296"
   dependencies:
@@ -3665,12 +3665,6 @@ ember-cli-preprocess-registry@^3.1.0:
     process-relative-require "^1.0.0"
     silent-error "^1.0.0"
 
-ember-cli-prune-style-tree@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-prune-style-tree/-/ember-cli-prune-style-tree-1.0.1.tgz#29447fb844613d248335af5e5f0dcdd0fa60a6fa"
-  dependencies:
-    broccoli-funnel "^1.0.7"
-
 ember-cli-qunit@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/ember-cli-qunit/-/ember-cli-qunit-4.3.2.tgz#cfd89ad3b0dbc28a9c2223d532b52eeade7c602c"
@@ -3709,6 +3703,13 @@ ember-cli-sri@^2.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-sri/-/ember-cli-sri-2.1.1.tgz#971620934a4b9183cf7923cc03e178b83aa907fd"
   dependencies:
     broccoli-sri-hash "^2.1.0"
+
+ember-cli-string-helpers@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-string-helpers/-/ember-cli-string-helpers-1.9.0.tgz#2c1605bc5768ff58cecd2fa1bd0d13d81e47f3d3"
+  dependencies:
+    broccoli-funnel "^1.0.1"
+    ember-cli-babel "^6.6.0"
 
 ember-cli-string-utils@^1.0.0, ember-cli-string-utils@^1.1.0:
   version "1.1.0"
