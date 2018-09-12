@@ -71,6 +71,7 @@
     "node": "6.* || 8.* || >= 10.*"
   },
   "dependencies": {
+    "node-sass": "^4.9.3",
     "tabletop": "^1.5.2"
   }
 }

@@ -5,7 +5,7 @@ var contentSecurityPolicy = {
   'connect-src': "'self' https://*.google.com"
 };
 
-module.exports = function(environment) {
+module.exports = function(environment = 'production') {
   let ENV = {
     modulePrefix: 'congreso',
     environment,
@@ -40,6 +40,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: contentSecurityPolicy
   };
 
+  // "ember build" is development
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -48,9 +49,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.contentSecurityPolicy = contentSecurityPolicy;
     ENV.contentSecurityPolicy['script-src'] = "'self' 'unsafe-eval' db.devservir6:* 172.20.10.9:*";
-
-    ENV.APP.staticFilesUrl = 'http://localhost:4200/static-files/';
-    // ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+    ENV.locationType = 'hash';
+    ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
   }
 
   if (environment === 'test') {
@@ -68,8 +68,9 @@ module.exports = function(environment) {
     ENV.googleAnalytics = {
       webPropertyId: 'UA-113727052-1'
     };
-
-    ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+    ENV.locationType = 'hash';
+    // ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+    ENV.APP.staticFilesUrl = 'http://localhost:4200/static-files/';
   }
 
   return ENV;
