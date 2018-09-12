@@ -3982,35 +3982,41 @@
         // Información general de diputado
         // TODO: Evaluar pertinencia, ya que es una funcionalidad específica de
         // Elección PDH
-        spreadsheetService.fetchConfig('diputado-informacion-general-configuracion').then(function (configuracionData) {
-          var diputadoDataArray = Ember.A([]);
+        // spreadsheetService
+        //   .fetchConfig('diputado-informacion-general-configuracion')
+        //   .then((configuracionData) => {
+        //     let diputadoDataArray = A([]);
 
-          Ember.A(configuracionData).forEach(function (item) {
-            diputadoDataArray.pushObject({
-              field: item.field,
-              label: item.label
-            });
-          });
+        //     A(configuracionData).forEach((item) => {
+        //       diputadoDataArray.pushObject({
+        //         field: item.field,
+        //         label: item.label
+        //       });
+        //     });
 
-          var serializer = _this.store.serializerFor('postulador-comision');
+        //     let serializer = this.store.serializerFor('postulador-comision');
 
-          serializer.set('informacionGeneralFields', diputadoDataArray);
-          // serializer.set('frenteAFrenteFields', A());
-        }), spreadsheetService.fetchConfig('diputado-frente-a-frente-configuracion').then(function (configuracionData) {
-          var postuladorFrenteAFrenteDataArray = Ember.A([]);
+        //     serializer.set('informacionGeneralFields', diputadoDataArray);
+        //     // serializer.set('frenteAFrenteFields', A());
+        //   }),
 
-          Ember.A(configuracionData).forEach(function (item) {
-            postuladorFrenteAFrenteDataArray.pushObject({
-              field: item.field,
-              label: item.label,
-              section: item.section
-            });
-          });
+        // spreadsheetService
+        //   .fetchConfig('diputado-frente-a-frente-configuracion')
+        //   .then((configuracionData) => {
+        //     let postuladorFrenteAFrenteDataArray = A([]);
 
-          var serializer = _this.store.serializerFor('postulador-comision');
+        //     A(configuracionData).forEach((item) => {
+        //       postuladorFrenteAFrenteDataArray.pushObject({
+        //         field: item.field,
+        //         label: item.label,
+        //         section: item.section
+        //       });
+        //     });
 
-          serializer.set('frenteAFrenteFields', postuladorFrenteAFrenteDataArray);
-        }),
+        //     let serializer = this.store.serializerFor('postulador-comision');
+
+        //     serializer.set('frenteAFrenteFields', postuladorFrenteAFrenteDataArray);
+        //   }),
 
         /**
          * Setear los campos a utilizar en la funcionalidad de frente-a-frente
@@ -4038,7 +4044,7 @@
 
       return Ember.RSVP.hash({
         perfiles: this.store.findAll('perfil'),
-        diputados: this.store.findAll('postulador-comision'),
+        // diputados: this.store.findAll('postulador-comision'),
         config: spreadsheet.fetchConfig('configuracion').then(function (configuracion) {
           var configObject = Ember.Object.create();
 
@@ -5393,7 +5399,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+abfd4504"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"http://localhost:4200/static-files/","name":"congreso","version":"0.0.0+abfd4504"});
           }
         
 //# sourceMappingURL=congreso.map
