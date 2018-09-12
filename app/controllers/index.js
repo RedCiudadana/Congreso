@@ -33,6 +33,7 @@ export default Controller.extend({
         selectors.push('.ley3');
       }
 
+      // this._applyFilter();
       return selectors.join(', ');
     }
   ),

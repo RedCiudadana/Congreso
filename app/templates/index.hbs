@@ -7,7 +7,7 @@
   {{{model.config.banner1Title}}}
 {{/if}}
 {{!-- Filter widget --}}
-{{#if model.config.useFrontFilterWidget2}}
+{{#if model.config.useFrontFilterWidget}}
   <div id="s-filters-main">
     <div class="search-and-filter">
         <h1>Conoce todo sobre el proceso del congreso</h1>
@@ -27,33 +27,15 @@
         <div class="filters-container">
           <strong>Filtrar por a favor de: </strong>
           <label>
-            {{one-way-select
-              value=ley1
-              update=(queue
-                (action (mut ley1))
-                (action 'applyFilter')
-              )
-            }}
+            <input type="checkbox" checked={{ley1}} onclick={{action (mut ley1) value="target.checked"}} onchange={{action 'applyFilter'}}>
             Reformas Materia Antejuicio
           </label>
           <label>
-            {{one-way-select
-              ley2
-              update=(queue
-                (action (mut ley2))
-                (action 'applyFilter')
-              )
-            }}
+            <input type="checkbox" checked={{ley2}} onclick={{action (mut ley2) value="target.checked"}} onchange={{action 'applyFilter'}}>
             Financiamiento Ilícito
           </label>
           <label>
-            {{one-way-select
-              ley3
-              update=(queue
-                (action (mut ley3))
-                (action 'applyFilter')
-              )
-            }}
+            <input type="checkbox" checked={{ley3}} onclick={{action (mut ley3) value="target.checked"}} onchange={{action 'applyFilter'}}>
             Reformas al Código Penal
          </label>
        </div>
