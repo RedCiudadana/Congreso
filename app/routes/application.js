@@ -113,41 +113,41 @@ export default Route.extend({
         // Información general de diputado
         // TODO: Evaluar pertinencia, ya que es una funcionalidad específica de
         // Elección PDH
-        spreadsheetService
-          .fetchConfig('diputado-informacion-general-configuracion')
-          .then((configuracionData) => {
-            let diputadoDataArray = A([]);
+        // spreadsheetService
+        //   .fetchConfig('diputado-informacion-general-configuracion')
+        //   .then((configuracionData) => {
+        //     let diputadoDataArray = A([]);
 
-            A(configuracionData).forEach((item) => {
-              diputadoDataArray.pushObject({
-                field: item.field,
-                label: item.label
-              });
-            });
+        //     A(configuracionData).forEach((item) => {
+        //       diputadoDataArray.pushObject({
+        //         field: item.field,
+        //         label: item.label
+        //       });
+        //     });
 
-            let serializer = this.store.serializerFor('postulador-comision');
+        //     let serializer = this.store.serializerFor('postulador-comision');
 
-            serializer.set('informacionGeneralFields', diputadoDataArray);
-            // serializer.set('frenteAFrenteFields', A());
-          }),
+        //     serializer.set('informacionGeneralFields', diputadoDataArray);
+        //     // serializer.set('frenteAFrenteFields', A());
+        //   }),
 
-        spreadsheetService
-          .fetchConfig('diputado-frente-a-frente-configuracion')
-          .then((configuracionData) => {
-            let postuladorFrenteAFrenteDataArray = A([]);
+        // spreadsheetService
+        //   .fetchConfig('diputado-frente-a-frente-configuracion')
+        //   .then((configuracionData) => {
+        //     let postuladorFrenteAFrenteDataArray = A([]);
 
-            A(configuracionData).forEach((item) => {
-              postuladorFrenteAFrenteDataArray.pushObject({
-                field: item.field,
-                label: item.label,
-                section: item.section
-              });
-            });
+        //     A(configuracionData).forEach((item) => {
+        //       postuladorFrenteAFrenteDataArray.pushObject({
+        //         field: item.field,
+        //         label: item.label,
+        //         section: item.section
+        //       });
+        //     });
 
-            let serializer = this.store.serializerFor('postulador-comision');
+        //     let serializer = this.store.serializerFor('postulador-comision');
 
-            serializer.set('frenteAFrenteFields', postuladorFrenteAFrenteDataArray);
-          }),
+        //     serializer.set('frenteAFrenteFields', postuladorFrenteAFrenteDataArray);
+        //   }),
 
         /**
          * Setear los campos a utilizar en la funcionalidad de frente-a-frente
@@ -178,7 +178,7 @@ export default Route.extend({
 
     return RSVP.hash({
       perfiles: this.store.findAll('perfil'),
-      diputados: this.store.findAll('postulador-comision'),
+      // diputados: this.store.findAll('postulador-comision'),
       config: spreadsheet.fetchConfig('configuracion')
         .then((configuracion) => {
           let configObject = EmberObject.create();
