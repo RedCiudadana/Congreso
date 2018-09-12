@@ -1840,6 +1840,25 @@
     }
   });
 });
+;define('congreso/helpers/camelize', ['exports', 'ember-cli-string-helpers/helpers/camelize'], function (exports, _camelize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _camelize.default;
+    }
+  });
+  Object.defineProperty(exports, 'camelize', {
+    enumerable: true,
+    get: function () {
+      return _camelize.camelize;
+    }
+  });
+});
 ;define('congreso/helpers/cancel-all', ['exports', 'ember-concurrency/helpers/cancel-all'], function (exports, _cancelAll) {
   'use strict';
 
@@ -1850,6 +1869,25 @@
     enumerable: true,
     get: function () {
       return _cancelAll.default;
+    }
+  });
+});
+;define('congreso/helpers/capitalize', ['exports', 'ember-cli-string-helpers/helpers/capitalize'], function (exports, _capitalize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _capitalize.default;
+    }
+  });
+  Object.defineProperty(exports, 'capitalize', {
+    enumerable: true,
+    get: function () {
+      return _capitalize.capitalize;
     }
   });
 });
@@ -1891,6 +1929,25 @@
     enumerable: true,
     get: function () {
       return _chunk.chunk;
+    }
+  });
+});
+;define('congreso/helpers/classify', ['exports', 'ember-cli-string-helpers/helpers/classify'], function (exports, _classify) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _classify.default;
+    }
+  });
+  Object.defineProperty(exports, 'classify', {
+    enumerable: true,
+    get: function () {
+      return _classify.classify;
     }
   });
 });
@@ -1948,6 +2005,25 @@
     enumerable: true,
     get: function () {
       return _contains.contains;
+    }
+  });
+});
+;define('congreso/helpers/dasherize', ['exports', 'ember-cli-string-helpers/helpers/dasherize'], function (exports, _dasherize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _dasherize.default;
+    }
+  });
+  Object.defineProperty(exports, 'dasherize', {
+    enumerable: true,
+    get: function () {
+      return _dasherize.dasherize;
     }
   });
 });
@@ -2302,6 +2378,44 @@
     }
   });
 });
+;define('congreso/helpers/html-safe', ['exports', 'ember-cli-string-helpers/helpers/html-safe'], function (exports, _htmlSafe) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _htmlSafe.default;
+    }
+  });
+  Object.defineProperty(exports, 'htmlSafe', {
+    enumerable: true,
+    get: function () {
+      return _htmlSafe.htmlSafe;
+    }
+  });
+});
+;define('congreso/helpers/humanize', ['exports', 'ember-cli-string-helpers/helpers/humanize'], function (exports, _humanize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _humanize.default;
+    }
+  });
+  Object.defineProperty(exports, 'humanize', {
+    enumerable: true,
+    get: function () {
+      return _humanize.humanize;
+    }
+  });
+});
 ;define('congreso/helpers/inc', ['exports', 'ember-composable-helpers/helpers/inc'], function (exports, _inc) {
   'use strict';
 
@@ -2481,6 +2595,25 @@
     enumerable: true,
     get: function () {
       return _join.join;
+    }
+  });
+});
+;define('congreso/helpers/lowercase', ['exports', 'ember-cli-string-helpers/helpers/lowercase'], function (exports, _lowercase) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _lowercase.default;
+    }
+  });
+  Object.defineProperty(exports, 'lowercase', {
+    enumerable: true,
+    get: function () {
+      return _lowercase.lowercase;
     }
   });
 });
@@ -3018,6 +3151,25 @@
     }
   });
 });
+;define('congreso/helpers/titleize', ['exports', 'ember-cli-string-helpers/helpers/titleize'], function (exports, _titleize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _titleize.default;
+    }
+  });
+  Object.defineProperty(exports, 'titleize', {
+    enumerable: true,
+    get: function () {
+      return _titleize.titleize;
+    }
+  });
+});
 ;define('congreso/helpers/toggle-action', ['exports', 'ember-composable-helpers/helpers/toggle-action'], function (exports, _toggleAction) {
   'use strict';
 
@@ -3050,6 +3202,63 @@
     }
   });
 });
+;define('congreso/helpers/trim', ['exports', 'ember-cli-string-helpers/helpers/trim'], function (exports, _trim) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _trim.default;
+    }
+  });
+  Object.defineProperty(exports, 'trim', {
+    enumerable: true,
+    get: function () {
+      return _trim.trim;
+    }
+  });
+});
+;define('congreso/helpers/truncate', ['exports', 'ember-cli-string-helpers/helpers/truncate'], function (exports, _truncate) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _truncate.default;
+    }
+  });
+  Object.defineProperty(exports, 'truncate', {
+    enumerable: true,
+    get: function () {
+      return _truncate.truncate;
+    }
+  });
+});
+;define('congreso/helpers/underscore', ['exports', 'ember-cli-string-helpers/helpers/underscore'], function (exports, _underscore) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _underscore.default;
+    }
+  });
+  Object.defineProperty(exports, 'underscore', {
+    enumerable: true,
+    get: function () {
+      return _underscore.underscore;
+    }
+  });
+});
 ;define('congreso/helpers/union', ['exports', 'ember-composable-helpers/helpers/union'], function (exports, _union) {
   'use strict';
 
@@ -3066,6 +3275,44 @@
     enumerable: true,
     get: function () {
       return _union.union;
+    }
+  });
+});
+;define('congreso/helpers/uppercase', ['exports', 'ember-cli-string-helpers/helpers/uppercase'], function (exports, _uppercase) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _uppercase.default;
+    }
+  });
+  Object.defineProperty(exports, 'uppercase', {
+    enumerable: true,
+    get: function () {
+      return _uppercase.uppercase;
+    }
+  });
+});
+;define('congreso/helpers/w', ['exports', 'ember-cli-string-helpers/helpers/w'], function (exports, _w) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _w.default;
+    }
+  });
+  Object.defineProperty(exports, 'w', {
+    enumerable: true,
+    get: function () {
+      return _w.w;
     }
   });
 });
@@ -5012,7 +5259,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "JmiITHHO", "block": "{\"symbols\":[\"fields\",\"section\",\"field\",\"fieldName\",\"fields\",\"section\",\"field\",\"fieldName\"],\"statements\":[[7,\"section\"],[11,\"id\",\"election\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"frenteAFrenteFuncionalidad\"]]],null,{\"statements\":[[0,\"    \"],[7,\"div\"],[11,\"id\",\"msj-alerta\"],[11,\"class\",\"alert alert-info\"],[9],[0,\"\\n      \"],[1,[23,[\"frenteAFrenteFuncionalidad\",\"title\"]],true],[0,\"\\n    \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n  \"],[7,\"div\"],[11,\"id\",\"compare-candidates\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n        \"],[1,[27,\"one-way-select\",[[23,[\"perfilUnoId\"]]],[[\"options\",\"optionValuePath\",\"optionLabelPath\",\"update\"],[[23,[\"model\",\"perfiles\"]],\"id\",\"nombre\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"perfilUno\"]]],null]],null]]]],false],[0,\"\\n      \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n        \"],[1,[27,\"one-way-select\",[[23,[\"perfilDosId\"]]],[[\"options\",\"optionValuePath\",\"optionLabelPath\",\"update\"],[[23,[\"model\",\"perfiles\"]],\"id\",\"nombre\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"perfilDos\"]]],null]],null]]]],false],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"hidden-xs\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"frenteAFrenteSectionGroupedFields\"]]],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-heading\"],[9],[7,\"h3\"],[11,\"class\",\"panel-title\"],[9],[1,[22,6,[]],false],[10],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[22,5,[]]],null]],null,{\"statements\":[[4,\"if\",[[22,7,[\"label\"]]],null,{\"statements\":[[0,\"                \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"col-md-12\"],[9],[0,\"\\n                    \"],[7,\"h5\"],[9],[1,[22,7,[\"label\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-1\"],[9],[0,\"\\n                  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"perfilUno\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"perfilUno\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive\"],[9],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"fondo-blanco contenedor\"],[9],[0,\"\\n                    \"],[7,\"p\"],[9],[0,\"\\n                      \"],[1,[27,\"get-html-safe\",[[23,[\"perfilUno\"]],[22,7,[\"field\"]]],null],false],[0,\"\\n                    \"],[10],[0,\"\\n                    \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[1,[23,[\"perfilUno\",\"nombre\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-1\"],[9],[0,\"\\n                  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"perfilDos\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"perfilDos\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive\"],[9],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"fondo-blanco contenedor\"],[9],[0,\"\\n                    \"],[7,\"p\"],[9],[0,\"\\n                      \"],[1,[27,\"get-html-safe\",[[23,[\"perfilDos\"]],[22,7,[\"field\"]]],null],false],[0,\"\\n                    \"],[10],[0,\"\\n                    \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[1,[23,[\"perfilDos\",\"nombre\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n              \"],[10],[0,\"\\n\"]],\"parameters\":[7,8]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\"]],\"parameters\":[5,6]},null],[0,\"    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"visible-xs\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"frenteAFrenteSectionGroupedFields\"]]],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-heading\"],[9],[7,\"h3\"],[11,\"class\",\"panel-title\"],[9],[1,[22,2,[]],false],[10],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[22,1,[]]],null]],null,{\"statements\":[[4,\"if\",[[22,3,[\"label\"]]],null,{\"statements\":[[0,\"                \"],[7,\"h3\"],[11,\"class\",\"panel-title\"],[9],[1,[22,3,[\"label\"]],false],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"response-candidate-one\"],[9],[0,\"\\n                \"],[7,\"p\"],[9],[0,\"\\n                  \"],[1,[27,\"get-html-safe\",[[23,[\"perfilUno\"]],[22,3,[\"field\"]]],null],false],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[7,\"small\"],[9],[1,[23,[\"perfilUno\",\"nombre\"]],false],[10],[10],[0,\"\\n              \"],[10],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"response-candidate-dos\"],[9],[0,\"\\n                \"],[7,\"p\"],[9],[0,\"\\n                  \"],[1,[27,\"get-html-safe\",[[23,[\"perfilDos\"]],[22,3,[\"field\"]]],null],false],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[7,\"small\"],[9],[1,[23,[\"perfilDos\",\"nombre\"]],false],[10],[10],[0,\"\\n              \"],[10],[0,\"\\n\"]],\"parameters\":[3,4]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"    \"],[10],[0,\"\\n\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil/frente-a-frente.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "EltTFycV", "block": "{\"symbols\":[\"fields\",\"section\",\"field\",\"fieldName\",\"fields\",\"section\",\"field\",\"fieldName\"],\"statements\":[[7,\"section\"],[11,\"id\",\"election\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"frenteAFrenteFuncionalidad\"]]],null,{\"statements\":[[0,\"    \"],[7,\"div\"],[11,\"id\",\"msj-alerta\"],[11,\"class\",\"alert alert-info\"],[9],[0,\"\\n      \"],[1,[23,[\"frenteAFrenteFuncionalidad\",\"title\"]],true],[0,\"\\n    \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n  \"],[7,\"div\"],[11,\"id\",\"compare-candidates\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n        \"],[1,[27,\"one-way-select\",[[23,[\"perfilUnoId\"]]],[[\"options\",\"optionValuePath\",\"optionLabelPath\",\"update\"],[[23,[\"model\",\"perfiles\"]],\"id\",\"nombre\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"perfilUno\"]]],null]],null]]]],false],[0,\"\\n      \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n        \"],[1,[27,\"one-way-select\",[[23,[\"perfilDosId\"]]],[[\"options\",\"optionValuePath\",\"optionLabelPath\",\"update\"],[[23,[\"model\",\"perfiles\"]],\"id\",\"nombre\",[27,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"perfilDos\"]]],null]],null]]]],false],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"hidden-xs\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"frenteAFrenteSectionGroupedFields\"]]],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-heading d-flex\"],[9],[7,\"img\"],[12,\"src\",[28,[\"app/img/icon-\",[27,\"dasherize\",[[22,6,[]]],null],\".png\"]]],[11,\"alt\",\"Asistencia\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"panel-title my-auto mx-3\"],[9],[1,[22,6,[]],false],[10],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[22,5,[]]],null]],null,{\"statements\":[[4,\"if\",[[22,7,[\"label\"]]],null,{\"statements\":[[0,\"                \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"col-md-12\"],[9],[0,\"\\n                    \"],[7,\"h5\"],[9],[1,[22,7,[\"label\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-1\"],[9],[0,\"\\n                  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"perfilUno\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"perfilUno\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive\"],[9],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"fondo-blanco contenedor\"],[9],[0,\"\\n                    \"],[7,\"p\"],[9],[0,\"\\n                      \"],[1,[27,\"get-html-safe\",[[23,[\"perfilUno\"]],[22,7,[\"field\"]]],null],false],[0,\"\\n                    \"],[10],[0,\"\\n                    \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[1,[23,[\"perfilUno\",\"nombre\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-1\"],[9],[0,\"\\n                  \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"perfilDos\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"perfilDos\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive\"],[9],[10],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n                  \"],[7,\"div\"],[11,\"class\",\"fondo-blanco contenedor\"],[9],[0,\"\\n                    \"],[7,\"p\"],[9],[0,\"\\n                      \"],[1,[27,\"get-html-safe\",[[23,[\"perfilDos\"]],[22,7,[\"field\"]]],null],false],[0,\"\\n                    \"],[10],[0,\"\\n                    \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[1,[23,[\"perfilDos\",\"nombre\"]],false],[10],[0,\"\\n                  \"],[10],[0,\"\\n                \"],[10],[0,\"\\n              \"],[10],[0,\"\\n\"]],\"parameters\":[7,8]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\"]],\"parameters\":[5,6]},null],[0,\"    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"visible-xs\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"frenteAFrenteSectionGroupedFields\"]]],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-heading\"],[9],[7,\"h3\"],[11,\"class\",\"panel-title\"],[9],[1,[22,2,[]],false],[10],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"panel-body\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[22,1,[]]],null]],null,{\"statements\":[[4,\"if\",[[22,3,[\"label\"]]],null,{\"statements\":[[0,\"                \"],[7,\"h3\"],[11,\"class\",\"panel-title\"],[9],[1,[22,3,[\"label\"]],false],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"response-candidate-one\"],[9],[0,\"\\n                \"],[7,\"p\"],[9],[0,\"\\n                  \"],[1,[27,\"get-html-safe\",[[23,[\"perfilUno\"]],[22,3,[\"field\"]]],null],false],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[7,\"small\"],[9],[1,[23,[\"perfilUno\",\"nombre\"]],false],[10],[10],[0,\"\\n              \"],[10],[0,\"\\n              \"],[7,\"div\"],[11,\"class\",\"response-candidate-dos\"],[9],[0,\"\\n                \"],[7,\"p\"],[9],[0,\"\\n                  \"],[1,[27,\"get-html-safe\",[[23,[\"perfilDos\"]],[22,3,[\"field\"]]],null],false],[0,\"\\n                \"],[10],[0,\"\\n                \"],[7,\"p\"],[11,\"class\",\"text-right\"],[9],[7,\"small\"],[9],[1,[23,[\"perfilDos\",\"nombre\"]],false],[10],[10],[0,\"\\n              \"],[10],[0,\"\\n\"]],\"parameters\":[3,4]},null],[0,\"          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"    \"],[10],[0,\"\\n\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil/frente-a-frente.hbs" } });
 });
 ;define("congreso/templates/perfil/index", ["exports"], function (exports) {
   "use strict";
@@ -5020,7 +5267,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "cg2PEWs4", "block": "{\"symbols\":[\"item\",\"key\"],\"statements\":[[2,\"\\n  Revisa este diseño\\n\"],[0,\"\\n\"],[7,\"div\"],[11,\"class\",\"profile-candidate\"],[11,\"style\",\"border: 1px solid #ddd;\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"row perfil-container\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-3\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"id\",\"candidate-img-profile\"],[11,\"style\",\"padding-top: 20px;\"],[9],[0,\"\\n        \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"perfil\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"model\",\"perfil\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive center-block\"],[9],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n      \"],[7,\"h1\"],[9],[1,[23,[\"model\",\"perfil\",\"nombre\"]],false],[10],[0,\"\\n      \"],[7,\"table\"],[11,\"class\",\"table\"],[9],[0,\"\\n        \"],[7,\"tbody\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"model\",\"perfil\",\"informacionGeneral\"]]],null]],null,{\"statements\":[[0,\"            \"],[7,\"tr\"],[9],[0,\"\\n              \"],[7,\"td\"],[9],[0,\"\\n                \"],[4,\"if\",[[22,1,[\"label\"]]],null,{\"statements\":[[1,[22,1,[\"label\"]],true]],\"parameters\":[]},null],[0,\"\\n                \"],[1,[22,1,[\"value\"]],true],[0,\"\\n              \"],[10],[0,\"\\n            \"],[10],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-4 social-side text-center d-block\"],[9],[0,\"\\n      \"],[7,\"div\"],[9],[0,\"\\n        \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"perfil\",\"fotoUrlPartido\"]]]]],[12,\"alt\",[28,[[23,[\"model\",\"perfil\",\"partidoactual\"]]]]],[9],[10],[0,\"\\n      \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"d-block mt-3\"],[9],[0,\"\\n        \"],[7,\"div\"],[9],[0,\"\\n          \"],[7,\"a\"],[12,\"href\",[28,[[23,[\"mode\",\"perfil\",\"tw\"]]]]],[11,\"target\",\"_blank\"],[9],[7,\"i\"],[11,\"class\",\"fa fa-twitter mr-1\"],[9],[10],[1,[23,[\"model\",\"perfil\",\"tw\"]],false],[10],[0,\"\\n        \"],[10],[0,\"\\n        \"],[7,\"div\"],[9],[0,\"\\n          \"],[7,\"a\"],[12,\"href\",[28,[[23,[\"model\",\"perfil\",\"fb\"]]]]],[11,\"target\",\"_blank\"],[9],[7,\"i\"],[11,\"class\",\"fa fa-facebook mr-1\"],[9],[10],[1,[23,[\"model\",\"perfil\",\"nombre\"]],false],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"div\"],[11,\"class\",\"row perfil-container\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"panel panel-default perfil-social\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-phone\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"telefono\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-map-marker\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"direccion\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-envelope\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"email\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n\"],[0,\"  \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-votaciones.png\"],[11,\"alt\",\"Votaciones\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Votaciones\"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"panel-body tabla-gradacion-content no-padding-top-bottom\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/logo-aspectos-academicos.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Reformas Materia Antejuicio\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley1\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/logo-aspectos-academicos.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Financiamiento Ilícito\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley2\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/logo-aspectos-academicos.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Reformas al Código Penal\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley3\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[0,\"  \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n\"],[0,\"    \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-asistencia.png\"],[11,\"alt\",\"Asistencia\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Asistencia\"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"pie-chart\"],[9],[0,\"\\n          \"],[1,[27,\"ember-chart\",null,[[\"type\",\"data\",\"options\",\"width\",\"height\"],[\"doughnut\",[27,\"pie-data\",[[23,[\"model\",\"asistencia\",\"porcentaje\"]]],null],[23,[\"model\",\"options\"]],200,80]]],false],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil/index.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "pHRqcy2u", "block": "{\"symbols\":[\"item\",\"key\"],\"statements\":[[2,\"\\n  Revisa este diseño\\n\"],[0,\"\\n\"],[7,\"div\"],[11,\"class\",\"profile-candidate\"],[11,\"style\",\"border: 1px solid #ddd;\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"row perfil-container\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-3\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"id\",\"candidate-img-profile\"],[11,\"style\",\"padding-top: 20px;\"],[9],[0,\"\\n        \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"perfil\",\"fotoPerfil\"]]]]],[12,\"alt\",[28,[[23,[\"model\",\"perfil\",\"nombre\"]]]]],[11,\"border\",\"0\"],[11,\"class\",\"img-responsive center-block\"],[9],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-5\"],[9],[0,\"\\n      \"],[7,\"h1\"],[9],[1,[23,[\"model\",\"perfil\",\"nombre\"]],false],[10],[0,\"\\n      \"],[7,\"table\"],[11,\"class\",\"table\"],[9],[0,\"\\n        \"],[7,\"tbody\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"-each-in\",[[23,[\"model\",\"perfil\",\"informacionGeneral\"]]],null]],null,{\"statements\":[[0,\"            \"],[7,\"tr\"],[9],[0,\"\\n              \"],[7,\"td\"],[9],[0,\"\\n                \"],[4,\"if\",[[22,1,[\"label\"]]],null,{\"statements\":[[1,[22,1,[\"label\"]],true]],\"parameters\":[]},null],[0,\"\\n                \"],[1,[22,1,[\"value\"]],true],[0,\"\\n              \"],[10],[0,\"\\n            \"],[10],[0,\"\\n\"]],\"parameters\":[1,2]},null],[0,\"        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"col-md-4 social-side text-center d-block\"],[9],[0,\"\\n      \"],[7,\"div\"],[9],[0,\"\\n        \"],[7,\"img\"],[12,\"src\",[28,[[23,[\"model\",\"perfil\",\"fotoUrlPartido\"]]]]],[12,\"alt\",[28,[[23,[\"model\",\"perfil\",\"partidoactual\"]]]]],[9],[10],[0,\"\\n      \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"d-block mt-3\"],[9],[0,\"\\n        \"],[7,\"div\"],[9],[0,\"\\n          \"],[7,\"a\"],[12,\"href\",[28,[[23,[\"mode\",\"perfil\",\"tw\"]]]]],[11,\"target\",\"_blank\"],[9],[7,\"i\"],[11,\"class\",\"fa fa-twitter mr-1\"],[9],[10],[1,[23,[\"model\",\"perfil\",\"tw\"]],false],[10],[0,\"\\n        \"],[10],[0,\"\\n        \"],[7,\"div\"],[9],[0,\"\\n          \"],[7,\"a\"],[12,\"href\",[28,[[23,[\"model\",\"perfil\",\"fb\"]]]]],[11,\"target\",\"_blank\"],[9],[7,\"i\"],[11,\"class\",\"fa fa-facebook mr-1\"],[9],[10],[1,[23,[\"model\",\"perfil\",\"nombre\"]],false],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"div\"],[11,\"class\",\"row perfil-container\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"panel panel-default perfil-social\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-phone\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"telefono\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-map-marker\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"direccion\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"col-12 col-md-4\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-envelope\"],[9],[10],[0,\"\\n      \"],[7,\"strong\"],[9],[1,[23,[\"model\",\"perfil\",\"email\"]],false],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n\"],[0,\"  \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-votaciones.png\"],[11,\"alt\",\"Votaciones\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Votaciones\"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"panel-body tabla-gradacion-content no-padding-top-bottom\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/icon-reformas-materia-antejuicio.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Reformas Materia Antejuicio\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley1\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/icon-financiamiento-ilicito.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Financiamiento Ilícito\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley2\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-3 col-md-2 text-center icon-container\"],[9],[0,\"\\n\"],[0,\"              \"],[7,\"img\"],[11,\"src\",\"app/img/icon-reformas-al-código-penal.png\"],[11,\"class\",\"img-responsive center\"],[9],[10],[0,\"\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-7 col-md-8 col-md-offset-0 text-container\"],[9],[0,\"\\n              Reformas al Código Penal\\n            \"],[10],[0,\"\\n            \"],[7,\"div\"],[11,\"class\",\"col-xs-2 col-md-2\"],[11,\"style\",\"padding-left: 5px; padding-right: 5px;\"],[9],[0,\"\\n              \"],[7,\"span\"],[11,\"class\",\"badge\"],[9],[7,\"i\"],[12,\"class\",[28,[[27,\"check-or-times\",[[23,[\"model\",\"votaciones\",\"firstObject\",\"ley3\"]]],null]]]],[9],[10],[10],[0,\"\\n            \"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[0,\"  \"],[7,\"div\"],[11,\"class\",\"col-md-6\"],[9],[0,\"\\n\"],[0,\"    \"],[7,\"div\"],[11,\"class\",\"perfil-container\"],[9],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"panel panel-default\"],[9],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"header d-flex\"],[9],[0,\"\\n            \"],[7,\"img\"],[11,\"src\",\"app/img/icon-asistencia.png\"],[11,\"alt\",\"Asistencia\"],[11,\"class\",\"image60x60\"],[9],[10],[7,\"h3\"],[11,\"class\",\"my-auto mx-5\"],[9],[0,\"Asistencia\"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[7,\"div\"],[11,\"class\",\"pie-chart\"],[9],[0,\"\\n          \"],[1,[27,\"ember-chart\",null,[[\"type\",\"data\",\"options\",\"width\",\"height\"],[\"doughnut\",[27,\"pie-data\",[[23,[\"model\",\"asistencia\",\"porcentaje\"]]],null],[23,[\"model\",\"options\"]],200,80]]],false],[0,\"\\n        \"],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/perfil/index.hbs" } });
 });
 ;define("congreso/templates/perfil/propuestas", ["exports"], function (exports) {
   "use strict";
@@ -5107,6 +5354,19 @@
     enumerable: true,
     get: function () {
       return _loadFilepickerApi.default;
+    }
+  });
+});
+;define('congreso/utils/titleize', ['exports', 'ember-cli-string-helpers/utils/titleize'], function (exports, _titleize) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _titleize.default;
     }
   });
 });
