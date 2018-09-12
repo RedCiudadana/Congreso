@@ -69,7 +69,13 @@ module.exports = function(environment = 'production') {
       webPropertyId: 'UA-113727052-1'
     };
     ENV.locationType = 'hash';
-    // ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+    ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+  }
+
+  if (environment === 'e') {
+    ENV.contentSecurityPolicy = contentSecurityPolicy;
+    ENV.contentSecurityPolicy['script-src'] = "'self' 'unsafe-eval' db.devservir6:* 172.20.10.9:*";
+    ENV.locationType = 'hash';
     ENV.APP.staticFilesUrl = 'http://localhost:4200/static-files/';
   }
 
