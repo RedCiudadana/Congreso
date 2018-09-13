@@ -8164,11 +8164,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 .search-and-filter .filter-container .dropdown-menu {
   width: 15rem;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 10000; }
 
 .search-and-filter .filter-container .dropdown-menu label {
   font-weight: lighter;
-  font-size: normal; }
+  font-size: normal;
+  width: 100%; }
+
+.search-and-filter .filter-container .dropdown-large .dropdown-menu {
+  width: 20rem; }
+
+.search-and-filter .filter-container .dropdown-large .dropdown-menu label {
+  font-weight: lighter;
+  font-size: normal;
+  width: 45%;
+  text-transform: capitalize; }
 
 .search-container .ember-power-select-status-icon {
   display: none; }
