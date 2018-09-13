@@ -93,6 +93,17 @@ $border-radius: 10px;
     width: 100%;;
 }
 
+.search-and-filter .filter-container .dropdown-large .dropdown-menu {
+    width: 20rem;
+}
+
+.search-and-filter .filter-container .dropdown-large .dropdown-menu label {
+    font-weight: lighter;
+    font-size: normal;
+    width: 45%;
+    text-transform: capitalize;
+}
+
 .search-and-filter .filter-container .dropdown-menu label input[type=checkbox] {
     // visibility: hidden;
 }
