@@ -15,6 +15,8 @@ export default Model.extend({
 
   cargoNombreCorto: attr(),
 
+  distrito: attr(),
+
   profesion: attr(),
 
   educacion: attr(),
@@ -111,7 +113,7 @@ export default Model.extend({
   //   return returnValue;
   // }),
 
-  selector: computed('ley1', 'ley2', 'ley3', 'sexo', function() {
+  selector: computed('ley1', 'ley2', 'ley3', 'sexo', 'distrito', function() {
     let returnValue = '';
 
     if (this.get('ley1') === 'favor') {
@@ -133,6 +135,10 @@ export default Model.extend({
     if (this.get('sexo') === 'Femenino') {
       returnValue += ' mujer';
     }
+
+    returnValue += ' ' + this.get('partidoactual');
+
+    returnValue += ' ' + this.get('distrito').dasherize().normalize();
 
     return returnValue;
   }),
