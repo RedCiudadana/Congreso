@@ -1,66 +1,344 @@
 <div class="container">
+  {{!-- Filter widget --}}
   {{#if model.config.useFrontFilterWidget}}
-    <div class="row search-container-row">
-      <div class="search-container search-and-filter">
-        <div class="search-container" style="text-align: center;">
-          {{#power-select
-            selected=currentCandidato
-            options=model.perfiles
-            onchange=(route-action 'selectPerfil')
-            searchField='nombre'
-            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
-            noMatchesMessage='Sin resultados'
-              as |candidato|
-          }}
-            <strong>{{candidato.nombre}}</strong>
-          {{/power-select}}
-        </div>
-
-        <div class="filters-container">
-          <strong>Filtrar por a favor de: </strong>
-          <label>
-            {{one-way-select
-              ley1
-              update=(queue
-                (action (mut ley1))
-                (action 'applyFilter')
-              )
+    <div {{!-- id="s-filters-main" --}}>
+      <div class="search-and-filter row">
+          <h1 class="mx-auto my-3">Conoce todo sobre el proceso del congreso</h1>
+          <div class="search-container col-12">
+            {{#power-select
+              selected=currentCandidato
+              options=model.perfiles
+              onchange=(route-action 'selectPerfil')
+              searchField='nombre'
+              placeholder='Escriba el nombre del diputado o diputada que desea buscar'
+              noMatchesMessage='Sin resultados'
+                as |candidato|
             }}
-            Reformas Materia Antejuicio
-          </label>
+              <strong>{{candidato.nombre}}</strong>
+            {{/power-select}}
+          </div>
+          <div class="col-12 filter-container">
 
-          <label>
-            {{one-way-select
-              ley2
-              update=(queue
-                (action (mut ley2))
-                (action 'applyFilter')
-              )
-            }}
-            Financiamiento Ilícito
-          </label>
+            {{!-- VOTACIÓN --}}
 
-          <label>
-            {{one-way-select
-              ley3
-              update=(queue
-                (action (mut ley3))
-                (action 'applyFilter')
-              )
-            }}
-            Reformas al Código Penal
-         </label>
+            {{#bs-dropdown class="m-2 rounded" as |dd|}}
+              {{#dd.button class="btn-warning text-white"}}<img src="app/img/icon-vote.png" alt="Votación" >Votación <span class="caret"></span>{{/dd.button}}
+              {{#dd.menu as |menu|}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{ley1}} onclick={{action (mut ley1) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  Reformas Materia Antejuicio
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{ley2}} onclick={{action (mut ley2) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  Financiamiento Ilícito
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{ley3}} onclick={{action (mut ley3) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  Reformas al Código Penal
+                  </label>
+                {{/menu.item}}
+              {{/dd.menu}}
+            {{/bs-dropdown}}
 
-       </div>
+            {{!-- DISTRITO --}}
+
+            {{#bs-dropdown class="m-2 rounded dropdown-large" as |dd|}}
+              {{#dd.button class="btn-success"}}<img src="app/img/icon-district.png" alt="Distrito" >Distrito <span class="caret"></span>{{/dd.button}}
+              {{#dd.menu as |menu|}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{listado-nacional}} onclick={{action (mut listado-nacional) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  listado-nacional
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{guatemala}} onclick={{action (mut guatemala) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  guatemala
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{central}} onclick={{action (mut central) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  central
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{totonicapan}} onclick={{action (mut totonicapan) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  totonicapan
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{quiche}} onclick={{action (mut quiche) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  quiche
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{suchitepequez}} onclick={{action (mut suchitepequez) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  suchitepequez
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{chimaltenango}} onclick={{action (mut chimaltenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  chimaltenango
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{retalhuleu}} onclick={{action (mut retalhuleu) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  retalhuleu
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{alta-verapaz}} onclick={{action (mut alta-verapaz) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  alta-verapaz
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{izabal}} onclick={{action (mut izabal) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  izabal
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{huehuetenango}} onclick={{action (mut huehuetenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  huehuetenango
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{baja-verapaz}} onclick={{action (mut baja-verapaz) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  baja-verapaz
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{san-marcos}} onclick={{action (mut san-marcos) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  san-marcos
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{santa-rosa}} onclick={{action (mut santa-rosa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  santa-rosa
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{sacatepequez}} onclick={{action (mut sacatepequez) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  sacatepequez
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{escuintla}} onclick={{action (mut escuintla) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  escuintla
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{solola}} onclick={{action (mut solola) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  solola
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{quetzaltenango}} onclick={{action (mut quetzaltenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  quetzaltenango
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{jutiapa}} onclick={{action (mut jutiapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  jutiapa
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{chiquimula}} onclick={{action (mut chiquimula) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  chiquimula
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{el-progreso}} onclick={{action (mut el-progreso) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  el-progreso
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{zacapa}} onclick={{action (mut zacapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  zacapa
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{jalapa}} onclick={{action (mut jalapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  jalapa
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{peten}} onclick={{action (mut peten) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  peten
+                </label>
+              {{/menu.item}}
+              {{#menu.item}}
+                <label>
+                  <input type="checkbox" checked={{distrito-central}} onclick={{action (mut distrito-central) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  distrito-central
+                </label>
+              {{/menu.item}}
+              {{/dd.menu}}
+            {{/bs-dropdown}}
+
+            {{!-- PARTIDO --}}
+
+            {{#bs-dropdown class="m-2 rounded" as |dd|}}
+              {{#dd.button class="btn-info"}}<img src="app/img/icon-party-politic.png" alt="Partido" >Partido <span class="caret"></span>{{/dd.button}}
+              {{#dd.menu as |menu|}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{TODOS}} onclick={{action (mut TODOS) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  TODOS
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{INDP}} onclick={{action (mut INDP) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  INDP
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{FCN}} onclick={{action (mut FCN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  FCN
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{BLR}} onclick={{action (mut BLR) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  BLR
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{UNE}} onclick={{action (mut UNE) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  UNE
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{PU}} onclick={{action (mut PU) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  PU
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{BAC}} onclick={{action (mut BAC) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  BAC
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{UCN}} onclick={{action (mut UCN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  UCN
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{CREO}} onclick={{action (mut CREO) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  CREO
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{PAN}} onclick={{action (mut PAN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  PAN
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{VIVA}} onclick={{action (mut VIVA) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  VIVA
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{EG}} onclick={{action (mut EG) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  EG
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{URNG}} onclick={{action (mut URNG) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  URNG
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{CONV}} onclick={{action (mut CONV) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  CONV
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{WINAQ}} onclick={{action (mut WINAQ) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  WINAQ
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{FUERZ}} onclick={{action (mut FUERZ) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  FUERZ
+                  </label>
+                {{/menu.item}}
+              {{/dd.menu}}
+            {{/bs-dropdown}}
+
+            {{!-- GENERO --}}
+
+            {{#bs-dropdown class="m-2 rounded" as |dd|}}
+              {{#dd.button class="bg-primary"}}<img src="app/img/icon-genere.png">Genero <span class="caret"></span>{{/dd.button}}
+              {{#dd.menu as |menu|}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{esMujer}} onclick={{action (mut esMujer) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  Femenino
+                  </label>
+                {{/menu.item}}
+                {{#menu.item}}
+                  <label>
+                  <input type="checkbox" checked={{esHombre}} onclick={{action (mut esHombre) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                  Masculino
+                  </label>
+                {{/menu.item}}
+              {{/dd.menu}}
+            {{/bs-dropdown}}
+          </div>
       </div>
     </div>
   {{/if}}
 
+  {{!-- Portfolio --}}
   {{#if model.config.useFrontPortfolioVisualization}}
-    {{front-porfolio-visualization
-      perfiles=model.perfiles
-      onDidInsertElement=(action 'applyFilter')
-    }}
+    <div class="container-fluid p-5 bg-light">
+      {{front-porfolio-visualization
+        perfiles=model.perfiles
+        onDidInsertElement=(action 'applyFilter')
+      }}
+    </div>
   {{/if}}
 
   {{#if model.config.useFrontTableVisualization}}
@@ -88,4 +366,5 @@
       {{/each}}
     </table>
   {{/if}}
+
 </div>
