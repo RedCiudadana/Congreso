@@ -54,7 +54,6 @@ export default Controller.extend({
     'distrito-central',
     'onFire',
     function() {
-      this.set('onFire', true);
       if (
         !this.get('ley1')
             && !this.get('ley2')
@@ -296,12 +295,6 @@ export default Controller.extend({
       return selectors.join(', ');
     }
   ),
-
-  fire: computed('onFire', () => {
-    console.log('hola');
-    this._applyFilter();
-    return true
-  }),
 
   _applyFilter() {
 
