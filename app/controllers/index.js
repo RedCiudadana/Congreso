@@ -52,7 +52,9 @@ export default Controller.extend({
     'jalapa',
     'peten',
     'distrito-central',
+    'onFire',
     function() {
+      this.set('onFire', true);
       if (
         !this.get('ley1')
             && !this.get('ley2')
@@ -291,12 +293,20 @@ export default Controller.extend({
         selectors.push('.distrito-central');
       }
 
-      console.log(this.get('listado-nacional'));
       return selectors.join(', ');
     }
   ),
 
+  fire: computed('onFire', () => {
+    console.log('hola');
+    this._applyFilter();
+    return true
+  }),
+
   _applyFilter() {
+
+    console.log('filter');
+
     var $container = $('#portfolio');
 
     $container.isotope({transitionDuration: '0.65s'});

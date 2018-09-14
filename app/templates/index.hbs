@@ -33,19 +33,19 @@
             {{#dd.menu as |menu|}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{ley1}} onclick={{action (mut ley1) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{ley1}} onclick={{queue (action (mut ley1) value="target.checked") (action 'applyFilter')}}>
                 Reformas Materia Antejuicio
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{ley2}} onclick={{action (mut ley2) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{ley2}} onclick={{queue (action (mut ley2) value="target.checked") (action 'applyFilter')}}>
                 Financiamiento Ilícito
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{ley3}} onclick={{action (mut ley3) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{ley3}} onclick={{queue (action (mut ley3) value="target.checked") (action 'applyFilter')}}>
                 Reformas al Código Penal
                 </label>
               {{/menu.item}}
@@ -59,151 +59,151 @@
             {{#dd.menu as |menu|}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{listado-nacional}} onclick={{action (mut listado-nacional) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{listado-nacional}} onclick={{queue (action (mut listado-nacional) value="target.checked") (action 'applyFilter')}}>
                 listado-nacional
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{guatemala}} onclick={{action (mut guatemala) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{guatemala}} onclick={{queue (action (mut guatemala) value="target.checked") (action 'applyFilter')}}>
                 guatemala
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{central}} onclick={{action (mut central) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{central}} onclick={{queue (action (mut central) value="target.checked") (action 'applyFilter')}}>
                 central
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{totonicapan}} onclick={{action (mut totonicapan) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{totonicapan}} onclick={{queue (action (mut totonicapan) value="target.checked") (action 'applyFilter')}}>
                 totonicapan
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{quiche}} onclick={{action (mut quiche) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{quiche}} onclick={{queue (action (mut quiche) value="target.checked") (action 'applyFilter')}}>
                 quiche
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{suchitepequez}} onclick={{action (mut suchitepequez) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{suchitepequez}} onclick={{queue (action (mut suchitepequez) value="target.checked") (action 'applyFilter')}}>
                 suchitepequez
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{chimaltenango}} onclick={{action (mut chimaltenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{chimaltenango}} onclick={{queue (action (mut chimaltenango) value="target.checked") (action 'applyFilter')}}>
                 chimaltenango
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{retalhuleu}} onclick={{action (mut retalhuleu) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{retalhuleu}} onclick={{queue (action (mut retalhuleu) value="target.checked") (action 'applyFilter')}}>
                 retalhuleu
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{alta-verapaz}} onclick={{action (mut alta-verapaz) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{alta-verapaz}} onclick={{queue (action (mut alta-verapaz) value="target.checked") (action 'applyFilter')}}>
                 alta-verapaz
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{izabal}} onclick={{action (mut izabal) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{izabal}} onclick={{queue (action (mut izabal) value="target.checked") (action 'applyFilter')}}>
                 izabal
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{huehuetenango}} onclick={{action (mut huehuetenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{huehuetenango}} onclick={{queue (action (mut huehuetenango) value="target.checked") (action 'applyFilter')}}>
                 huehuetenango
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{baja-verapaz}} onclick={{action (mut baja-verapaz) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{baja-verapaz}} onclick={{queue (action (mut baja-verapaz) value="target.checked") (action 'applyFilter')}}>
                 baja-verapaz
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{san-marcos}} onclick={{action (mut san-marcos) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{san-marcos}} onclick={{queue (action (mut san-marcos) value="target.checked") (action 'applyFilter')}}>
                 san-marcos
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{santa-rosa}} onclick={{action (mut santa-rosa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{santa-rosa}} onclick={{queue (action (mut santa-rosa) value="target.checked") (action 'applyFilter')}}>
                 santa-rosa
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{sacatepequez}} onclick={{action (mut sacatepequez) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{sacatepequez}} onclick={{queue (action (mut sacatepequez) value="target.checked") (action 'applyFilter')}}>
                 sacatepequez
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{escuintla}} onclick={{action (mut escuintla) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{escuintla}} onclick={{queue (action (mut escuintla) value="target.checked") (action 'applyFilter')}}>
                 escuintla
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{solola}} onclick={{action (mut solola) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{solola}} onclick={{queue (action (mut solola) value="target.checked") (action 'applyFilter')}}>
                 solola
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{quetzaltenango}} onclick={{action (mut quetzaltenango) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{quetzaltenango}} onclick={{queue (action (mut quetzaltenango) value="target.checked") (action 'applyFilter')}}>
                 quetzaltenango
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{jutiapa}} onclick={{action (mut jutiapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{jutiapa}} onclick={{queue (action (mut jutiapa) value="target.checked") (action 'applyFilter')}}>
                 jutiapa
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{chiquimula}} onclick={{action (mut chiquimula) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{chiquimula}} onclick={{queue (action (mut chiquimula) value="target.checked") (action 'applyFilter')}}>
                 chiquimula
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{el-progreso}} onclick={{action (mut el-progreso) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{el-progreso}} onclick={{queue (action (mut el-progreso) value="target.checked") (action 'applyFilter')}}>
                 el-progreso
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{zacapa}} onclick={{action (mut zacapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{zacapa}} onclick={{queue (action (mut zacapa) value="target.checked") (action 'applyFilter')}}>
                 zacapa
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{jalapa}} onclick={{action (mut jalapa) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{jalapa}} onclick={{queue (action (mut jalapa) value="target.checked") (action 'applyFilter')}}>
                 jalapa
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{peten}} onclick={{action (mut peten) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{peten}} onclick={{queue (action (mut peten) value="target.checked") (action 'applyFilter')}}>
                 peten
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
-                <input type="checkbox" checked={{distrito-central}} onclick={{action (mut distrito-central) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{distrito-central}} onclick={{queue (action (mut distrito-central) value="target.checked") (action 'applyFilter')}}>
                 distrito-central
               </label>
             {{/menu.item}}
@@ -217,97 +217,97 @@
             {{#dd.menu as |menu|}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{TODOS}} onclick={{action (mut TODOS) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{TODOS}} onclick={{queue (action (mut TODOS) value="target.checked") (action 'applyFilter')}}>
                 TODOS
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{INDP}} onclick={{action (mut INDP) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{INDP}} onclick={{queue (action (mut INDP) value="target.checked") (action 'applyFilter')}}>
                 INDP
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{FCN}} onclick={{action (mut FCN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{FCN}} onclick={{queue (action (mut FCN) value="target.checked") (action 'applyFilter')}}>
                 FCN
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{BLR}} onclick={{action (mut BLR) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{BLR}} onclick={{queue (action (mut BLR) value="target.checked") (action 'applyFilter')}}>
                 BLR
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{UNE}} onclick={{action (mut UNE) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{UNE}} onclick={{queue (action (mut UNE) value="target.checked") (action 'applyFilter')}}>
                 UNE
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{PU}} onclick={{action (mut PU) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{PU}} onclick={{queue (action (mut PU) value="target.checked") (action 'applyFilter')}}>
                 PU
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{BAC}} onclick={{action (mut BAC) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{BAC}} onclick={{queue (action (mut BAC) value="target.checked") (action 'applyFilter')}}>
                 BAC
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{UCN}} onclick={{action (mut UCN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{UCN}} onclick={{queue (action (mut UCN) value="target.checked") (action 'applyFilter')}}>
                 UCN
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{CREO}} onclick={{action (mut CREO) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{CREO}} onclick={{queue (action (mut CREO) value="target.checked") (action 'applyFilter')}}>
                 CREO
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{PAN}} onclick={{action (mut PAN) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{PAN}} onclick={{queue (action (mut PAN) value="target.checked") (action 'applyFilter')}}>
                 PAN
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{VIVA}} onclick={{action (mut VIVA) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{VIVA}} onclick={{queue (action (mut VIVA) value="target.checked") (action 'applyFilter')}}>
                 VIVA
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{EG}} onclick={{action (mut EG) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{EG}} onclick={{queue (action (mut EG) value="target.checked") (action 'applyFilter')}}>
                 EG
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{URNG}} onclick={{action (mut URNG) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{URNG}} onclick={{queue (action (mut URNG) value="target.checked") (action 'applyFilter')}}>
                 URNG
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{CONV}} onclick={{action (mut CONV) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{CONV}} onclick={{queue (action (mut CONV) value="target.checked") (action 'applyFilter')}}>
                 CONV
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{WINAQ}} onclick={{action (mut WINAQ) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{WINAQ}} onclick={{queue (action (mut WINAQ) value="target.checked") (action 'applyFilter')}}>
                 WINAQ
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{FUERZ}} onclick={{action (mut FUERZ) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{FUERZ}} onclick={{queue (action (mut FUERZ) value="target.checked") (action 'applyFilter')}}>
                 FUERZ
                 </label>
               {{/menu.item}}
@@ -321,13 +321,13 @@
             {{#dd.menu as |menu|}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{esMujer}} onclick={{action (mut esMujer) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{esMujer}} onclick={{queue (action (mut esMujer) value="target.checked") (action 'applyFilter')}}>
                 Femenino
                 </label>
               {{/menu.item}}
               {{#menu.item}}
                 <label>
-                <input type="checkbox" checked={{esHombre}} onclick={{action (mut esHombre) value="target.checked"}} onchange={{action 'applyFilter'}}>
+                <input type="checkbox" checked={{esHombre}} onclick={{queue (action (mut esHombre) value="target.checked") (action 'applyFilter')}}>
                 Masculino
                 </label>
               {{/menu.item}}
