@@ -2,8 +2,8 @@
 {{#if model.config.useFrontFilterWidget}}
   <div {{!-- id="s-filters-main" --}}>
     <div class="search-and-filter row">
-        <h1 class="mx-auto my-3">Conoce todo sobre el proceso del congreso</h1>
-        <div class="search-container col-12">
+
+        <div class="search-container col-12 pt-5">
           {{#power-select
             selected=currentCandidato
             options=model.perfiles
@@ -332,7 +332,7 @@
 
   {{!-- Portfolio --}}
   {{#if model.config.useFrontPortfolioVisualization}}
-    <div class="container-fluid p-5 bg-light">
+    <div class="container-fluid">
       {{front-porfolio-visualization
         perfiles=model.perfiles
         onDidInsertElement=(action 'applyFilter')
