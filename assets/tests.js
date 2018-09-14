@@ -57,7 +57,7 @@ define('congreso/tests/app.lint-test', [], function () {
 
   QUnit.test('controllers/index.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/index.js should pass ESLint\n\n57:7 - Don\'t introduce side-effects in computed properties (ember/no-side-effects)');
+    assert.ok(true, 'controllers/index.js should pass ESLint\n\n');
   });
 
   QUnit.test('controllers/perfil/frente-a-frente.js', function (assert) {
