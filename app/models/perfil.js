@@ -138,7 +138,7 @@ export default Model.extend({
 
     returnValue += ' ' + this.get('partidoactual');
 
-    returnValue += ' ' + this.get('distrito').dasherize().normalize();
+    returnValue += ' ' + this.get('distrito').dasherize().normalize().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
     return returnValue;
   }),

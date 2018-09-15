@@ -25,6 +25,10 @@ module.exports = function(defaults) {
         'node_modules/bootstrap/scss',
         'app/styles'
       ]
+    },
+
+    pageTitle: {
+      replace: true
     }
 
   });
