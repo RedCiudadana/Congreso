@@ -1105,6 +1105,32 @@
     }
   });
 });
+;define('congreso/components/head-tag', ['exports', 'ember-cli-meta-tags/components/head-tag'], function (exports, _headTag) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _headTag.default;
+    }
+  });
+});
+;define('congreso/components/head-tags', ['exports', 'ember-cli-meta-tags/components/head-tags'], function (exports, _headTags) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+});
 ;define('congreso/components/link-to-wrapper', ['exports', 'ember-link-to-wrapper/components/link-to-wrapper'], function (exports, _linkToWrapper) {
   'use strict';
 
@@ -3806,6 +3832,25 @@
     initialize: initialize
   };
 });
+;define('congreso/initializers/head-tags', ['exports', 'ember-cli-meta-tags/initializers/head-tags'], function (exports, _headTags) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function () {
+      return _headTags.initialize;
+    }
+  });
+});
 ;define('congreso/initializers/load-bootstrap-config', ['exports', 'congreso/config/environment', 'ember-bootstrap/config'], function (exports, _environment, _config) {
   'use strict';
 
@@ -3821,6 +3866,25 @@
     name: 'load-bootstrap-config',
     initialize: initialize
   };
+});
+;define('congreso/initializers/router-head-tags', ['exports', 'ember-cli-meta-tags/initializers/router-head-tags'], function (exports, _routerHeadTags) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _routerHeadTags.default;
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function () {
+      return _routerHeadTags.initialize;
+    }
+  });
 });
 ;define("congreso/instance-initializers/ember-data", ["exports", "ember-data/initialize-store-service"], function (exports, _initializeStoreService) {
   "use strict";
@@ -4406,6 +4470,115 @@
         frontTableVisualizationConfig: spreadsheet.fetchConfig('front-table-visualization-config')
       });
     },
+
+
+    // METADATA
+    headTags: function headTags() {
+      // here we are pulling meta data from the model for this route
+      // let model = this.modelFor('application');
+
+      var description = 'Un proyecto de Red Ciudadana para ver toda la información del congreso de Guatemala y los diputados.';
+      return [
+      // General
+      {
+        type: 'meta',
+        tagId: 'meta-description-tag',
+        attrs: {
+          name: 'description',
+          content: description
+        }
+      },
+      // Google Engine - Search Engine
+      {
+        type: 'meta',
+        tagId: 'Google / Search Engine Tags name',
+        attrs: {
+          itemprop: 'name',
+          content: 'Monitor Legislativo'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Google / Search Engine Tags description',
+        attrs: {
+          itemprop: 'description',
+          content: description
+        }
+      }, {
+        type: 'meta',
+        tagId: 'description-general',
+        attrs: {
+          itemprop: 'image',
+          content: '/app/img/logo-red.png'
+        }
+      },
+      // Facebook Meta Tags
+      {
+        type: 'meta',
+        tagId: 'Facebook Meta Tags url',
+        attrs: {
+          property: 'og:url',
+          content: 'https://congreso.redciudadana.org'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Facebook Meta Tags type',
+        attrs: {
+          property: 'og:type',
+          content: 'website'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Facebook Meta Tags title',
+        attrs: {
+          property: 'og:title',
+          content: 'Monitor Legislativo Guatemala Red Ciudadana'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Facebook Meta Tags description',
+        attrs: {
+          property: 'og:description',
+          content: description
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Facebook Meta Tags image',
+        attrs: {
+          property: 'og:image',
+          content: '/app/img/logo-red.png'
+        }
+      },
+      // Twitter Meta Tags
+      {
+        type: 'meta',
+        tagId: 'Twitter Meta Tags image',
+        attrs: {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Twitter Meta Tags title',
+        attrs: {
+          name: 'twitter:title',
+          content: 'Monitor Legislativo Guatemala Red Ciudadana'
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Twitter Meta Tags description',
+        attrs: {
+          name: 'twitter:description',
+          content: description
+        }
+      }, {
+        type: 'meta',
+        tagId: 'Twitter Meta Tags url image',
+        attrs: {
+          name: 'twitter:image',
+          content: '/app/img/logo-red.png'
+        }
+      }];
+    },
     setupController: function setupController(controller, model) {
       this._super(controller, model);
 
@@ -4420,6 +4593,7 @@
         this.transitionTo('perfil', candidato.get('id'));
       }
     }
+
   });
 });
 ;define('congreso/routes/comision', ['exports'], function (exports) {
@@ -5252,6 +5426,19 @@
     }
   });
 });
+;define('congreso/services/head-tags', ['exports', 'ember-cli-meta-tags/services/head-tags'], function (exports, _headTags) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+});
 ;define('congreso/services/page-title-list', ['exports', 'ember-page-title/services/page-title-list', 'congreso/config/environment'], function (exports, _pageTitleList, _environment) {
   'use strict';
 
@@ -5503,7 +5690,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "Vdsjehsc", "block": "{\"symbols\":[],\"statements\":[[7,\"title\"],[9],[1,[23,[\"model\",\"title\"]],false],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/head.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "GYPEf4I5", "block": "{\"symbols\":[],\"statements\":[[7,\"title\"],[9],[1,[23,[\"model\",\"title\"]],false],[10],[0,\"\\n\"],[1,[27,\"head-tags\",null,[[\"headTags\"],[[23,[\"model\",\"headTags\"]]]]],false],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "congreso/templates/head.hbs" } });
 });
 ;define("congreso/templates/index", ["exports"], function (exports) {
   "use strict";
@@ -5701,7 +5888,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+841f77dd"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+a59ffcea"});
           }
         
 //# sourceMappingURL=congreso.map
