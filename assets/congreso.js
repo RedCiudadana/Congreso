@@ -5887,7 +5887,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+a8cc34c1"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+6beb573b"});
           }
         
 //# sourceMappingURL=congreso.map
