@@ -36,6 +36,115 @@ export default Route.extend({
    *
    * TODO: Hacer esto en un lugar más decente, por amor al Señor
    */
+
+     // METADATA
+  headTags() {
+    // here we are pulling meta data from the model for this route
+    // let model = this.modelFor('application');
+
+    let description = 'Un proyecto de Red Ciudadana para ver toda la información del congreso de Guatemala y los diputados.';
+    return [
+    // General
+    {
+      type: 'meta',
+      tagId: 'meta-description-tag',
+      attrs: {
+        name: 'description',
+        content: description
+      }
+    },
+    // Google Engine - Search Engine
+    {
+      type: 'meta',
+      tagId: 'Google / Search Engine Tags name',
+      attrs: {
+        itemprop: 'name',
+        content: 'Monitor Legislativo'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Google / Search Engine Tags description',
+      attrs: {
+        itemprop: 'description',
+        content: description
+      }
+    },{
+      type: 'meta',
+      tagId: 'description-general',
+      attrs: {
+        itemprop: 'image',
+        content: 'https://github.com/RedCiudadana/Congreso/blob/gh-pages/app/img/logo-red.png'
+      }
+    },
+    // Facebook Meta Tags
+    {
+      type: 'meta',
+      tagId: 'Facebook Meta Tags url',
+      attrs: {
+        property: 'og:url',
+        content: 'https://congreso.redciudadana.org'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Facebook Meta Tags type',
+      attrs: {
+        property: 'og:type',
+        content: 'website'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Facebook Meta Tags title',
+      attrs: {
+        property: 'og:title',
+        content: 'Monitor Legislativo Guatemala Red Ciudadana'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Facebook Meta Tags description',
+      attrs: {
+        property: 'og:description',
+        content: description
+      }
+    },{
+      type: 'meta',
+      tagId: 'Facebook Meta Tags image',
+      attrs: {
+        property: 'og:image',
+        content: 'https://github.com/RedCiudadana/Congreso/blob/gh-pages/app/img/logo-red.png'
+      }
+    },
+    // Twitter Meta Tags
+    {
+      type: 'meta',
+      tagId: 'Twitter Meta Tags image',
+      attrs: {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Twitter Meta Tags title',
+      attrs: {
+        name: 'twitter:title',
+        content: 'Monitor Legislativo Guatemala Red Ciudadana'
+      }
+    },{
+      type: 'meta',
+      tagId: 'Twitter Meta Tags description',
+      attrs: {
+        name: 'twitter:description',
+        content: description
+      }
+    },{
+      type: 'meta',
+      tagId: 'Twitter Meta Tags url image',
+      attrs: {
+        name: 'twitter:image',
+        content: 'https://github.com/RedCiudadana/Congreso/blob/gh-pages/app/img/logo-red.png'
+      }
+    }];
+  },
+
   beforeModel(transition) {
     const spreadsheetService = this.get('spreadsheets');
 
@@ -240,114 +349,6 @@ export default Route.extend({
 
       frontTableVisualizationConfig: spreadsheet.fetchConfig('front-table-visualization-config')
     });
-  },
-
-  // METADATA
-  headTags() {
-    // here we are pulling meta data from the model for this route
-    // let model = this.modelFor('application');
-
-    let description = 'Un proyecto de Red Ciudadana para ver toda la información del congreso de Guatemala y los diputados.';
-    return [
-    // General
-    {
-      type: 'meta',
-      tagId: 'meta-description-tag',
-      attrs: {
-        name: 'description',
-        content: description
-      }
-    },
-    // Google Engine - Search Engine
-    {
-      type: 'meta',
-      tagId: 'Google / Search Engine Tags name',
-      attrs: {
-        itemprop: 'name',
-        content: 'Monitor Legislativo'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Google / Search Engine Tags description',
-      attrs: {
-        itemprop: 'description',
-        content: description
-      }
-    },{
-      type: 'meta',
-      tagId: 'description-general',
-      attrs: {
-        itemprop: 'image',
-        content: '/app/img/logo-red.png'
-      }
-    },
-    // Facebook Meta Tags
-    {
-      type: 'meta',
-      tagId: 'Facebook Meta Tags url',
-      attrs: {
-        property: 'og:url',
-        content: 'https://congreso.redciudadana.org'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Facebook Meta Tags type',
-      attrs: {
-        property: 'og:type',
-        content: 'website'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Facebook Meta Tags title',
-      attrs: {
-        property: 'og:title',
-        content: 'Monitor Legislativo Guatemala Red Ciudadana'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Facebook Meta Tags description',
-      attrs: {
-        property: 'og:description',
-        content: description
-      }
-    },{
-      type: 'meta',
-      tagId: 'Facebook Meta Tags image',
-      attrs: {
-        property: 'og:image',
-        content: '/app/img/logo-red.png'
-      }
-    },
-    // Twitter Meta Tags
-    {
-      type: 'meta',
-      tagId: 'Twitter Meta Tags image',
-      attrs: {
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Twitter Meta Tags title',
-      attrs: {
-        name: 'twitter:title',
-        content: 'Monitor Legislativo Guatemala Red Ciudadana'
-      }
-    },{
-      type: 'meta',
-      tagId: 'Twitter Meta Tags description',
-      attrs: {
-        name: 'twitter:description',
-        content: description
-      }
-    },{
-      type: 'meta',
-      tagId: 'Twitter Meta Tags url image',
-      attrs: {
-        name: 'twitter:image',
-        content: '/app/img/logo-red.png'
-      }
-    }];
   },
 
   setupController(controller, model) {
