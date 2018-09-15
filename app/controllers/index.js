@@ -298,8 +298,6 @@ export default Controller.extend({
 
   _applyFilter() {
 
-    console.log('filter');
-
     var $container = $('#portfolio');
 
     $container.isotope({transitionDuration: '0.65s'});

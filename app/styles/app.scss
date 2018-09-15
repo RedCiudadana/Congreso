@@ -149,10 +149,10 @@ body.perfil .container.content-container {
 
 // STIKCY CONTACT BANNER
 
-.sticky-contact {
+.sticky-contact .col-12, .col-md-8{
     padding: 10px;
     font-size: medium;
-}
+ }
 
 .sticky-contact .fa-facebook-square, .fa-twitter-square {
     font-size: 20px;
@@ -183,6 +183,7 @@ body.perfil .container.content-container {
 
 .navbar-brand img {
     max-height: 50px;
+    max-width: 250px;
 }
 
 .navbar-header {
