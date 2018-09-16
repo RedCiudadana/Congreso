@@ -5,6 +5,10 @@
 <section id="election" style="margin-top: 35px;" class="container" >
   {{#if model.config.perfilFuncionalidades}}
     <div style="background-color: #ffffff; margin-bottom: 25px;">
+      <div class="social-media d-block d-md-none">
+        {{#twitter-share-button title=applicationConfig.twitterShareLink hashtags='MonitorLegislativo' via='Redxguate'}}Tweet{{/twitter-share-button}}
+        {{#fb-share-button quote=applicationConfig.twitterShareLink hashtags='MonitorLegislativo'}}Share{{/fb-share-button}}
+      </div>
       <div class="nav-candidator" style="border: 1px solid #ddd;">
         <nav>
           <ul class="list-inline">
@@ -25,7 +29,7 @@
                   {{/link-to-wrapper}}
                 {{/if}}
             {{/each}}
-            <li class="social-media px-3">
+            <li class="social-media px-3 d-none d-md-block">
               {{#twitter-share-button title=applicationConfig.twitterShareLink hashtags='MonitorLegislativo' via='Redxguate'}}Tweet{{/twitter-share-button}}
               {{#fb-share-button quote=applicationConfig.twitterShareLink hashtags='MonitorLegislativo'}}Share{{/fb-share-button}}
             </li>
