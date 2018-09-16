@@ -75,12 +75,14 @@ $border-radius: 10px;
 }
 
 .search-and-filter .filter-container .btn {
-    width: 10rem;
+    width: 180px;
+    height: 45px;
+    font-size: 1rem;
 }
 
 .search-and-filter .filter-container .btn img {
-    margin-right: 5px;
-    width: 15px;
+    width: 20px;
+    margin-right: 15px;
 }
 
 .search-and-filter .filter-container .dropdown-menu {
@@ -116,6 +118,14 @@ $border-radius: 10px;
 
 .ember-power-select-placeholder {
     text-align: left;
+    padding-left: 40px;
+}
+
+.ember-power-select-trigger {
+    border-radius: $border-radius;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
 }
 
 td.number {
@@ -441,6 +451,17 @@ p.datos-abiertos {
 
 .portfolio-5 .portfolio-item {
     height: 315px;
+}
+
+.portfolio .image-party img {
+    position: absolute;
+    left: 70%;
+    top: -20px;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 25px !important;
 }
 
 .logo-partido {

@@ -8,22 +8,28 @@
 {{/if}}
 {{!-- Filter widget --}}
 {{#if model.config.useFrontFilterWidget}}
-  <div {{!-- id="s-filters-main" --}}>
-    <div class="search-and-filter row">
-        <h1 class="mx-auto my-3">Conoce todo sobre el proceso del congreso</h1>
-        <div class="search-container col-12">
+  <div>
+    <div class="search-and-filter row text-center">
+        {{!-- Title --}}
+        <div class="col-12 p-5">
+          <h2 class="mx-auto font-weight-bold">Conoce todo sobre el proceso del congreso</h2>
+          <h3 class="mx-auto font-weight-normal">Ínformate, participa e incide</h3>
+        </div>
+        {{!--Ember-power-select --}}
+        <div class="search-container col-12 mb-5">
           {{#power-select
             selected=currentCandidato
             options=model.perfiles
             onchange=(route-action 'selectPerfil')
             searchField='nombre'
-            placeholder='Escriba el nombre del diputado o diputada que desea buscar'
+            placeholder='Busca a tu candidato'
             noMatchesMessage='Sin resultados'
               as |candidato|
           }}
             <strong>{{candidato.nombre}}</strong>
           {{/power-select}}
         </div>
+        {{!-- Filters --}}
         <div class="col-12 filter-container">
 
           {{!-- VOTACIÓN --}}
