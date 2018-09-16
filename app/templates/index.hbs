@@ -31,9 +31,7 @@
         </div>
         {{!-- Filters --}}
         <div class="col-12 filter-container">
-
           {{!-- VOTACIÓN --}}
-
           {{#bs-dropdown class="m-2 rounded" as |dd|}}
             {{#dd.button class="btn-warning text-white"}}<img src="app/img/icon-vote.png" alt="Votación" >Votación <span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
@@ -57,9 +55,7 @@
               {{/menu.item}}
             {{/dd.menu}}
           {{/bs-dropdown}}
-
           {{!-- DISTRITO --}}
-
           {{#bs-dropdown class="m-2 rounded dropdown-large" as |dd|}}
             {{#dd.button class="btn-success"}}<img src="app/img/icon-district.png" alt="Distrito" >Distrito <span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
@@ -215,9 +211,7 @@
             {{/menu.item}}
             {{/dd.menu}}
           {{/bs-dropdown}}
-
           {{!-- PARTIDO --}}
-
           {{#bs-dropdown class="m-2 rounded" as |dd|}}
             {{#dd.button class="btn-info"}}<img src="app/img/icon-party-politic.png" alt="Partido" >Partido <span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
@@ -319,9 +313,7 @@
               {{/menu.item}}
             {{/dd.menu}}
           {{/bs-dropdown}}
-
           {{!-- GENERO --}}
-
           {{#bs-dropdown class="m-2 rounded" as |dd|}}
             {{#dd.button class="bg-primary"}}<img src="app/img/icon-genere.png">Genero <span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
@@ -339,6 +331,8 @@
               {{/menu.item}}
             {{/dd.menu}}
           {{/bs-dropdown}}
+          {{!-- Clear --}}
+          {{#bs-button type="primary" onClick=(action 'clearFilter')}}Limpiar filtros{{/bs-button}}
         </div>
     </div>
   </div>

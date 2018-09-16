@@ -309,6 +309,57 @@ export default Controller.extend({
   actions: {
     applyFilter() {
       return this._applyFilter();
+    },
+
+    clearFilter() {
+      this.set('ley1', false);
+      this.set('ley2', false);
+      this.set('ley3', false);
+      this.set('esHombre', false);
+      this.set('esMujer', false);
+      this.set('TODOS', false);
+      this.set('INDP', false);
+      this.set('FCN', false);
+      this.set('BLR', false);
+      this.set('UNE', false);
+      this.set('PU', false);
+      this.set('BAC', false);
+      this.set('UCN', false);
+      this.set('CREO', false);
+      this.set('PAN', false);
+      this.set('VIVA', false);
+      this.set('EG', false);
+      this.set('URNG', false);
+      this.set('CONV', false);
+      this.set('WINAQ', false);
+      this.set('FUERZ', false);
+      this.set('listado-nacional', false);
+      this.set('guatemala', false);
+      this.set('central', false);
+      this.set('totonicapan', false);
+      this.set('quiche', false);
+      this.set('suchitepequez', false);
+      this.set('chimaltenango', false);
+      this.set('retalhuleu', false);
+      this.set('alta-verapaz', false);
+      this.set('izabal', false);
+      this.set('huehuetenango', false);
+      this.set('baja-verapaz', false);
+      this.set('san-marcos', false);
+      this.set('santa-rosa', false);
+      this.set('sacatepequez', false);
+      this.set('escuintla', false);
+      this.set('solola', false);
+      this.set('quetzaltenango', false);
+      this.set('jutiapa', false);
+      this.set('chiquimula', false);
+      this.set('el-progreso', false);
+      this.set('zacapa', false);
+      this.set('jalapa', false);
+      this.set('peten', false);
+      this.set('distrito-central', false);
+      return this._applyFilter();
     }
+
   }
 });
