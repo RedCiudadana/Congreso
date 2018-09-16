@@ -2297,11 +2297,11 @@
   exports.checkOrTimes = checkOrTimes;
   function checkOrTimes(value /*, hash*/) {
 
-    if (value == "favor") {
+    if (String(value).toLowerCase() == "favor") {
       return "fa fa-check";
     }
 
-    if (value == "ausente") {
+    if (String(value).toLowerCase() == "ausente") {
       return "fa fa-question";
     }
 
@@ -5973,7 +5973,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+5257aa51"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"https://congreso.redciudadana.org/static-files/","name":"congreso","version":"0.0.0+857f7fa6"});
           }
         
 //# sourceMappingURL=congreso.map
