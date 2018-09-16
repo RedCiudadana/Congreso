@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import Controller from '@ember/controller';
-import { computed } from '@ember/object'
+import { computed } from '@ember/object';
 
 
 export default Controller.extend({
@@ -295,6 +295,8 @@ export default Controller.extend({
     }
   ),
 
+  selectorBadges: '',
+
   _applyFilter() {
 
     var $container = $('#portfolio');
@@ -302,6 +304,14 @@ export default Controller.extend({
     $container.isotope({transitionDuration: '0.65s'});
 
     $container.isotope({filter: this.get('currentSelector')});
+
+    if(this.get('currentSelector') == '*') {
+      this.set('selectorBadges', '');
+    } else {
+      this.set('selectorBadges', this.get('currentSelector').replace(/\./g , '').split(', '));
+    }
+
+    console.log(this.get('selectorBadges'));
 
     return false;
   },

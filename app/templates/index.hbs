@@ -334,6 +334,13 @@
           {{!-- Clear --}}
           {{#bs-button type="primary" onClick=(action 'clearFilter')}}Limpiar filtros{{/bs-button}}
         </div>
+        {{!-- Badges --}}
+        <div class="col-12 mb-2">
+          <h6>Filtrando:</h6>
+          {{#each selectorBadges as |badge|}}
+            <div class="btn btn-primary mx-1">{{humanize badge}}</div>
+          {{/each}}
+        </div>
     </div>
   </div>
 {{/if}}
