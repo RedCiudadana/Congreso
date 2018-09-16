@@ -16,7 +16,8 @@
         width: 100%;
     }
 }
-@media (min-width: 991px) {
+
+@media (min-width: 700px) {
     .portfolio .portfolio-item {
         width: 33.33333333%;
     }
