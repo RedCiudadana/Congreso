@@ -52,7 +52,6 @@ export default Controller.extend({
     'jalapa',
     'peten',
     'distrito-central',
-    'onFire',
     function() {
       if (
         !this.get('ley1')
