@@ -8157,11 +8157,13 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 2rem; }
 
 .search-and-filter .filter-container .btn {
-  width: 10rem; }
+  width: 180px;
+  height: 45px;
+  font-size: 1rem; }
 
 .search-and-filter .filter-container .btn img {
-  margin-right: 5px;
-  width: 15px; }
+  width: 20px;
+  margin-right: 15px; }
 
 .search-and-filter .filter-container .dropdown-menu {
   width: 15rem;
@@ -8186,7 +8188,14 @@ a.text-dark:hover, a.text-dark:focus {
   display: none; }
 
 .ember-power-select-placeholder {
-  text-align: left; }
+  text-align: left;
+  padding-left: 40px; }
+
+.ember-power-select-trigger {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto; }
 
 td.number {
   text-align: right; }
@@ -8348,17 +8357,10 @@ nav > .container {
 
 .profile-candidate {
   background-color: #FFFFFF;
-  color: #475059;
-  font-size: 1.5rem; }
+  color: #475059; }
 
 .profile-candidate h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
-
-.profile-candidate .table {
-  font-size: 2rem; }
-
-.profile-candidate .social-side i.fa {
-  font-size: 2rem; }
 
 .profile-candidate .social-side img {
   width: auto;
@@ -8439,6 +8441,16 @@ p.datos-abiertos {
 
 .portfolio-5 .portfolio-item {
   height: 315px; }
+
+.portfolio .image-party img {
+  position: absolute;
+  left: 70%;
+  top: -20px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 25px !important; }
 
 .logo-partido {
   margin-bottom: 0px; }
@@ -8568,17 +8580,16 @@ a:focus {
 
 .perfil-social {
   padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 1.5rem; }
+  padding-bottom: 20px; }
 
 .perfil-social div {
   text-align: center; }
 
 .perfil-social i {
   color: #163f7f;
-  font-size: 4rem;
   margin-right: 15px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 2rem; }
 
 .image100x100 {
   width: 100px;
@@ -8600,7 +8611,6 @@ a:focus {
   .perfil-social i {
     color: #163f7f;
     margin-left: 75px;
-    margin-right: 15px;
-    font-size: 3rem; } }
+    margin-right: 15px; } }
 
 /*# sourceMappingURL=congreso.css.map */
