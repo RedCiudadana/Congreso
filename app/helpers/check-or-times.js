@@ -2,11 +2,11 @@ import { helper } from '@ember/component/helper';
 
 export function checkOrTimes(value/*, hash*/) {
 
-  if(value == "favor") {
+  if(String(value).toLowerCase() == "favor") {
     return "fa fa-check"
   }
 
-  if(value == "ausente") {
+  if(String(value).toLowerCase() == "ausente") {
     return "fa fa-question"
   }
 
