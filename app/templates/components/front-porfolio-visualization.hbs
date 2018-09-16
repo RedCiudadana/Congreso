@@ -1,29 +1,31 @@
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
   {{#each perfiles as |perfil|}}
-    <article class="portfolio-item pf-media {{perfil.selector}}">
+    <article class="portfolio-item pf-media {{perfil.selector}} p-2">
 
-      <div class="portfolio-image">
-        {{#link-to 'perfil' perfil.id}}
-          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
-        {{/link-to}}
-      </div>
-
-      <div class="portfolio-desc">
-        <h3>
+      <div class="bg-white pt-3">
+        <div class="portfolio-image">
           {{#link-to 'perfil' perfil.id}}
-            {{perfil.nombre}}
+            <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
           {{/link-to}}
-        </h3>
+        </div>
 
-        <span>
-          {{#link-to 'perfil' perfil.id}}
-            {{perfil.cargoNombreCorto}}
-          {{/link-to}}
-        </span>
-      </div>
+        <div class="portfolio-desc mx-auto text-center">
+          <h3>
+            {{#link-to 'perfil' perfil.id}}
+              {{perfil.nombre}}
+            {{/link-to}}
+          </h3>
 
-      <div class="image-party">
-        <img src="{{perfil.fotoUrlPartido}}" alt="{{perfil.partidoactual}}">
+          <span>
+            {{#link-to 'perfil' perfil.id}}
+              {{perfil.cargo}}
+            {{/link-to}}
+          </span>
+        </div>
+
+        <div class="image-party">
+          <img src="{{perfil.fotoUrlPartido}}" alt="{{perfil.partidoactual}}">
+        </div>
       </div>
 
     </article>

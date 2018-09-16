@@ -15,6 +15,8 @@ export default Model.extend({
 
   cargoNombreCorto: attr(),
 
+  cargo: attr(),
+
   distrito: attr(),
 
   profesion: attr(),

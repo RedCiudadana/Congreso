@@ -446,11 +446,16 @@ p.datos-abiertos {
 
 .portfolio-item .portfolio-image, .portfolio-item .portfolio-image a, .portfolio-item .portfolio-image img {
     max-height: 250px;
-    width: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .portfolio-5 .portfolio-item {
     height: 315px;
+}
+
+.portfolio-5 .portfolio-item  div.bg-white {
+    height: 90%;
 }
 
 .portfolio .image-party img {
