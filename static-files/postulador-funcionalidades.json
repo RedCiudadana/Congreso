@@ -1,20 +1,20 @@
 [
   {
-    "route": "perfil.index",
+    "route": "comision.diputado.index",
     "link": "",
     "name": "Perfil",
     "iconClass": "fa fa-user color-grey",
     "title": "Perfil"
   },
   {
-    "route": "perfil.frente-a-frente",
+    "route": "comision.diputado.frente-a-frente",
     "link": "",
     "name": "Frente a Frente",
     "iconClass": "fa fa-bolt color-yellow",
-    "title": "Compara aquí la experiencia profesional, académica y trayectoria de los candidatos."
+    "title": "Compara aquí la experiencia profesional, académica y trayectoria de los postuladores."
   },
   {
-    "route": "perfil.fact-checking",
+    "route": "comision.diputado.fact-checking",
     "link": "",
     "name": "Investigación",
     "iconClass": "fa fa-check-circle color-blue",

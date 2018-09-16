@@ -1,22 +1,22 @@
 [
   {
-    "field": "partidoactual",
-    "label": "Partido al que representa:"
+    "field": "estado",
+    "label": "Estado:"
   },
   {
-    "field": "partidopostulante",
-    "label": "Partido postulante:"
+    "field": "edad",
+    "label": "Edad:"
   },
   {
-    "field": "distrito",
-    "label": "Distrito al que representa:"
+    "field": "estadocivil",
+    "label": "Estado Civil:"
   },
   {
-    "field": "cargo",
-    "label": "Cargo:"
+    "field": "anosprofesional",
+    "label": "Años de Ejercicio Profesional:"
   },
   {
-    "field": "nacimiento",
-    "label": "Fecha de nacimiento:"
+    "field": "colegiado",
+    "label": "No. Colegiado:"
   }
 ]

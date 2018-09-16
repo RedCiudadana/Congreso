@@ -1,3 +1,3 @@
-# Congreso
+# EleccionCGC
 
-Congreso es un app desarrollada sobre [MiGuatemala](https://github.com/RedCiudadana/Miguatemala).
+EleccionCGC es un app desarrollada sobre [MiGuatemala](https://github.com/RedCiudadana/Miguatemala).
