@@ -1,19 +1,11 @@
 [
   {
     "route": "perfiles",
-    "title": "Candidatos"
+    "title": "Diputados"
   },
   {
-    "route": "tabla-gradacion",
-    "title": "Tabla de gradación"
-  },
-  {
-    "route": "centros-votacion",
-    "title": "Centro de votación"
-  },
-  {
-    "route": "comision",
-    "title": "Comisión de Postulación"
+    "route": "perfiles",
+    "title": "¿Quién es mi representante?"
   },
   {
     "route": "metodologia",

@@ -1,22 +1,17 @@
 [
   {
-    "field": "experienciaProfesional",
+    "field": "ley1",
     "label": "",
-    "section": "Experiencia Profesional"
+    "section": "Reformas Materia Antejuicio"
   },
   {
-    "field": "experienciaAcademica",
+    "field": "ley2",
     "label": "",
-    "section": "Experiencia Académica"
+    "section": "Financiamiento Ilícito"
   },
   {
-    "field": "notaAreaEvaluada3",
+    "field": "ley3",
     "label": "",
-    "section": "Proyección Humana e Idoneidad"
-  },
-  {
-    "field": "notaAreaEvaluada4Texto",
-    "label": "",
-    "section": "Cualidades Éticas"
+    "section": "Reformas al Código Penal"
   }
 ]
