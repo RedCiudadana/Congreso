@@ -25,9 +25,9 @@
       </div>
     </div>
 
-    <div class="hidden-xs">
+    <div class="d-none d-md-block">
       {{#each-in frenteAFrenteSectionGroupedFields as |section fields|}}
-        <div class="panel panel-default">
+        <div class="panel panel-default border">
           <div class="panel-heading d-flex"><img src="app/img/icon-{{dasherize section}}.png" alt="Asistencia" class="image60x60"><h3 class="panel-title my-auto mx-3">{{section}}</h3></div>
           <div class="panel-body">
             {{#each-in fields as |fieldName field|}}
@@ -45,7 +45,7 @@
                     src="{{perfilUno.fotoPerfil}}"
                     alt="{{perfilUno.nombre}}"
                     border="0"
-                    class="img-responsive"
+                    class="img-fluid"
                   >
                 </div>
                 <div class="col-md-5">
@@ -61,7 +61,7 @@
                     src="{{perfilDos.fotoPerfil}}"
                     alt="{{perfilDos.nombre}}"
                     border="0"
-                    class="img-responsive"
+                    class="img-fluid"
                   >
                 </div>
                 <div class="col-md-5">
@@ -79,7 +79,7 @@
       {{/each-in}}
     </div>
 
-    <div class="visible-xs">
+    <div class="d-block d-md-none">
       {{#each-in frenteAFrenteSectionGroupedFields as |section fields|}}
         <div class="panel panel-default">
           <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>

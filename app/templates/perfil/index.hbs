@@ -22,8 +22,10 @@
           {{#each-in model.perfil.informacionGeneral as |key item|}}
             <tr>
               <td>
-                {{#if item.label}}{{{item.label}}}{{/if}}
-                {{{item.value}}}
+                <small>
+                  {{#if item.label}}{{{item.label}}}{{/if}}
+                  {{{item.value}}}
+                </small>
               </td>
             </tr>
           {{/each-in}}
@@ -48,7 +50,7 @@
 </div>
 
 {{!-- Social --}}
-<div class="row perfil-container panel panel-default perfil-social">
+<div class="row perfil-container border panel-default perfil-social">
   <div>
     <div class="col-12 col-md-4">
       <i class="fa fa-phone"></i>
@@ -70,7 +72,7 @@
   {{!-- Votaciones --}}
   <div class="col-md-6">
     <div class="perfil-container">
-      <div class="panel panel-default">
+      <div class="border panel-default">
         <div class="header d-flex">
             <img src="app/img/icon-votaciones.png" alt="Votaciones" class="image60x60"><h3 class="my-auto mx-5">Votaciones</h3>
           </div>
@@ -119,7 +121,7 @@
   <div class="col-md-6">
     {{!-- Gráfica de asistencia --}}
     <div class="perfil-container">
-      <div class="panel panel-default">
+      <div class="border panel-default">
         <div class="header d-flex">
             <img src="app/img/icon-asistencia.png" alt="Asistencia" class="image60x60"><h3 class="my-auto mx-5">Asistencia</h3>
           </div>
