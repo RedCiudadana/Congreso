@@ -35,7 +35,12 @@
 
     <div class="col-md-4 social-side text-center d-block">
       <div>
-        <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}">
+        {{#link-to 'partidos.partido' model.perfil.partidoactual}}
+          <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}">
+        {{/link-to}}
+        {{#link-to 'partidos.partido' model.perfil.partidoactual}}
+          <h6>Ver partido</h6>
+        {{/link-to}}
       </div>
       <div class="d-block mt-3">
         <div>

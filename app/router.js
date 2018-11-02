@@ -27,6 +27,9 @@ Router.map(function() {
 
   this.route('metodologia');
   this.route('tabla-gradacion');
+  this.route('partidos', function() {
+    this.route('partido', { path: '/partido/:siglas'});
+  }); 
 });
 
 export default Router;

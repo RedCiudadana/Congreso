@@ -30,7 +30,7 @@ module.exports = function(environment = 'production') {
       // Set null to retrieve data from the spreadsheet live. Otherwhise set the
       // URL from which to load de ducgced static files
       // staticFilesUrl: null
-      // staticFilesUrl: 'http://eleccioncgc.org/static-files/'
+      staticFilesUrl : 'http://localhost:4200/static-files/'
     },
 
     disqus: {
@@ -49,8 +49,7 @@ module.exports = function(environment = 'production') {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.contentSecurityPolicy = contentSecurityPolicy;
     ENV.contentSecurityPolicy['script-src'] = "'self' 'unsafe-eval' db.devservir6:* 172.20.10.9:*";
-    ENV.locationType = 'hash';
-    ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
+    ENV.APP.staticFilesUrl = 'http://localhost:4200/static-files/';
   }
 
   if (environment === 'test') {
@@ -70,13 +69,6 @@ module.exports = function(environment = 'production') {
     };
     ENV.locationType = 'hash';
     ENV.APP.staticFilesUrl = 'https://congreso.redciudadana.org/static-files/';
-  }
-
-  if (environment === 'e') {
-    ENV.contentSecurityPolicy = contentSecurityPolicy;
-    ENV.contentSecurityPolicy['script-src'] = "'self' 'unsafe-eval' db.devservir6:* 172.20.10.9:*";
-    ENV.locationType = 'hash';
-    ENV.APP.staticFilesUrl = 'http://localhost:4200/static-files/';
   }
 
   return ENV;

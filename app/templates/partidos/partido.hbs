@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 border my-4">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div id="candidate-img-profile">
+            <img
+              src="{{model.partido.fotoUrlPartido}}"
+              alt="{{model.partido.nombrepartido}}"
+              border="0"
+              class="img-responsive center-block py-4"
+              height="200"
+            >
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <h1>{{model.partido.nombre}}</h1>
+          <table class="table">
+            <tbody>
+                <tr>
+                  <td>
+                    <small>
+                      <strong>Nombre:</strong>
+                      {{model.partido.nombrepartido}}
+                    </small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <small>
+                      <strong>Siglas:</strong>
+                      {{model.partido.siglas}}
+                    </small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <small>
+                      <strong>Secretario general:</strong>
+                      {{model.partido.secretariogeneral}}
+                    </small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <small>
+                      <strong>Estado:</strong>
+                      {{model.partido.estado}}
+                    </small>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="d-block">
+            <div class="py-2">
+              <i class="fa fa-phone"></i>
+              <strong>{{model.partido.telefono}}</strong>
+            </div>
+            <div class="py-2">
+              <i class="fa fa-map-marker"></i>
+              <strong>{{model.partido.direccion}}</strong>
+            </div>
+            <div class="py-2">
+              <i class="fa fa-envelope"></i>
+              <strong>{{model.partido.email}}</strong>
+            </div>
+            <div class="py-2">
+              <a href="{{model.partido.tw}}" target="_blank"><i class="fa fa-twitter mr-1"></i>{{model.partido.tw}}</a>
+            </div>
+            <div class="py-2">
+              <a href="{{model.partido.fb}}" target="_blank"><i class="fa fa-facebook mr-1"></i>{{model.partido.nombrepartido}}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid p-5 bg-light">
+  <div>
+  {{front-porfolio-visualization
+    perfiles=model.miembros
+    onDidInsertElement=(action 'applyFilter')
+  }}
+  </div>
+</div>
