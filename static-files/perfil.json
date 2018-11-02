@@ -20,10 +20,7 @@
     "direccion": "Segunda Vicepresidencia Edificio Central, y 9a. Ave. 8-42 zona 1 Oficina 1",
     "telefono": "22325395 / 22380006",
     "ext": "",
-    "email": "correo@prueba.gt",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": "correo@prueba.gt"
   },
   {
     "id": "diputado-2",
@@ -46,10 +43,7 @@
     "direccion": "1er. Nivel Edificio 10-57",
     "telefono": "22447878",
     "ext": "2055 / 2022",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-3",
@@ -72,10 +66,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-4",
@@ -98,10 +89,7 @@
     "direccion": "11 calle 8-14 zona 1, Edificio Tecun, oficina 44",
     "telefono": "22301784",
     "ext": "2418 / 2420",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-5",
@@ -124,10 +112,7 @@
     "direccion": "Bancada, 7ma. Ave. 10 Calle 6-81 Zona 1, Edificio 7-10 oficina 901",
     "telefono": "22391093",
     "ext": "2565/2567/2559",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-6",
@@ -150,10 +135,7 @@
     "direccion": "Oficina 504, 5to. Nivel Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2410 / 2411",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-7",
@@ -176,10 +158,7 @@
     "direccion": "1er. Nivel Oficina 99 Edificio Morales",
     "telefono": "22514887 / 22301770",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-8",
@@ -202,10 +181,7 @@
     "direccion": "Oficina 409, 4to. Nivel Edificio 7 y 10",
     "telefono": "22447086",
     "ext": "2386 / 2387",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-9",
@@ -228,10 +204,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-10",
@@ -254,10 +227,7 @@
     "direccion": "Oficina 306, 3er. Nivel Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2329 al 2331",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-11",
@@ -280,10 +250,7 @@
     "direccion": "2° nivel Parqueo del Congreso",
     "telefono": "22447373",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-12",
@@ -306,10 +273,7 @@
     "direccion": "Edificio 7-10 Oficina 606, 6 Nivel Zona 1",
     "telefono": "22447878",
     "ext": "2459",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-13",
@@ -332,10 +296,7 @@
     "direccion": "2do. Nivel, Parqueo del Congreso",
     "telefono": "22391016",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-14",
@@ -358,10 +319,7 @@
     "direccion": "Edificio 7 y 10 Oficina 704, 7° nivel",
     "telefono": "22447878",
     "ext": "2492",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-15",
@@ -384,10 +342,7 @@
     "direccion": "Oficina 09, 3er. Nivel Edificio Zadic",
     "telefono": "22447878",
     "ext": "1414",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-16",
@@ -410,10 +365,7 @@
     "direccion": "2do. Nivel Bancada UNE, Parqueo del Congreso",
     "telefono": "22447878",
     "ext": "1533",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-17",
@@ -436,10 +388,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-18",
@@ -462,10 +411,7 @@
     "direccion": "11 calle 8-14 zona 1 Edificio Tecún oficina 53 quinto nivel",
     "telefono": "22321335 / 22327439",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-19",
@@ -488,10 +434,7 @@
     "direccion": "4to. Nivel Oficina 405, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-20",
@@ -514,10 +457,7 @@
     "direccion": "Anexo 6 2do. Nivel Interior Parqueo del Congreso",
     "telefono": "22447878",
     "ext": "1244",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-21",
@@ -540,10 +480,7 @@
     "direccion": "10 Calle 7-69 zona 1, Edificio Casa de la Cultura, Primer Nivel.",
     "telefono": "22447878",
     "ext": "1404 / 1308",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-22",
@@ -566,10 +503,7 @@
     "direccion": "Edificio 7-10 Oficina 607, 6 Nivel Zona 1",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-23",
@@ -592,10 +526,7 @@
     "direccion": "2do. Nivel, interior del Congreso",
     "telefono": "22447878",
     "ext": "1296",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-24",
@@ -618,10 +549,7 @@
     "direccion": "2do. Nivel Anexo 10, Palacio Legislativo",
     "telefono": "22204013",
     "ext": "1228 / 1279",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-25",
@@ -644,10 +572,7 @@
     "direccion": "2do. Nivel, Edificio Zadik",
     "telefono": "22447878",
     "ext": "1413",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-26",
@@ -670,10 +595,7 @@
     "direccion": "Oficina 609, 6to. Nivel Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-27",
@@ -696,10 +618,7 @@
     "direccion": "1er. Nivel, Casa de La Cultura",
     "telefono": "22447878",
     "ext": "1310 / 1322",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-28",
@@ -722,10 +641,7 @@
     "direccion": "2do. Nivel, Casa de La Cultura",
     "telefono": "22447878",
     "ext": "1210 / 1256",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-29",
@@ -748,10 +664,7 @@
     "direccion": "Edificio 7 y 10 Oficina 704, 7° nivel",
     "telefono": "22447878",
     "ext": "2488",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-30",
@@ -774,10 +687,7 @@
     "direccion": "3ra. Vicepresidencia, Palacio Legislativo",
     "telefono": "22447878",
     "ext": "1305 / 1345",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-31",
@@ -800,10 +710,7 @@
     "direccion": "2° nivel, Parqueo del Congreso",
     "telefono": "22447878",
     "ext": "1534",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-32",
@@ -826,10 +733,7 @@
     "direccion": "2do. Nivel, Parqueo del Congreso",
     "telefono": "22447878",
     "ext": "1350",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-33",
@@ -852,10 +756,7 @@
     "direccion": "Edificio 7 y 10 Oficina 705, 7° nivel",
     "telefono": "22447878",
     "ext": "2495",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-34",
@@ -878,10 +779,7 @@
     "direccion": "Oficina 18 y 19, 1er. Nivel Edificio 6a. Ave. \"A\"",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-35",
@@ -904,10 +802,7 @@
     "direccion": "Edificio 7 y 10, 6to. Nivel Oficina 608",
     "telefono": "22301786",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-36",
@@ -930,10 +825,7 @@
     "direccion": "4to. Nivel, Edificio Morales",
     "telefono": "22515957",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-37",
@@ -956,10 +848,7 @@
     "direccion": "2do. Nivel, Edificio La Casona",
     "telefono": "22301775",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-38",
@@ -982,10 +871,7 @@
     "direccion": "3er. Nivel, Edificio 10-57",
     "telefono": "22447878",
     "ext": "1298 / 1224 / 1305 / 1345",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-39",
@@ -1008,10 +894,7 @@
     "direccion": "3er. Nivel, Edificio 10-57",
     "telefono": "22447878",
     "ext": "2173",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-40",
@@ -1034,10 +917,7 @@
     "direccion": "Tercer nivel, 8va. avenida 10-57 zona 1",
     "telefono": "22204007",
     "ext": "1260",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-41",
@@ -1060,10 +940,7 @@
     "direccion": "2do. Nivel Oficina 24, Edificio La Casona",
     "telefono": "22447878",
     "ext": "2230 / 1044",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-42",
@@ -1086,10 +963,7 @@
     "direccion": "4to. Nivel Edificio 10-57 y 6to. Nivel Oficina 604 Edificio 7 y 10",
     "telefono": "21612162",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-43",
@@ -1112,10 +986,7 @@
     "direccion": "1er. Nivel, Edificio La Casona",
     "telefono": "22301776",
     "ext": "1505",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-44",
@@ -1138,10 +1009,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-45",
@@ -1164,10 +1032,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-46",
@@ -1190,10 +1055,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-47",
@@ -1216,10 +1078,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-48",
@@ -1242,10 +1101,7 @@
     "direccion": "1er. Nivel, Edificio Casa de la Cultura",
     "telefono": "2230-1769",
     "ext": "1229",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-49",
@@ -1268,10 +1124,7 @@
     "direccion": "3er. Nivel Oficina 01, Edificio Zadik",
     "telefono": "22205581",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-50",
@@ -1294,10 +1147,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-51",
@@ -1320,10 +1170,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-52",
@@ -1346,10 +1193,7 @@
     "direccion": "Edificio Tecun 3er. Nivel, oficina 38",
     "telefono": "22204021",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-53",
@@ -1372,10 +1216,7 @@
     "direccion": "2do. Nivel Oficina 204, Edificio Morales",
     "telefono": "22536621",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-54",
@@ -1398,10 +1239,7 @@
     "direccion": "Oficina 03, Edificio Torin",
     "telefono": "22447878",
     "ext": "2243",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-55",
@@ -1424,10 +1262,7 @@
     "direccion": "9no. Nivel, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "1513",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-56",
@@ -1450,10 +1285,7 @@
     "direccion": "3er. Nivel Oficina 304, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-57",
@@ -1476,10 +1308,7 @@
     "direccion": "3er. Nivel Oficina 41, Edificio Tecún y 2do. Nivel, Edificio Diagnostico.",
     "telefono": "22201152",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-58",
@@ -1502,10 +1331,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-59",
@@ -1528,10 +1354,7 @@
     "direccion": "5to. Nivel Oficina 503, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2406 / 2407",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-60",
@@ -1554,10 +1377,7 @@
     "direccion": "Edificio 10-57, 3° nivel",
     "telefono": "2244-7878",
     "ext": "2179 / 2176",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-61",
@@ -1580,10 +1400,7 @@
     "direccion": "1er Nivel, Edificio 10-57",
     "telefono": "2156 / 2157",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-62",
@@ -1606,10 +1423,7 @@
     "direccion": "2do. Nivel, Edificio La Casona",
     "telefono": "22301856",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-63",
@@ -1632,10 +1446,7 @@
     "direccion": "2do. Nivel Oficina 203, Edificio Morales",
     "telefono": "0.22533465",
     "ext": ".",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-64",
@@ -1658,10 +1469,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-65",
@@ -1684,10 +1492,7 @@
     "direccion": "5to. Nivel Oficina 502, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2404 / 2405 / 1560",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-66",
@@ -1710,10 +1515,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-67",
@@ -1736,10 +1538,7 @@
     "direccion": "2do Nivel, Edificio La Casona",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-68",
@@ -1762,10 +1561,7 @@
     "direccion": "Oficina 33 y 34, Edificio Tecún",
     "telefono": "22204859",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-69",
@@ -1788,10 +1584,7 @@
     "direccion": "7mo. Nivel Oficina 701, Edificio 7 y 10 y 3er. Nivel, Edificio Zadik",
     "telefono": "22204036",
     "ext": "1430 / 2009",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-70",
@@ -1814,10 +1607,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-71",
@@ -1840,10 +1630,7 @@
     "direccion": "11 Calle 8-14 Zona 1 Edificio Tecùn, oficina 32 3er. Nivel",
     "telefono": "2232-1979",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-72",
@@ -1866,10 +1653,7 @@
     "direccion": "3er. nivel Oficina 37, Edificio Tecún",
     "telefono": "22204848",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-73",
@@ -1892,10 +1676,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-74",
@@ -1918,10 +1699,7 @@
     "direccion": "Segundo Nivel, Parqueo del Congreso",
     "telefono": "22205669",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-75",
@@ -1944,10 +1722,7 @@
     "direccion": "3er. Nivel Oficina 08, Edificio Zadik",
     "telefono": "22447878",
     "ext": "1549",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-76",
@@ -1970,10 +1745,7 @@
     "direccion": "7mo. Nivel Oficina 708, Edificio 7 y 10 y 2do. Nivel, Edificio 10-57",
     "telefono": "22447940",
     "ext": "2141 y 2140",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-77",
@@ -1996,10 +1768,7 @@
     "direccion": "3er. Nivel, Palacio Legislativo",
     "telefono": "22447878",
     "ext": "1230 y 1234",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-78",
@@ -2022,10 +1791,7 @@
     "direccion": "6to. Nivel Oficina 602, Edificio 7 y 10",
     "telefono": "24447145",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-79",
@@ -2048,10 +1814,7 @@
     "direccion": "2do. Nivel, Edificio Casa de La Cultura",
     "telefono": "22447878",
     "ext": "1441",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-80",
@@ -2074,10 +1837,7 @@
     "direccion": "1er. Nivel Oficina 102, Edificio Morales",
     "telefono": "22519624 / 22519626",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-81",
@@ -2100,10 +1860,7 @@
     "direccion": "3er. Nivel Oficina 45, Edificio Tecún",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-82",
@@ -2126,10 +1883,7 @@
     "direccion": "3er. Nivel Oficina 303, Edificio Morales",
     "telefono": "22205955 / 22447895",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-83",
@@ -2152,10 +1906,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-84",
@@ -2178,10 +1929,7 @@
     "direccion": "1er. Nivel, Edificio Casa de La Cultura",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-85",
@@ -2204,10 +1952,7 @@
     "direccion": "2do. Nivel Oficina 22, Edificio Torín",
     "telefono": "22301863",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-86",
@@ -2230,10 +1975,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-87",
@@ -2256,10 +1998,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-88",
@@ -2282,10 +2021,7 @@
     "direccion": "7mo. Nivel Oficina 707, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-89",
@@ -2308,10 +2044,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-90",
@@ -2334,10 +2067,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-91",
@@ -2360,10 +2090,7 @@
     "direccion": "10a calle 6-81 zona 1, Edificio 7&10 oficina P-06, primer nivel",
     "telefono": "22301850",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-92",
@@ -2386,10 +2113,7 @@
     "direccion": "3er. Nivel Oficina 302, Edificio Morales",
     "telefono": "22391043",
     "ext": "1289 / 1335",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-93",
@@ -2412,10 +2136,7 @@
     "direccion": "Edificio 8-42 y Parqueo del Congreso",
     "telefono": "22380117",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-94",
@@ -2438,10 +2159,7 @@
     "direccion": "Oficina 23, Edificio Tecún y Edificio 6a. Ave. \"A\"",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-95",
@@ -2464,10 +2182,7 @@
     "direccion": "3er. Nivel, Edificio 10-57",
     "telefono": "22447878",
     "ext": "2164",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-96",
@@ -2490,10 +2205,7 @@
     "direccion": "10 Avenida y 7 Calle Edificio 7y10 Oficina 506 5to. Nivel",
     "telefono": "22447119",
     "ext": "2419 / 2421",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-97",
@@ -2516,10 +2228,7 @@
     "direccion": "8vo. Nivel Oficina 804, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2542",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-98",
@@ -2542,10 +2251,7 @@
     "direccion": "Oficina 21, Edificio Tecún",
     "telefono": "22201786",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-99",
@@ -2568,10 +2274,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-100",
@@ -2594,10 +2297,7 @@
     "direccion": "2do. Nivel, Edificio Casa de La Cultura",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-101",
@@ -2620,10 +2320,7 @@
     "direccion": "4to. Nivel Oficina 403, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2369",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-102",
@@ -2646,10 +2343,7 @@
     "direccion": "2do. Nivel, Edificio La Cultura",
     "telefono": "22447878",
     "ext": "1212 / 1227 / 1128",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-103",
@@ -2672,10 +2366,7 @@
     "direccion": "8vo. Nivel, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2449 / 2520 / 2524",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-104",
@@ -2698,10 +2389,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-105",
@@ -2724,10 +2412,7 @@
     "direccion": "7mo. Nivel Oficina 709, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-106",
@@ -2750,10 +2435,7 @@
     "direccion": "Edificio Diagnóstico",
     "telefono": "22207230",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-107",
@@ -2776,10 +2458,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-108",
@@ -2802,10 +2481,7 @@
     "direccion": "4to. Nivel Oficina 402, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2367 / 2368",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-109",
@@ -2828,10 +2504,7 @@
     "direccion": "3er. Nivel Oficina 306, Edificio Morales",
     "telefono": "22203062",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-110",
@@ -2854,10 +2527,7 @@
     "direccion": "Edificio 7 y 10 Oficinas 509 y 506 5° nivel.",
     "telefono": "22447129 / 30",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-111",
@@ -2880,10 +2550,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-112",
@@ -2906,10 +2573,7 @@
     "direccion": "1er. Nivel Edificio Casa de La Cultura y Oficina 302 Edificio Morales",
     "telefono": "22447878",
     "ext": "1202 / 1204",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-113",
@@ -2932,10 +2596,7 @@
     "direccion": "Edificio 7-10 of. 204, 2° nivel y Edificio 8-42 Oficina M-3",
     "telefono": "22380629 / 22328967",
     "ext": "2318 / 2319",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-114",
@@ -2958,10 +2619,7 @@
     "direccion": "3er. Nivel Oficina 305, Edificio 7 y 10",
     "telefono": "22447018 / 22447019",
     "ext": "2325 / 2326",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-115",
@@ -2984,10 +2642,7 @@
     "direccion": "2do. Nivel Oficina 23, Edificio Torín",
     "telefono": "22306758",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-116",
@@ -3010,10 +2665,7 @@
     "direccion": "Edificio 7 y 10 Oficina 505, 5° nivel",
     "telefono": "22447115",
     "ext": "2415",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-117",
@@ -3036,10 +2688,7 @@
     "direccion": "2do. Nivel Oficina 24 y 25, Edificio Torín",
     "telefono": "24205434",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-118",
@@ -3062,10 +2711,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-119",
@@ -3088,10 +2734,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-120",
@@ -3114,10 +2757,7 @@
     "direccion": "Edificio 7-10 oficina 405 4 Nivel Zona 1",
     "telefono": "2244-7878",
     "ext": "2376",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-121",
@@ -3140,10 +2780,7 @@
     "direccion": "1er. Nivel, Edificio Casa de La Cultura",
     "telefono": "23301772",
     "ext": "1206",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-122",
@@ -3166,10 +2803,7 @@
     "direccion": "10ma calle, 6-81 zona 1, Edificio 7&10 oficina 703, Ciudad de Guatemala",
     "telefono": "22301776",
     "ext": "2484",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-123",
@@ -3192,10 +2826,7 @@
     "direccion": "2do. Nivel, Edificio Casa de La Cultura",
     "telefono": "22447878",
     "ext": "1524 / 1525",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-124",
@@ -3218,10 +2849,7 @@
     "direccion": "4to. Nivel Oficina 404, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2372 / 2373 / 2374",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-125",
@@ -3244,10 +2872,7 @@
     "direccion": "2do. Nivel, Edificio Zadik y 7mo. Nivel Oficina 704, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "1401 / 2491",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-126",
@@ -3270,10 +2895,7 @@
     "direccion": "3eer. Nivel Anexo 9, Palacio Legislativo",
     "telefono": "22202551",
     "ext": "1239",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-127",
@@ -3296,10 +2918,7 @@
     "direccion": "Edificio 7-10 Oficina 608 6 Nivel Zona 1",
     "telefono": "2244-7160",
     "ext": "2460",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-128",
@@ -3322,17 +2941,14 @@
     "direccion": "2do. Nivel Oficina 203, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-129",
     "nombre": "Luis Armando Rabbé Tejada",
     "primerNombre": "Luis Armando",
     "apellidos": "Rabbé Tejada",
-    "partidopostulante": "IND",
+    "partidopostulante": "INDP",
     "partidoactual": "BAC",
     "distrito": "Listado Nacional",
     "nacimiento": "26/05/1956",
@@ -3348,10 +2964,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-130",
@@ -3374,10 +2987,7 @@
     "direccion": "7ma. avenida 9-34, Zona 1. Edificio Morales Of. 402, 4° nivel. Anexo UNE.",
     "telefono": "2253-3462/ 2232-4525",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-131",
@@ -3400,10 +3010,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-132",
@@ -3426,10 +3033,7 @@
     "direccion": "P05 Edificio 7-10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-133",
@@ -3452,10 +3056,7 @@
     "direccion": "Edificio 10-57 7 nivel",
     "telefono": "22447878",
     "ext": "2261",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-134",
@@ -3478,10 +3079,7 @@
     "direccion": "Edificio 7/10 4 nivel oficina 403 Oficina Morales 3re. Nivel oficina 302",
     "telefono": "22205955 / 22205929",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-135",
@@ -3504,10 +3102,7 @@
     "direccion": "Edificio 10-57 2do. Nivel",
     "telefono": "22447878",
     "ext": "2124",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-136",
@@ -3530,10 +3125,7 @@
     "direccion": "Palacio Legislativo 1er. Nivel",
     "telefono": "22447878",
     "ext": "1270",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-137",
@@ -3556,10 +3148,7 @@
     "direccion": "La Casona 1er. Nivel",
     "telefono": "22447878 / 22301789",
     "ext": "2146",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-138",
@@ -3582,10 +3171,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-139",
@@ -3608,10 +3194,7 @@
     "direccion": "Edificio 10-57 1er. Nivel",
     "telefono": "22447878",
     "ext": "2296",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-140",
@@ -3634,10 +3217,7 @@
     "direccion": "3er. Nivel Oficina 309, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-141",
@@ -3660,10 +3240,7 @@
     "direccion": "7mo. Nivel Oficina 702, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-142",
@@ -3686,10 +3263,7 @@
     "direccion": "2do. Nivel Oficina 205, Edificio Morales",
     "telefono": "22205045",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-143",
@@ -3712,10 +3286,7 @@
     "direccion": "Edificio 7-10 2do. Nivel oficina 204",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-144",
@@ -3738,10 +3309,7 @@
     "direccion": "Parqueo del Congreso",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-145",
@@ -3764,10 +3332,7 @@
     "direccion": "2do. Nivel Oficina 202, Edificio Morales",
     "telefono": "22533476",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-146",
@@ -3790,10 +3355,7 @@
     "direccion": "Presidencia, Palacio Legislativo",
     "telefono": "2244-7878",
     "ext": "1745 / 1748",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-147",
@@ -3816,10 +3378,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-148",
@@ -3842,10 +3401,7 @@
     "direccion": "7ma. Avenida 9-34 Zona 1, Edificio Morales, Oficina 103",
     "telefono": "2251-9622",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-149",
@@ -3868,10 +3424,7 @@
     "direccion": "7ma. Ave. 10 Calle 6-81 Zona 1 Edificio 7 y 10 Oficina M-1, 2° nivel",
     "telefono": "22447011 / 22447012",
     "ext": "2312 / 2311",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-150",
@@ -3894,10 +3447,7 @@
     "direccion": "Edificio 7&10 oficina 303 Tercer Nivel",
     "telefono": "22516102 y 22301781",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-151",
@@ -3920,10 +3470,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-152",
@@ -3946,10 +3493,7 @@
     "direccion": "5to. Nivel Oficina 501, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-153",
@@ -3972,10 +3516,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-154",
@@ -3998,10 +3539,7 @@
     "direccion": "2do. Nivel, Edificio 10-57",
     "telefono": "22447878",
     "ext": "2187",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-155",
@@ -4024,10 +3562,7 @@
     "direccion": "1er. Nivel, Edificio Casa de La Cultura",
     "telefono": "22447878",
     "ext": "",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-156",
@@ -4050,10 +3585,7 @@
     "direccion": "Edificio 7-10 Oficina 605 6 Nivel, Edificio Tecún Oficina 38",
     "telefono": "22447156 / 22447155",
     "ext": "2447 al 2456",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-157",
@@ -4076,10 +3608,7 @@
     "direccion": "6to. Nivel Oficina 608, Edificio 7 y 10",
     "telefono": "22447878",
     "ext": "2460 / 2462",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-158",
@@ -4102,10 +3631,7 @@
     "direccion": "3er. Nivel, Edificio 10-57",
     "telefono": "22447878",
     "ext": "2165",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-159",
@@ -4128,10 +3654,7 @@
     "direccion": "9 Avenida 9-44 Zona 1, Edificio Central Congreso de la República, Tercer Nivel",
     "telefono": "2244-7878",
     "ext": "1424",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-160",
@@ -4154,10 +3677,7 @@
     "direccion": "10a. calle 6-81, Edificio 7 y 10, oficina 101, zona 1.",
     "telefono": "22447002",
     "ext": "2302",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-161",
@@ -4180,10 +3700,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-162",
@@ -4206,10 +3723,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-163",
@@ -4232,10 +3746,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-164",
@@ -4258,10 +3769,7 @@
     "direccion": "10A calle y 10A Avenida, 6to nivel, of. 604. Oficina externa al Congreso. edificio de la UP",
     "telefono": "2244-7878",
     "ext": "Ext 2517",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-165",
@@ -4284,10 +3792,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-166",
@@ -4310,10 +3815,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": ""
   },
   {
     "id": "diputado-167",
@@ -4336,10 +3838,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-168",
@@ -4362,10 +3861,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-169",
@@ -4388,10 +3884,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": ""
   },
   {
     "id": "diputado-170",
@@ -4414,10 +3907,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": ""
   },
   {
     "id": "diputado-171",
@@ -4440,10 +3930,7 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "Jbautista@congreso.gob.gt",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": "Jbautista@congreso.gob.gt"
   },
   {
     "id": "diputado-172",
@@ -4466,10 +3953,7 @@
     "direccion": "9a. Ave. 9-44 zona 1, Congreso de La República",
     "telefono": "22447878",
     "ext": "",
-    "email": "congreso@congreso.gob.gt",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": "congreso@congreso.gob.gt"
   },
   {
     "id": "diputado-173",
@@ -4492,10 +3976,7 @@
     "direccion": "2do. Nivel Oficina 15, Parqueo del Congreso",
     "telefono": "22447914 / 22447917",
     "ext": "1340 / 1341",
-    "email": "congreso@congreso.gob.gt",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": "congreso@congreso.gob.gt"
   },
   {
     "id": "diputado-174",
@@ -4518,10 +3999,7 @@
     "direccion": "Primer nivel, 8va avenida 10-57 zona 1",
     "telefono": "",
     "ext": "",
-    "email": "hgarciag@congreso.gob.gt",
-    "ley1": "contra",
-    "ley2": "contra",
-    "ley3": "contra"
+    "email": "hgarciag@congreso.gob.gt"
   },
   {
     "id": "diputado-175",
@@ -4544,10 +4022,7 @@
     "direccion": "Aquí debe de ingresar su dirección",
     "telefono": "Aquí debe de ingresar su teléfono",
     "ext": "Aquí debe de ingresar su extensión",
-    "email": "lcsamayoar@congreso.gob.gt",
-    "ley1": "favor",
-    "ley2": "favor",
-    "ley3": "favor"
+    "email": "lcsamayoar@congreso.gob.gt"
   },
   {
     "id": "diputado-176",
@@ -4570,9 +4045,6 @@
     "direccion": "",
     "telefono": "",
     "ext": "",
-    "email": "hamelgarp@congreso.gob.gt",
-    "ley1": "ausente",
-    "ley2": "ausente",
-    "ley3": "ausente"
+    "email": "hamelgarp@congreso.gob.gt"
   }
 ]
