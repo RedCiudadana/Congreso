@@ -33,7 +33,7 @@ Cuenta con pares key, value que contienen la información acerca de la Comisión
 postulación para la elección: nombre, trayectoria, fb, tw e email.
 
 
-##### [`postuladores-comision.json`](public/static-files/postuladores-comision.json)
+##### [`diputados-comision.json`](public/static-files/postuladores-comision.json)
 
 Contiene la información de los miembros de la comisión: `id`, `nombre`, `fotoUrl`,
 `biografia` (HTML), `trayectoria` (HTML), `fb`, `tw`, `email`.
