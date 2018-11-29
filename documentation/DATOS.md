@@ -26,7 +26,7 @@ información: `id`, `nombre`, `primerNombre`, `apellidos`, `distrito`, `direccio
 
 ##### [`partidos.json`](public/static-files/partidos.json)
 
-Cuenta con pares key, value que contienen la información acerca de los partidos: `nombre`, `siglas`, `fb`, `tw`, `fundación` (fecha), `sercretariogeneral`, `telefono`, `estado`, `paginaWeb` y `email`.
+Cuenta con pares key, value que contienen la información acerca de los partidos: `id`, `nombre`, `siglas`, `fb`, `tw`, `fundación` (fecha), `sercretariogeneral`, `telefono`, `estado`, `paginaWeb` y `email`.
 
 
 ##### [`asistencia.json`](public/static-files/evaluaciones.json)
