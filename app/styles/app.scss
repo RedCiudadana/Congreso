@@ -7,11 +7,11 @@ $warning: #f6ab40;
 $info: #26a5dc;
 $dark: #1e2b3d;
 
-// $navbar-background-color: blue; => Configure in component pls. 
 $navbar-color: #ffffff;
 
-$footer-background-color: $secondary;
+$footer-background-color: #1b2b3a;
 $footer-color: #ffffff;
+
 $border-radius: 10px;
 
 @import "bootstrap";
@@ -226,29 +226,61 @@ body.perfil .container.content-container {
     }
 }
 
-// FOOTER
+// Footer
 
 #footer {
     background-color: $footer-background-color;
     color: $footer-color;
+    padding-top: 40px;
     padding-bottom: 40px;
-    line-height: 26px;
+
+    a {
+        color: $footer-color;
+    }
+
+    a:hover {
+        // Calcula el color según el color de fondo. Aclara.
+        color: lighten( $footer-background-color, 30% ) !important;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+
+    // Ajusta alineación con los demas iconos.
+    .fa-map-marker {
+        padding-left: 2px;
+    }
+
+    .follow {
+        h6 {
+            margin-bottom: 1.5rem;
+        }
+        
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .image-opacity:hover {
+        opacity: 0.8;
+    }
 }
 
-#footer img {
-    opacity: 1;
-}
+#red-footer {
+    background-color: #e6e7e8;
+    color: #404041;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-#footer .logo {
-    margin-right: 0px;
-}
+    .logo-rc {
+        width: 120px;
+        height: 62px;
+    }
 
-#footer a {
-    color: $footer-color;;
-}
-
-#footer i {
-    width: 14px;
+    .cc-icons img {
+        margin-right: 10px;
+    }
 }
 
 // INDEX PAGE
@@ -644,18 +676,20 @@ a:focus {
 .perfil-social {
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.perfil-social div {
     text-align: center;
+
+    img {
+        height: 50px;
+        width: 50px;
+        margin: auto;
+    }
+
+    strong {
+        margin: auto;
+        padding: 10px;
+    }
 }
 
-.perfil-social i {
-    color: $primary;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
 
 .image100x100 {
     width: 100px;

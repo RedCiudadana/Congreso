@@ -4,7 +4,7 @@
 {{/if}}
 {{!-- Filter widget --}}
 {{#if model.config.useFrontFilterWidget}}
-  <div>
+  <div style="background-image: url('app/img/banner-congreso.png');" class="text-white">
     <div class="search-and-filter row text-center">
         {{!-- Title --}}
         <div class="col-12 p-5">
@@ -311,7 +311,7 @@
           {{/bs-dropdown}}
           {{!-- GENERO --}}
           {{#bs-dropdown class="m-2 rounded" as |dd|}}
-            {{#dd.button class="bg-primary"}}<img src="app/img/icon-genere.png">Genero <span class="caret"></span>{{/dd.button}}
+            {{#dd.button class="bg-primary"}}<img src="app/img/icon-sex.png">Genero <span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
               {{#menu.item}}
                 <label>
