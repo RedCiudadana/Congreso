@@ -2,60 +2,67 @@
 <!--
   Revisa este diseño
 -->
-<div class="profile-candidate" style="border: 1px solid #ddd;">
-  <div class="row perfil-container">
-    <div class="col-md-3">
-      <div id="candidate-img-profile" style="padding-top: 20px;">
+<div class="row m-1 bg-white border">
+  {{!-- Imagen --}}
+  <div class="col-md-3 text-center p-3">
+    <img
+      id="photo-profile"
+      src={{model.perfil.fotoPerfil}}
+      alt={{model.perfil.nombre}}
+      border="0"
+      class="img-responsive center-block"
+    >
+  </div>
+  {{!-- Información general --}}
+  <div class="col-md-6 p-3">
+    <h3>{{model.perfil.nombre}}</h3>
+    <table class="table w-75">
+      <tbody>
+        {{#each-in model.perfil.informacionGeneral as |key item|}}
+          <tr>
+            <td class="p-0">
+              <small>
+                {{#if item.label}} <strong>{{{item.label}}}: </strong> {{/if}}
+                {{{item.value}}}
+              </small>
+            </td>
+          </tr>
+        {{/each-in}}
+      </tbody>
+    </table>
+  </div>
+  {{!-- Información extra, redes sociales --}}
+  <div class="col-md-3 social-side text-center d-block p-3">
+    <div>
+      {{#link-to 'partidos.partido' model.perfil.partidoactual}}
         <img
-          src="{{model.perfil.fotoPerfil}}"
-          alt="{{model.perfil.nombre}}"
-          border="0"
-          class="img-responsive center-block"
-        >
-      </div>
+          src="{{model.perfil.fotoUrlPartido}}"
+          alt="{{model.perfil.partidoactual}}"
+          width="100px">
+      {{/link-to}}
+      {{#link-to 'partidos.partido' model.perfil.partidoactual}}
+        <h6>Ver partido</h6>
+      {{/link-to}}
     </div>
-
-    <div class="col-md-5">
-      <h1>{{model.perfil.nombre}}</h1>
-      <table class="table">
-        <tbody>
-          {{#each-in model.perfil.informacionGeneral as |key item|}}
-            <tr>
-              <td>
-                <small>
-                  {{#if item.label}}{{{item.label}}}{{/if}}
-                  {{{item.value}}}
-                </small>
-              </td>
-            </tr>
-          {{/each-in}}
-        </tbody>
-      </table>
-    </div>
-
-    <div class="col-md-4 social-side text-center d-block">
+    <div class="d-block mt-3">
       <div>
-        {{#link-to 'partidos.partido' model.perfil.partidoactual}}
-          <img src="{{model.perfil.fotoUrlPartido}}" alt="{{model.perfil.partidoactual}}">
-        {{/link-to}}
-        {{#link-to 'partidos.partido' model.perfil.partidoactual}}
-          <h6>Ver partido</h6>
-        {{/link-to}}
+        <a href={{model.perfil.tw}} target="_blank" rel="noopener">
+          <img src="img/icono-tw.png" alt="Twitter">
+          {{model.perfil.tw}}
+        </a>
       </div>
-      <div class="d-block mt-3">
-        <div>
-          <a href="{{mode.perfil.tw}}" target="_blank"><i class="fa fa-twitter mr-1"></i>{{model.perfil.tw}}</a>
-        </div>
-        <div>
-          <a href="{{model.perfil.fb}}" target="_blank"><i class="fa fa-facebook mr-1"></i>{{model.perfil.nombre}}</a>
-        </div>
+      <div>
+        <a href={{model.perfil.fb}} target="_blank" rel="noopener">
+          <img src="img/icono-fb.png" alt="Facebook">
+          {{model.perfil.nombre}}
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 {{!-- Social --}}
-<div class="row perfil-container border panel-default perfil-social">
+<div class="row perfil-container panel perfil-social d-none">
   <div>
     <div class="col-12 col-md-4">
       <img src="app/img/icon-phone-fulled.png" alt="Icono teléfono.">
@@ -76,47 +83,45 @@
 <div class="row">
   {{!-- Votaciones --}}
   <div class="col-md-6">
-    <div class="perfil-container">
-      <div class="border panel-default">
-        <div class="header d-flex">
-            <img src="app/img/icon-votaciones.png" alt="Votaciones" class="image60x60"><h3 class="my-auto mx-5">Votaciones</h3>
+    <div class="panel">
+      <div class="header d-flex">
+          <img src="app/img/icon-votaciones.png" alt="Votaciones" class="image60x60"><h3 class="my-auto mx-5">Votaciones</h3>
+        </div>
+      <div class="body tabla-gradacion-content no-padding-top-bottom">
+        <div class="row">
+          <div class="col-xs-3 col-md-2 text-center icon-container">
+            {{!-- <i class="fa fa-graduation-cap"></i> --}}
+            <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
-        <div class="panel-body tabla-gradacion-content no-padding-top-bottom">
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-graduation-cap"></i> --}}
-              <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
-              Reformas Materia Antejuicio
-            </div>
-            <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley1}}"></i></span>
-            </div>
+          <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
+            Reformas Materia Antejuicio
           </div>
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-graduation-cap"></i> --}}
-              <img src="app/img/icon-financiamiento-ilicito.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
-              Financiamiento Ilícito
-            </div>
-            <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley2}}"></i></span>
-            </div>
+          <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
+            <span class="badge text-white"><i class="{{check-or-times model.votaciones.firstObject.ley1}}"></i></span>
           </div>
-          <div class="row">
-            <div class="col-xs-3 col-md-2 text-center icon-container">
-              {{!-- <i class="fa fa-graduation-cap"></i> --}}
-              <img src="app/img/icon-reformas-al-codigo-penal.png" class="img-responsive center" />
-            </div>
-            <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
-              Reformas al Código Penal
-            </div>
-            <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
-              <span class="badge"><i class="{{check-or-times model.votaciones.firstObject.ley3}}"></i></span>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-md-2 text-center icon-container">
+            {{!-- <i class="fa fa-graduation-cap"></i> --}}
+            <img src="app/img/icon-financiamiento-ilicito.png" class="img-responsive center" />
+          </div>
+          <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
+            Financiamiento Ilícito
+          </div>
+          <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
+            <span class="badge text-white"><i class="{{check-or-times model.votaciones.firstObject.ley2}}"></i></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-md-2 text-center icon-container">
+            {{!-- <i class="fa fa-graduation-cap"></i> --}}
+            <img src="app/img/icon-reformas-al-codigo-penal.png" class="img-responsive center" />
+          </div>
+          <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center">
+            Reformas al Código Penal
+          </div>
+          <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
+            <span class="badge text-white"><i class="{{check-or-times model.votaciones.firstObject.ley3}}"></i></span>
           </div>
         </div>
       </div>
@@ -125,14 +130,12 @@
   {{!-- Asistencia --}}
   <div class="col-md-6">
     {{!-- Gráfica de asistencia --}}
-    <div class="perfil-container">
-      <div class="border panel-default">
-        <div class="header d-flex">
-            <img src="app/img/icon-asistencia.png" alt="Asistencia" class="image60x60"><h3 class="my-auto mx-5">Asistencia</h3>
-          </div>
-        <div class="pie-chart">
-          {{ember-chart type='doughnut' data=( pie-data model.asistencia.porcentaje) options=model.options width=200 height=80}}
+    <div class="panel">
+      <div class="header d-flex">
+          <img src="app/img/icon-asistencia.png" alt="Asistencia" class="image60x60"><h3 class="my-auto mx-5">Asistencia</h3>
         </div>
+      <div class="body pie-chart">
+        {{ember-chart type='doughnut' data=( pie-data model.asistencia.porcentaje) options=model.options width=200 height=80}}
       </div>
     </div>
   </div>

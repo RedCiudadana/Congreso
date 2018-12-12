@@ -2,7 +2,7 @@
 
 {{set-body-class 'perfil'}}
 
-<section id="election" style="margin-top: 35px;" class="container" >
+<section id="election" style="margin-top: 35px;" class="container profile" >
   {{#if model.config.perfilFuncionalidades}}
     <div style="background-color: #ffffff; margin-bottom: 25px;">
       <div class="social-media d-block d-md-none">
@@ -43,16 +43,14 @@
 
   <div class="row">
     <div class="col-12">
-      <div class="perfil-container">
-        <div class="border panel-default">
-          <div class="header d-flex">
-            <img src="app/img/icon-disqus.png" alt="Disqus" class="image60x60"><h3 class="my-auto mx-5">Disqus</h3>
-          </div>
-          <div class="panel-body">
-            {{#if disqusShortname}}
-              {{disqus-comments identifier=model.perfil.disqusIdentifier}}
-            {{/if}}
-          </div>
+      <div class="panel">
+        <div class="header d-flex">
+          <img src="app/img/icon-disqus.png" alt="Disqus" class="image60x60"><h3 class="my-auto mx-5">Comentarios</h3>
+        </div>
+        <div class="body">
+          {{#if disqusShortname}}
+            {{disqus-comments identifier=model.perfil.disqusIdentifier}}
+          {{/if}}
         </div>
       </div>
     </div>

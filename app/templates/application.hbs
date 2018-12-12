@@ -31,7 +31,7 @@
     </div>
 
     {{#navbar.content}}
-      {{#navbar.nav classNames='navbar-right' as |nav|}}
+      {{#navbar.nav justified=true type="pills" class="ml-auto" as |nav|}}
         {{#nav.item active=false class="text-center px-5"}}{{#link-to link.route}}
             <div>
               <img src="app/img/icono-diputados.png" alt="Icono diputados" class="mx-auto px-auto">
