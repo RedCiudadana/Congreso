@@ -8228,7 +8228,8 @@ body.perfil .container.content-container {
 
 .navbar {
   color: #ffffff;
-  border-radius: 0px; }
+  border-radius: 0px;
+  height: 100px; }
 
 .nav > li > a {
   padding-left: 35px;
