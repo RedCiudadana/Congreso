@@ -717,19 +717,23 @@ a:focus {
 
 
 .perfil-social {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+
+    div {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
     img {
         height: 50px;
         width: 50px;
-        margin: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 15px;
     }
 
-    strong {
-        margin: auto;
-        padding: 10px;
+    p {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 

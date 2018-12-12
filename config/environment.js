@@ -30,7 +30,6 @@ module.exports = function(environment = 'production') {
       // Set null to retrieve data from the spreadsheet live. Otherwhise set the
       // URL from which to load de ducgced static files
       // staticFilesUrl: null
-      staticFilesUrl : 'http://localhost:4200/static-files/'
     },
 
     disqus: {
