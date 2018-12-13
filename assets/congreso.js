@@ -6204,7 +6204,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"http://localhost:4200/static-files/","name":"congreso","version":"0.0.0+bce0c1c2"});
+            require("congreso/app")["default"].create({"dataSpreadsheetSourceUrl":"/data-spreadsheet-url","configSpreadsheetSourceUrl":"/config-spreadsheet-url","staticFilesUrl":"http://localhost:4200/static-files/","name":"congreso","version":"0.0.0+8fe1fd94"});
           }
         
 //# sourceMappingURL=congreso.map
