@@ -33,7 +33,7 @@ module.exports = function(environment = 'production') {
     },
 
     disqus: {
-      shortname: 'eleccion-mp'
+      shortname: 'monitor-legislativo'
     },
 
     contentSecurityPolicy: contentSecurityPolicy

@@ -8,7 +8,7 @@
     <div class="search-and-filter row text-center">
         {{!-- Title --}}
         <div class="col-12 p-5">
-          <h2 class="mx-auto font-weight-bold">Conoce todo sobre el proceso del congreso</h2>
+          <h2 class="mx-auto font-weight-bold">"Conoce todo sobre el Congreso de Guatemala"</h2>
           <h3 class="mx-auto font-weight-normal">Infórmate, participa e incide</h3>
         </div>
         {{!--Ember-power-select --}}
@@ -76,19 +76,19 @@
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{totonicapan}} onclick={{queue (action (mut totonicapan) value="target.checked") (action 'applyFilter')}}>
-                totonicapan
+                totonicapán
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{quiche}} onclick={{queue (action (mut quiche) value="target.checked") (action 'applyFilter')}}>
-                quiche
+                quiché
               </label>
             {{/menu.item}}
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{suchitepequez}} onclick={{queue (action (mut suchitepequez) value="target.checked") (action 'applyFilter')}}>
-                suchitepequez
+                suchitepéquez
               </label>
             {{/menu.item}}
             {{#menu.item}}
@@ -142,7 +142,7 @@
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{sacatepequez}} onclick={{queue (action (mut sacatepequez) value="target.checked") (action 'applyFilter')}}>
-                sacatepequez
+                sacatepéquez
               </label>
             {{/menu.item}}
             {{#menu.item}}
@@ -154,7 +154,7 @@
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{solola}} onclick={{queue (action (mut solola) value="target.checked") (action 'applyFilter')}}>
-                solola
+                sololá
               </label>
             {{/menu.item}}
             {{#menu.item}}
@@ -196,7 +196,7 @@
             {{#menu.item}}
               <label>
                 <input type="checkbox" checked={{peten}} onclick={{queue (action (mut peten) value="target.checked") (action 'applyFilter')}}>
-                peten
+                petén
               </label>
             {{/menu.item}}
             {{#menu.item}}
@@ -311,7 +311,7 @@
           {{/bs-dropdown}}
           {{!-- GENERO --}}
           {{#bs-dropdown class="m-2 rounded" as |dd|}}
-            {{#dd.button class="bg-primary"}}<img src="app/img/icon-sex.png">Genero <span class="caret"></span>{{/dd.button}}
+            {{#dd.button class="bg-primary"}}<img src="app/img/icon-sex.png">Género<span class="caret"></span>{{/dd.button}}
             {{#dd.menu as |menu|}}
               {{#menu.item}}
                 <label>
