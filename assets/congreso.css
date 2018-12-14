@@ -8078,9 +8078,6 @@ a.text-dark:hover, a.text-dark:focus {
 #compare-candidates .ember-chosen select {
   width: 100%; }
 
-body {
-  font-family: 'Asap' !important; }
-
 .bg-secondary {
   background-color: #475059 !important; }
 
@@ -8658,5 +8655,11 @@ a:focus {
   vertical-align: top;
   border-bottom: 1px solid #dee2e6;
   border-top: 0px; }
+
+strong {
+  font-weight: bold; }
+
+.font-weight-light {
+  font-weight: 100 !important; }
 
 /*# sourceMappingURL=congreso.css.map */
