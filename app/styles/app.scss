@@ -6,6 +6,7 @@ $success: #00ac56;
 $warning: #f6ab40;
 $info: #26a5dc;
 $dark: #1e2b3d;
+$light: #ededee;
 
 $navbar-color: #ffffff;
 
@@ -20,9 +21,9 @@ $border-radius: 10px;
 @import "fonts";
 @import "main";
 
-// body {
-//     font-family: 'Asap' !important;
-// }
+body {
+    font-family: 'Asap' !important;
+}
 
 .bg-secondary {
     background-color: $secondary !important;
@@ -383,7 +384,7 @@ nav > .container {
 }
 
 .profile-candidate h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: 600 !important;
 }
 
 .profile-candidate .social-side img {
@@ -491,15 +492,21 @@ p.datos-abiertos {
     height: 90%;
 }
 
-.portfolio .image-party img {
-    position: absolute;
-    left: 70%;
-    top: -20px;
-    z-index: 10;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    border-radius: 25px !important;
+.portfolio {
+    .image-party img {
+        position: absolute;
+        left: 65%;
+        top: 5%;
+        z-index: 1000;
+        width: 25%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 50% !important;
+    }
+
+    .text {
+        width: 75%;
+    }
 }
 
 .logo-partido {
@@ -528,11 +535,11 @@ p.datos-abiertos {
 }
 
 html, body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family:  'Source Sans Pro', sans-serif;
+    font-family:  'Asap', sans-serif;
 }
 
 h5, h3 {
@@ -798,4 +805,30 @@ a:focus {
 .ember-power-select-trigger {
     height: 3rem;
     padding: 0.5rem;
+}
+
+.portfolio {
+    .image-party img {
+        position: absolute;
+        left: 65%;
+        top: 5%;
+        z-index: 80;
+        width: 25%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 50% !important;
+    }
+
+    .text {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 0px;
 }
