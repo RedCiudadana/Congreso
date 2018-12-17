@@ -186,6 +186,7 @@ body.perfil .container.content-container {
   }
 
   .navbar-nav {
+
     a {
         display: flex;
 
@@ -196,6 +197,10 @@ body.perfil .container.content-container {
   }
 }
 
+
+.navbar-nav {
+    margin-left: auto;
+}
 
 .navbar-brand img {
     max-height: 50px;
@@ -208,11 +213,11 @@ body.perfil .container.content-container {
     // height: 100px;
 
     .navbar-nav {
-        margin-top: 20px;
+
         li {
             text-align: center;
-            margin-top: auto;
-            margin-bottom: auto;
+            height: 80px;
+            padding-top: 10px;
             margin-left: 20px;
             margin-right: 20px;
         }

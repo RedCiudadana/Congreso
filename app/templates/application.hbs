@@ -31,7 +31,7 @@
     </div>
 
     {{#navbar.content}}
-      {{#navbar.nav as |nav|}}
+      {{#navbar.nav fustified="true" type="pills" as |nav|}}
         {{#nav.item}}
           {{#link-to 'perfiles' class="text-center"}}
             <img src="app/img/icono-diputados.png" alt="Icono diputados">
