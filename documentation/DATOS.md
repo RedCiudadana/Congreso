@@ -1,6 +1,6 @@
 # Datos
 
-Los datos que alimentan el sitio provienen de un [Google spreadseet](https://docs.google.com/spreadsheets/d/1pS2nfpWqdWsNHgZ6EtLGPFmrN_5zZRZShXd1BHJkR8k/pubhtml).
+Los datos que alimentan el sitio provienen de un [Google spreadseet](https://docs.google.com/spreadsheets/d/e/2PACX-1vT3O5xfM8EQX-ROqWQ-7uaR9cjEc3WmNU6oGr5aVHduTWzTJYigy9xO_ZG6p_XoXsLV7N49DFMdVnzm/pubhtml).
 
 Este spreadhseet se vuelca en archivos JSON estáticos dentro de [`public/static-files`](public/static-files)
 que están a disposición para consumo.
