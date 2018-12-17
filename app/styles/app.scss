@@ -218,8 +218,8 @@ body.perfil .container.content-container {
             text-align: center;
             height: 80px;
             padding-top: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
         }
     }
 }
@@ -239,6 +239,15 @@ body.perfil .container.content-container {
         // margin-top: auto;
         margin-bottom: auto;
         margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav > li > a {
+        img {
+            width: 30px;
+            height: auto;
+        }
     }
 }
 
