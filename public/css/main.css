@@ -266,28 +266,6 @@ input, button, select, textarea {
     font-family: 'Lato', sans-serif;
 }
 
-/*Menu*/
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #FFF;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #14b9d5;
-}
-
-.navbar-nav {
-    float: right;
-}
-
-.navbar-brand {
-    padding: 5px 13px;
-}
-
-.navbar-brand img {
-    max-width: 315px;
-}
-
 /*Menu Interno*/
 
 .nav-candidator .list-inline>li {

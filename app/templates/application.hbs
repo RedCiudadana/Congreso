@@ -31,25 +31,25 @@
     </div>
 
     {{#navbar.content}}
-      {{#navbar.nav justified=true type="pills" class="ml-auto" as |nav|}}
-        {{#nav.item active=false class="text-center px-5"}}{{#link-to link.route}}
-            <div>
-              <img src="app/img/icono-diputados.png" alt="Icono diputados" class="mx-auto px-auto">
-              <p>Diputados</p>
-            </div>
-        {{/link-to}}{{/nav.item}}
-        {{#nav.item active=false class="text-center px-5"}}{{#link-to link.route}}
-            <div>
-              <img src="app/img/icono-quien.png" alt="Icono quien me representa" class="mx-auto px-auto">
-              <p>¿Quién me representa?</p>
-            </div>
-        {{/link-to}}{{/nav.item}}
-        {{#nav.item active=false class="text-center px-5"}}{{#link-to link.route}}
-            <div>
-              <img src="app/img/icono-metodologia.png" alt="Icono metodología" class="mx-auto px-auto">
-              <p>Metodología</p>
-            </div>
-        {{/link-to}}{{/nav.item}}
+      {{#navbar.nav as |nav|}}
+        {{#nav.item}}
+          {{#link-to 'perfiles' class="text-center"}}
+            <img src="app/img/icono-diputados.png" alt="Icono diputados">
+            <p>Diputados</p>
+          {{/link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#link-to 'perfiles' class="text-center"}}
+            <img src="app/img/icono-quien.png" alt="Icono quien me representa">
+            <p>¿Quién me representa?</p>
+          {{/link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#link-to 'perfiles' class="text-center"}}
+            <img src="app/img/icono-metodologia.png" alt="Icono metodología">
+            <p>Metodología</p>
+          {{/link-to}}
+        {{/nav.item}}
       {{/navbar.nav}}
     {{/navbar.content}}
   {{/bs-navbar}}

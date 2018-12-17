@@ -21,9 +21,9 @@
         {{#each-in model.perfil.informacionGeneral as |key item|}}
           <tr>
             <td class="p-0">
-              <small>
-                {{#if item.label}} <strong>{{{item.label}}}: </strong> {{/if}}
-                {{{item.value}}}
+              <small class="font-weight-normal">
+                {{#if item.label}} <strong>{{{item.label}}} </strong> {{/if}}
+                <span class="font-weight-light">{{{item.value}}}</span>
               </small>
             </td>
           </tr>
