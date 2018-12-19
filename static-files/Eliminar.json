@@ -1,608 +1,1214 @@
 [
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "diputado-1",
+    "ano": "2016",
+    "partido": "TODOS"
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "diputado-2",
+    "ano": "2016",
+    "partido": "PP"
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "diputado-2",
+    "ano": "2017",
+    "partido": "TODOS"
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "diputado-3",
+    "ano": "2016",
+    "partido": "PP"
   },
   {
-    "distrito": "Totonicapán"
+    "distrito": "Totonicapán",
+    "perfil": "diputado-4",
+    "ano": "2016",
+    "partido": "UNE"
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "diputado-5",
+    "ano": "2016",
+    "partido": "ABC"
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Retalhuleu"
+    "distrito": "Retalhuleu",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Izabal"
+    "distrito": "Izabal",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Baja Verapaz"
+    "distrito": "Baja Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Santa Rosa"
+    "distrito": "Santa Rosa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sacatepéquez"
+    "distrito": "Sacatepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Izabal"
+    "distrito": "Izabal",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Totonicapán"
+    "distrito": "Totonicapán",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Santa Rosa"
+    "distrito": "Santa Rosa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sololá"
+    "distrito": "Sololá",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jutiapa"
+    "distrito": "Jutiapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chiquimula"
+    "distrito": "Chiquimula",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "El Progreso"
+    "distrito": "El Progreso",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Zacapa"
+    "distrito": "Zacapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sololá"
+    "distrito": "Sololá",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Totonicapán"
+    "distrito": "Totonicapán",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jalapa"
+    "distrito": "Jalapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chiquimula"
+    "distrito": "Chiquimula",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sacatepéquez"
+    "distrito": "Sacatepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Retalhuleu"
+    "distrito": "Retalhuleu",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jutiapa"
+    "distrito": "Jutiapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Retalhuleu"
+    "distrito": "Retalhuleu",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Baja Verapaz"
+    "distrito": "Baja Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jutiapa"
+    "distrito": "Jutiapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chiquimula"
+    "distrito": "Chiquimula",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Zacapa"
+    "distrito": "Zacapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Izabal"
+    "distrito": "Izabal",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Santa Rosa"
+    "distrito": "Santa Rosa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jalapa"
+    "distrito": "Jalapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jutiapa"
+    "distrito": "Jutiapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sololá"
+    "distrito": "Sololá",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sacatepéquez"
+    "distrito": "Sacatepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Totonicapán"
+    "distrito": "Totonicapán",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sololá"
+    "distrito": "Sololá",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Distrito Central"
+    "distrito": "Distrito Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "distrito"
+    "distrito": "distrito",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Listado Nacional"
+    "distrito": "Listado Nacional",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Guatemala"
+    "distrito": "Guatemala",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Central"
+    "distrito": "Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Totonicapán"
+    "distrito": "Totonicapán",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quiché"
+    "distrito": "Quiché",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Suchitepéquez"
+    "distrito": "Suchitepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chimaltenango"
+    "distrito": "Chimaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Retalhuleu"
+    "distrito": "Retalhuleu",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Alta Verapaz"
+    "distrito": "Alta Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Izabal"
+    "distrito": "Izabal",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Huehuetenango"
+    "distrito": "Huehuetenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Baja Verapaz"
+    "distrito": "Baja Verapaz",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "San Marcos"
+    "distrito": "San Marcos",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Santa Rosa"
+    "distrito": "Santa Rosa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sacatepéquez"
+    "distrito": "Sacatepéquez",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Escuintla"
+    "distrito": "Escuintla",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Sololá"
+    "distrito": "Sololá",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Quetzaltenango"
+    "distrito": "Quetzaltenango",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jutiapa"
+    "distrito": "Jutiapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Chiquimula"
+    "distrito": "Chiquimula",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "El Progreso"
+    "distrito": "El Progreso",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Zacapa"
+    "distrito": "Zacapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Jalapa"
+    "distrito": "Jalapa",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Petén"
+    "distrito": "Petén",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   },
   {
-    "distrito": "Distrito Central"
+    "distrito": "Distrito Central",
+    "perfil": "",
+    "ano": "",
+    "partido": ""
   }
 ]
