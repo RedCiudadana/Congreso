@@ -1,79 +1,41 @@
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
 import { computed } from '@ember/object';
+import { dasherize } from '@ember/string';
 
 export default Model.extend({
   nombre: attr(),
-
-  partidoactual: attr(),
-
   fotoUrl: attr(),
-
+  partidopostulante: attr(),
+  partidoactual: attr(),
   fotoUrlPartido: attr(),
-
-  cargoNombreCompleto: attr(),
-
-  cargoNombreCorto: attr(),
-
-  cargo: attr(),
-
   distrito: attr(),
-
-  profesion: attr(),
-
-  educacion: attr(),
-
-  fechaNacimiento: attr(),
-
-  lugarNacimiento: attr(),
-
-  email: attr(),
-
-  fb: attr(),
-
-  tw: attr(),
-
-  direccion: attr(),
-
-  telefono: attr(),
-
-  biografia: attr(),
-
-  desempenio: attr(),
-
-  historialPolitico: attr(),
-
-  experienciaProfesional: attr(),
-
-  experienciaAcademica: attr(),
-
-  planTrabajo: attr(),
-
+  tamanoBloque: attr(),
+  informaciongeneral: attr(),
+  historialpolitico: attr(),
   sexo: attr(),
-
-  estado: attr(),
-
-  notaAreaEvaluada1: attr(),
-
-  notaAreaEvaluada2: attr(),
-
-  notaAreaEvaluada3: attr(),
-
-  notaAreaEvaluada4: attr(),
-
-  notaAreaEvaluada4Texto: attr(),
-
-  resultadosEvaluacion: attr(),
-
-  ley1: attr(),
-
-  ley2: attr(),
-
-  ley3: attr(),
-
-  resultadosEvaluacionInt: computed('resultadosEvaluacion', function() {
-    return parseInt(this.get('resultadosEvaluacion'));
-  }),
+  reelecto: attr(),
+  tw: attr(),
+  fb: attr(),
+  nacimiento: attr(),
+  direccion: attr(),
+  telefono: attr(),
+  ext: attr(),
+  email: attr(),
+  JuntaDirectiva: attr(),
+  jefeDeBloque: attr(),
+  Comisión: attr(),
+  iniciativa1: attr(),
+  iniciativa2: attr(),
+  iniciativa3: attr(),
+  iniciativa4: attr(),
+  iniciativa5: attr(),
+  aFavor: attr(),
+  encontra: attr(),
+  ausente: attr(),
+  licencia: attr(),
+  total: attr(),
+  count: attr(),
 
   informacionGeneral: attr('informacion-general'),
 
@@ -93,42 +55,14 @@ export default Model.extend({
     return this.get('estado') === 'Descalificado';
   }),
 
-  // selector: computed('sexo', 'estado', function() {
-  //   let returnValue = '';
-
-    // if (this.get('sexo') === 'Masculino') {
-    //   returnValue += ' hombre';
-    // }
-
-    // if (this.get('sexo') === 'Femenino') {
-    //   returnValue += ' mujer';
-    // }
-
-  //   if (this.get('estado') === 'Descalificado') {
-  //     returnValue += ' descalificado';
-  //   }
-
-  //   if (this.get('estado') === 'En proceso') {
-  //     returnValue += ' enProceso';
-  //   }
-
-  //   return returnValue;
-  // }),
-
-  selector: computed('ley1', 'ley2', 'ley3', 'sexo', 'distrito', function() {
+  selector: computed('iniciativa1', 'iniciativa2', 'iniciativa3', 'iniciativa4', 'iniciativa5', 'sexo', 'distrito', function() {
     let returnValue = '';
 
-    if (this.get('ley1') === 'favor') {
-      returnValue += ' ley1';
-    }
-
-    if (this.get('ley2') === 'favor') {
-      returnValue += ' ley2';
-    }
-
-    if (this.get('ley3') === 'favor') {
-      returnValue += ' ley3';
-    }
+    returnValue += ' iniciativa1-' + dasherize(this.get('iniciativa1').toLowerCase());
+    returnValue += ' iniciativa2-' + dasherize(this.get('iniciativa2').toLowerCase());
+    returnValue += ' iniciativa3-' + dasherize(this.get('iniciativa3').toLowerCase());
+    returnValue += ' iniciativa4-' + dasherize(this.get('iniciativa4').toLowerCase());
+    returnValue += ' iniciativa5-' + dasherize(this.get('iniciativa5').toLowerCase());
 
     if (this.get('sexo') === 'Masculino') {
       returnValue += ' hombre';

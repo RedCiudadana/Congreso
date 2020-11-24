@@ -32,21 +32,37 @@
           {{#dd.menu as |menu|}}
             {{#menu.item}}
               <label>
-              <input type="checkbox" checked={{ley1}} onclick={{queue (action (mut ley1) value="target.checked") (action 'applyFilter')}}>
-              Reformas Materia Antejuicio
+              <input type="checkbox" checked={{iniciativa1}} onclick={{queue (action (mut iniciativa1) value="target.checked") (action 'applyFilter')}}>
+              PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020
               </label>
             {{/menu.item}}
             {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{ley2}} onclick={{queue (action (mut ley2) value="target.checked") (action 'applyFilter')}}>
-              Financiamiento Ilícito
-              </label>
+            <label>
+              <input type="checkbox" checked={{iniciativa2}}
+                onclick={{queue (action (mut iniciativa2) value="target.checked") (action 'applyFilter')}}>
+              REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020
+            </label>
             {{/menu.item}}
             {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{ley3}} onclick={{queue (action (mut ley3) value="target.checked") (action 'applyFilter')}}>
-              Reformas al Código Penal
-              </label>
+            <label>
+              <input type="checkbox" checked={{iniciativa3}}
+                onclick={{queue (action (mut iniciativa3) value="target.checked") (action 'applyFilter')}}>
+              PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020
+            </label>
+            {{/menu.item}}
+            {{#menu.item}}
+            <label>
+              <input type="checkbox" checked={{iniciativa4}}
+                onclick={{queue (action (mut iniciativa4) value="target.checked") (action 'applyFilter')}}>
+              ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020
+            </label>
+            {{/menu.item}}
+            {{#menu.item}}
+            <label>
+              <input type="checkbox" checked={{iniciativa5}}
+                onclick={{queue (action (mut iniciativa5) value="target.checked") (action 'applyFilter')}}>
+              ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020
+            </label>
             {{/menu.item}}
           {{/dd.menu}}
         {{/bs-dropdown}}

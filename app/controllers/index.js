@@ -2,13 +2,14 @@ import $ from 'jquery';
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 
-
 export default Controller.extend({
 
   currentSelector: computed(
-    'ley1',
-    'ley2',
-    'ley3',
+    'iniciativa1',
+    'iniciativa2',
+    'iniciativa3',
+    'iniciativa4',
+    'iniciativa5',
     'esHombre',
     'esMujer',
     'TODOS',
@@ -54,9 +55,11 @@ export default Controller.extend({
     'distrito-central',
     function() {
       if (
-        !this.get('ley1')
-            && !this.get('ley2')
-            && !this.get('ley3')
+        !this.get('iniciativa1')
+            && !this.get('iniciativa2')
+            && !this.get('iniciativa3')
+            && !this.get('iniciativa4')
+            && !this.get('iniciativa5')
             && !this.get('esHombre')
             && !this.get('esMujer')
             && !this.get('TODOS')
@@ -106,17 +109,24 @@ export default Controller.extend({
 
       let selectors = [];
 
-
-      if (this.get('ley1')) {
-        selectors.push('.ley1');
+      if (this.get('iniciativa1')) {
+        selectors.push('.iniciativa1-a-favor');
       }
 
-      if (this.get('ley2')) {
-        selectors.push('.ley2');
+      if (this.get('iniciativa2')) {
+        selectors.push('.iniciativa2-a-favor');
       }
 
-      if (this.get('ley3')) {
-        selectors.push('.ley3');
+      if (this.get('iniciativa3')) {
+        selectors.push('.iniciativa3-a-favor');
+      }
+
+      if (this.get('iniciativa4')) {
+        selectors.push('.iniciativa4-a-favor');
+      }
+
+      if (this.get('iniciativa5')) {
+        selectors.push('.iniciativa5-a-favor');
       }
 
       if (this.get('esHombre')) {
@@ -310,8 +320,6 @@ export default Controller.extend({
     } else {
       this.set('selectorBadges', this.get('currentSelector').replace(/\./g , '').split(', '));
     }
-
-    console.log(this.get('selectorBadges'));
 
     return false;
   },
