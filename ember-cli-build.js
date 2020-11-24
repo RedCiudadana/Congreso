@@ -2,7 +2,6 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const nodeSass = require('node-sass');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
@@ -19,7 +18,6 @@ module.exports = function(defaults) {
 
     sassOptions: {
       // Only search in 'includedPaths'; performance.
-      implementation: nodeSass,
       onlyIncluded: true,
       includePaths: [
         'node_modules/bootstrap/scss',
