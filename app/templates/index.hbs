@@ -24,7 +24,7 @@
           <strong>{{candidato.nombre}}</strong>
         {{/power-select}}
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-12 mb-2">
         <h5>
           Filtrar por iniciativa a favor
         </h5>
@@ -41,7 +41,7 @@
           <strong class="text-dark">{{iniciativa.label}}</strong>
         {{/power-select}}
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 mb-2">
         <h5>
           Filtrar por distrito
         </h5>
@@ -58,110 +58,25 @@
           <strong class="text-dark">{{distrito}}</strong>
         {{/power-select}}
       </div>
+      <div class="col-12 col-md-6 mb-2">
+        <h5>
+          Partido
+        </h5>
+        {{!-- Distrito --}}
+        {{#power-select
+          allowClear=true
+          selected=this.currentPartido
+          options=this.model.nombrePartidos
+          onchange=(queue (action 'selectPartido') (action 'applyFilter'))
+          placeholder='Seleccionar partido'
+          noMatchesMessage='Sin resultados'
+            as |partido|
+        }}
+          <strong class="text-dark">{{partido}}</strong>
+        {{/power-select}}
+      </div>
       {{!-- Filters --}}
       <div class="col-12 filter-container">
-        {{!-- PARTIDO --}}
-        {{#bs-dropdown class="m-2 rounded" as |dd|}}
-          {{#dd.button class="btn-info"}}<img src="app/img/icon-party-politic.png" alt="Partido" >Partido <span class="caret"></span>{{/dd.button}}
-          {{#dd.menu as |menu|}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{TODOS}} onclick={{queue (action (mut TODOS) value="target.checked") (action 'applyFilter')}}>
-              TODOS
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{INDP}} onclick={{queue (action (mut INDP) value="target.checked") (action 'applyFilter')}}>
-              INDP
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{FCN}} onclick={{queue (action (mut FCN) value="target.checked") (action 'applyFilter')}}>
-              FCN
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{BLR}} onclick={{queue (action (mut BLR) value="target.checked") (action 'applyFilter')}}>
-              BLR
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{UNE}} onclick={{queue (action (mut UNE) value="target.checked") (action 'applyFilter')}}>
-              UNE
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{PU}} onclick={{queue (action (mut PU) value="target.checked") (action 'applyFilter')}}>
-              PU
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{BAC}} onclick={{queue (action (mut BAC) value="target.checked") (action 'applyFilter')}}>
-              BAC
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{UCN}} onclick={{queue (action (mut UCN) value="target.checked") (action 'applyFilter')}}>
-              UCN
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{CREO}} onclick={{queue (action (mut CREO) value="target.checked") (action 'applyFilter')}}>
-              CREO
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{PAN}} onclick={{queue (action (mut PAN) value="target.checked") (action 'applyFilter')}}>
-              PAN
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{VIVA}} onclick={{queue (action (mut VIVA) value="target.checked") (action 'applyFilter')}}>
-              VIVA
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{EG}} onclick={{queue (action (mut EG) value="target.checked") (action 'applyFilter')}}>
-              EG
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{URNG}} onclick={{queue (action (mut URNG) value="target.checked") (action 'applyFilter')}}>
-              URNG
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{CONV}} onclick={{queue (action (mut CONV) value="target.checked") (action 'applyFilter')}}>
-              CONV
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{WINAQ}} onclick={{queue (action (mut WINAQ) value="target.checked") (action 'applyFilter')}}>
-              WINAQ
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{FUERZ}} onclick={{queue (action (mut FUERZ) value="target.checked") (action 'applyFilter')}}>
-              FUERZ
-              </label>
-            {{/menu.item}}
-          {{/dd.menu}}
-        {{/bs-dropdown}}
         {{!-- GENERO --}}
         {{#bs-dropdown class="m-2 rounded" as |dd|}}
           {{#dd.button class="bg-primary"}}<img src="app/img/icon-sex.png">Género<span class="caret"></span>{{/dd.button}}

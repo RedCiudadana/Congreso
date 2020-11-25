@@ -120,7 +120,6 @@ export default Route.extend({
     return RSVP.hash({
       partidos: spreadsheet.fetch('partidos'),
       perfiles: this.store.findAll('perfil'),
-      // diputados: this.store.findAll('postulador-comision'),
       config: spreadsheet.fetchConfig('configuracion')
         .then((configuracion) => {
           let configObject = EmberObject.create();
@@ -156,6 +155,8 @@ export default Route.extend({
     set(model.config, 'navbarLinks', model.navbarLinks);
     set(model.config, 'mainPageLinks', model.mainPageLinks);
     set(model.config, 'mainPageSliderData', model.mainPageSliderData);
+    set(model, 'nombrePartidos', model.perfiles.uniqBy('partidoactual').mapBy('partidoactual'));
+    set(model, 'nombreDistritos', model.perfiles.uniqBy('distrito').mapBy('distrito'));
   },
 
   actions: {

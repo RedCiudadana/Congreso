@@ -72,7 +72,7 @@ export default Model.extend({
       returnValue += ' mujer';
     }
 
-    returnValue += ' ' + this.get('partidoactual');
+    returnValue += ' ' + this.get('partidoactual').replace('/', '');
 
     returnValue += ' ' + this.get('distrito').dasherize().normalize().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
