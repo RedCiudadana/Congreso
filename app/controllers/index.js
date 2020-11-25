@@ -1,15 +1,46 @@
 import $ from 'jquery';
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
+import { dasherize } from '@ember/string';
+
+const distritos = ["Quetzaltenango", "Listado Nacional", "Central", "Totonicapán", "Sololá", "Guatemala", "Quiché", "Escuintla", "San Marcos", "Huehuetenango", "Chiquimula", "Suchitepequez", "Santa Rosa", "Jutiapa", "Petén", "Alta Verapaz", "Baja Verapaz", "Retalhuleu", "El Progreso", "Jalapa", "Chimaltenango", "Sacatepéquez", "Izabal", "Zacapa"];
 
 export default Controller.extend({
 
+  distritos: distritos,
+
+  currentIniciativa: null,
+  currentDistrito: null,
+
+  init() {
+    this._super(...arguments);
+    this.iniciativaOptions = [
+      {
+        label: 'PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020',
+        value: 'iniciativa1'
+      },
+      {
+        label: 'REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020',
+        value: 'iniciativa2'
+      },
+      {
+        label: 'PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020',
+        value: 'iniciativa3'
+      },
+      {
+        label: 'ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020',
+        value: 'iniciativa4'
+      },
+      {
+        label: 'ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020',
+        value: 'iniciativa5'
+      },
+    ]
+  },
+
   currentSelector: computed(
-    'iniciativa1',
-    'iniciativa2',
-    'iniciativa3',
-    'iniciativa4',
-    'iniciativa5',
+    'currentIniciativa',
+    'currentDistrito',
     'esHombre',
     'esMujer',
     'TODOS',
@@ -55,11 +86,8 @@ export default Controller.extend({
     'distrito-central',
     function() {
       if (
-        !this.get('iniciativa1')
-            && !this.get('iniciativa2')
-            && !this.get('iniciativa3')
-            && !this.get('iniciativa4')
-            && !this.get('iniciativa5')
+        !this.get('currentIniciativa')
+            && !this.get('currentDistrito')
             && !this.get('esHombre')
             && !this.get('esMujer')
             && !this.get('TODOS')
@@ -107,26 +135,17 @@ export default Controller.extend({
         return '*';
       }
 
+      console.log('update selector');
+
       let selectors = [];
 
-      if (this.get('iniciativa1')) {
-        selectors.push('.iniciativa1-a-favor');
+      if (this.get('currentIniciativa')) {
+        selectors.push(`.${this.get('currentIniciativa').value}-a-favor`);
       }
 
-      if (this.get('iniciativa2')) {
-        selectors.push('.iniciativa2-a-favor');
-      }
-
-      if (this.get('iniciativa3')) {
-        selectors.push('.iniciativa3-a-favor');
-      }
-
-      if (this.get('iniciativa4')) {
-        selectors.push('.iniciativa4-a-favor');
-      }
-
-      if (this.get('iniciativa5')) {
-        selectors.push('.iniciativa5-a-favor');
+      if (this.get('currentDistrito')) {
+        console.log('update distrito');
+        selectors.push(`.${dasherize(this.get('currentDistrito'))}`);
       }
 
       if (this.get('esHombre')) {
@@ -330,9 +349,8 @@ export default Controller.extend({
     },
 
     clearFilter() {
-      this.set('ley1', false);
-      this.set('ley2', false);
-      this.set('ley3', false);
+      this.set('currentDistrito', false);
+      this.set('currentIniciativa', false);
       this.set('esHombre', false);
       this.set('esMujer', false);
       this.set('TODOS', false);
@@ -377,7 +395,14 @@ export default Controller.extend({
       this.set('peten', false);
       this.set('distrito-central', false);
       return this._applyFilter();
-    }
+    },
 
+    selectIniciativa(e) {
+      this.set('currentIniciativa', e);
+    },
+
+    selectDistrito(value) {
+      this.set('currentDistrito', value);
+    }
   }
 });

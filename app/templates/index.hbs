@@ -11,7 +11,7 @@
         <h3 class="mx-auto font-weight-normal">Infórmate, participa e incide</h3>
       </div>
       {{!--Ember-power-select --}}
-      <div class="search-container col-12 mb-5">
+      <div class="search-container col-12 mb-4">
         {{#power-select
           selected=currentCandidato
           options=model.perfiles
@@ -24,204 +24,42 @@
           <strong>{{candidato.nombre}}</strong>
         {{/power-select}}
       </div>
+      <div class="col-12 col-md-6">
+        <h5>
+          Filtrar por iniciativa a favor
+        </h5>
+        {{!-- VOTACIÓN --}}
+        {{#power-select
+          allowClear=true
+          selected=this.currentIniciativa
+          options=this.iniciativaOptions
+          onchange=(queue (action 'selectIniciativa') (action 'applyFilter'))
+          placeholder='Seleccionar iniciativa'
+          noMatchesMessage='Sin resultados'
+            as |iniciativa|
+        }}
+          <strong class="text-dark">{{iniciativa.label}}</strong>
+        {{/power-select}}
+      </div>
+      <div class="col-12 col-md-6">
+        <h5>
+          Filtrar por distrito
+        </h5>
+        {{!-- Distrito --}}
+        {{#power-select
+          allowClear=true
+          selected=this.currentDistrito
+          options=this.distritos
+          onchange=(queue (action 'selectDistrito') (action 'applyFilter'))
+          placeholder='Seleccionar distrito'
+          noMatchesMessage='Sin resultados'
+            as |distrito|
+        }}
+          <strong class="text-dark">{{distrito}}</strong>
+        {{/power-select}}
+      </div>
       {{!-- Filters --}}
       <div class="col-12 filter-container">
-        {{!-- VOTACIÓN --}}
-        {{#bs-dropdown class="m-2 rounded" as |dd|}}
-          {{#dd.button class="btn-warning text-white"}}<img src="app/img/icon-vote.png" alt="Votación" >Votación <span class="caret"></span>{{/dd.button}}
-          {{#dd.menu as |menu|}}
-            {{#menu.item}}
-              <label>
-              <input type="checkbox" checked={{iniciativa1}} onclick={{queue (action (mut iniciativa1) value="target.checked") (action 'applyFilter')}}>
-              PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020
-              </label>
-            {{/menu.item}}
-            {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{iniciativa2}}
-                onclick={{queue (action (mut iniciativa2) value="target.checked") (action 'applyFilter')}}>
-              REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020
-            </label>
-            {{/menu.item}}
-            {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{iniciativa3}}
-                onclick={{queue (action (mut iniciativa3) value="target.checked") (action 'applyFilter')}}>
-              PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020
-            </label>
-            {{/menu.item}}
-            {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{iniciativa4}}
-                onclick={{queue (action (mut iniciativa4) value="target.checked") (action 'applyFilter')}}>
-              ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020
-            </label>
-            {{/menu.item}}
-            {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{iniciativa5}}
-                onclick={{queue (action (mut iniciativa5) value="target.checked") (action 'applyFilter')}}>
-              ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020
-            </label>
-            {{/menu.item}}
-          {{/dd.menu}}
-        {{/bs-dropdown}}
-        {{!-- DISTRITO --}}
-        {{#bs-dropdown class="m-2 rounded dropdown-large" as |dd|}}
-          {{#dd.button class="btn-success"}}<img src="app/img/icon-district.png" alt="Distrito" >Distrito <span class="caret"></span>{{/dd.button}}
-          {{#dd.menu as |menu|}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{listado-nacional}} onclick={{queue (action (mut listado-nacional) value="target.checked") (action 'applyFilter')}}>
-              listado nacional
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{guatemala}} onclick={{queue (action (mut guatemala) value="target.checked") (action 'applyFilter')}}>
-              guatemala
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{central}} onclick={{queue (action (mut central) value="target.checked") (action 'applyFilter')}}>
-              central
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{totonicapan}} onclick={{queue (action (mut totonicapan) value="target.checked") (action 'applyFilter')}}>
-              totonicapán
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{quiche}} onclick={{queue (action (mut quiche) value="target.checked") (action 'applyFilter')}}>
-              quiché
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{suchitepequez}} onclick={{queue (action (mut suchitepequez) value="target.checked") (action 'applyFilter')}}>
-              suchitepéquez
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{chimaltenango}} onclick={{queue (action (mut chimaltenango) value="target.checked") (action 'applyFilter')}}>
-              chimaltenango
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{retalhuleu}} onclick={{queue (action (mut retalhuleu) value="target.checked") (action 'applyFilter')}}>
-              retalhuleu
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{alta-verapaz}} onclick={{queue (action (mut alta-verapaz) value="target.checked") (action 'applyFilter')}}>
-              alta verapaz
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{izabal}} onclick={{queue (action (mut izabal) value="target.checked") (action 'applyFilter')}}>
-              izabal
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{huehuetenango}} onclick={{queue (action (mut huehuetenango) value="target.checked") (action 'applyFilter')}}>
-              huehuetenango
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{baja-verapaz}} onclick={{queue (action (mut baja-verapaz) value="target.checked") (action 'applyFilter')}}>
-              baja verapaz
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{san-marcos}} onclick={{queue (action (mut san-marcos) value="target.checked") (action 'applyFilter')}}>
-              san marcos
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{santa-rosa}} onclick={{queue (action (mut santa-rosa) value="target.checked") (action 'applyFilter')}}>
-              santa rosa
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{sacatepequez}} onclick={{queue (action (mut sacatepequez) value="target.checked") (action 'applyFilter')}}>
-              sacatepéquez
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{escuintla}} onclick={{queue (action (mut escuintla) value="target.checked") (action 'applyFilter')}}>
-              escuintla
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{solola}} onclick={{queue (action (mut solola) value="target.checked") (action 'applyFilter')}}>
-              sololá
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{quetzaltenango}} onclick={{queue (action (mut quetzaltenango) value="target.checked") (action 'applyFilter')}}>
-              quetzaltenango
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{jutiapa}} onclick={{queue (action (mut jutiapa) value="target.checked") (action 'applyFilter')}}>
-              jutiapa
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{chiquimula}} onclick={{queue (action (mut chiquimula) value="target.checked") (action 'applyFilter')}}>
-              chiquimula
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{el-progreso}} onclick={{queue (action (mut el-progreso) value="target.checked") (action 'applyFilter')}}>
-              el progreso
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{zacapa}} onclick={{queue (action (mut zacapa) value="target.checked") (action 'applyFilter')}}>
-              zacapa
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{jalapa}} onclick={{queue (action (mut jalapa) value="target.checked") (action 'applyFilter')}}>
-              jalapa
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{peten}} onclick={{queue (action (mut peten) value="target.checked") (action 'applyFilter')}}>
-              petén
-            </label>
-          {{/menu.item}}
-          {{#menu.item}}
-            <label>
-              <input type="checkbox" checked={{distrito-central}} onclick={{queue (action (mut distrito-central) value="target.checked") (action 'applyFilter')}}>
-              distrito central
-            </label>
-          {{/menu.item}}
-          {{/dd.menu}}
-        {{/bs-dropdown}}
         {{!-- PARTIDO --}}
         {{#bs-dropdown class="m-2 rounded" as |dd|}}
           {{#dd.button class="btn-info"}}<img src="app/img/icon-party-politic.png" alt="Partido" >Partido <span class="caret"></span>{{/dd.button}}

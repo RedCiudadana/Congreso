@@ -25,11 +25,11 @@ Router.map(function() {
 
   this.route('investigacion');
 
-  this.route('metodologia');
   this.route('tabla-gradacion');
   this.route('partidos', function() {
     this.route('partido', { path: '/partido/:siglas'});
-  }); 
+  });
+  this.route('quien-es-mi-representante');
 });
 
 export default Router;

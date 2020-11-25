@@ -91,66 +91,6 @@ export default Route.extend({
           }),
 
         /**
-         * Setear la información de recuadros del perfil mediante la parametrización
-         * proveniente de la configuración
-         */
-        spreadsheetService
-          .fetchConfig('perfil-recuadros-configuracion')
-          .then((configuracionData) => {
-            let perfilRecuadrosDataArray = A([]);
-
-            A(configuracionData).forEach((item) => {
-              perfilRecuadrosDataArray.pushObject({
-                field: item.field,
-                label: item.label
-              });
-            });
-
-            let prefilSerializer = this.store.serializerFor('perfil');
-
-            prefilSerializer.set('recuadrosFields', perfilRecuadrosDataArray);
-          }),
-
-        // Información general de diputado
-        // TODO: Evaluar pertinencia, ya que es una funcionalidad específica de
-        // Elección PDH
-        // spreadsheetService
-        //   .fetchConfig('diputado-informacion-general-configuracion')
-        //   .then((configuracionData) => {
-        //     let diputadoDataArray = A([]);
-
-        //     A(configuracionData).forEach((item) => {
-        //       diputadoDataArray.pushObject({
-        //         field: item.field,
-        //         label: item.label
-        //       });
-        //     });
-
-        //     let serializer = this.store.serializerFor('postulador-comision');
-
-        //     serializer.set('informacionGeneralFields', diputadoDataArray);
-        //     // serializer.set('frenteAFrenteFields', A());
-        //   }),
-
-        // spreadsheetService
-        //   .fetchConfig('diputado-frente-a-frente-configuracion')
-        //   .then((configuracionData) => {
-        //     let postuladorFrenteAFrenteDataArray = A([]);
-
-        //     A(configuracionData).forEach((item) => {
-        //       postuladorFrenteAFrenteDataArray.pushObject({
-        //         field: item.field,
-        //         label: item.label,
-        //         section: item.section
-        //       });
-        //     });
-
-        //     let serializer = this.store.serializerFor('postulador-comision');
-
-        //     serializer.set('frenteAFrenteFields', postuladorFrenteAFrenteDataArray);
-        //   }),
-
-        /**
          * Setear los campos a utilizar en la funcionalidad de frente-a-frente
          */
         spreadsheetService
@@ -206,41 +146,7 @@ export default Route.extend({
         return A(links).filter((link) => {
           return _routing.hasRoute(link.route);
         });
-      }),
-
-      /**
-       * Front page image links.
-       *
-       * If the row does not include a link property it gets dissmissed
-       */
-      mainPageLinks: spreadsheet.fetchConfig('main-page-links').then((links) => {
-        return A(links).filter((link) => {
-          if (link.link) {
-            return true;
-          }
-
-          return _routing.hasRoute(link.route);
-        });
-      }),
-
-      /**
-       * Main page slider profiles list
-       */
-      mainPageSliderData: spreadsheet.fetchConfig('main-page-slider-data'),
-
-      institucionData: spreadsheet
-        .fetch('institucion-data')
-        .then((institucionData) => {
-          let institucionDataObject = EmberObject.create();
-
-          A(institucionData).forEach((item) => {
-            institucionDataObject.set(item.key, item.value);
-          });
-
-          return institucionDataObject;
-        }),
-
-      frontTableVisualizationConfig: spreadsheet.fetchConfig('front-table-visualization-config')
+      })
     });
   },
 

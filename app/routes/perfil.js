@@ -26,27 +26,6 @@ export default Route.extend({
       perfilInformacionGeneralConfiguracion: spreadsheet
         .fetch('perfil-informacion-general-configuracion', 'config'),
       perfiles: this.modelFor('application').perfiles,
-      documentosDisponibles: spreadsheet
-        .fetch('documentos-disponibles')
-        .then((documentos) => {
-          return A(documentos)
-            .filterBy('perfil', perfil.get('id'));
-        }),
-      datosTablaGradacion: spreadsheet
-        .fetch('tabla-gradacion')
-        .then((registros) => {
-          return A(registros)
-            .filterBy('perfil', perfil.get('id'))
-            .filter((e) => e.aspecto !== 'Total');
-        }),
-      totalPuntajeGradacion: spreadsheet
-        .fetch('tabla-gradacion')
-        .then((registros) => {
-          return A(registros)
-            .filterBy('perfil', perfil.get('id'))
-            .filter((e) => e.aspecto !== 'Total' && e.aspecto !== 'Cualidades Éticas y de Probidad')
-            .reduce((previousValue, item) => previousValue + parseInt(item.puntaje), 0);
-        }),
       perfilFuncionalidades: spreadsheet
         .fetch('perfil-funcionalidades', 'config')
         .then((links) => {
@@ -62,12 +41,6 @@ export default Route.extend({
 
               return true;
             });
-        }),
-      tachas: spreadsheet
-        .fetch('tachas')
-        .then((registros) => {
-          return A(registros)
-            .filterBy('perfilId', perfil.get('id'));
         }),
       votaciones: spreadsheet
         .fetch('votaciones')

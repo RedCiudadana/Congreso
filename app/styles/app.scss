@@ -125,8 +125,8 @@ body {
 
 .ember-power-select-trigger {
     border-radius: $border-radius;
-    width: 80%;
-    max-width: 800px;
+    // width: 80%;
+    // max-width: 800px;
     margin: auto;
 }
 
@@ -897,4 +897,16 @@ strong {
 
 .font-weight-light {
     font-weight: 100 !important;
+}
+
+.radio {
+    background: unset;
+    color: black;
+    border: unset;
+}
+
+.ember-power-select-clear-btn {
+    color: black !important;
+    background: white !important;
+    padding-left: 10px !important;
 }

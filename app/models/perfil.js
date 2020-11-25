@@ -76,6 +76,8 @@ export default Model.extend({
 
     returnValue += ' ' + this.get('distrito').dasherize().normalize().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
+    returnValue += ' ' + this.get('distrito').dasherize();
+
     return returnValue;
   }),
 

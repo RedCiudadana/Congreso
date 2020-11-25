@@ -1,0 +1,61 @@
+{{title "Quien es mi representante"}}
+
+<div class="container">
+    {{#if model.config.useFrontFilterWidget}}
+    <div {{!-- id="s-filters-main" --}}>
+        <div class="search-and-filter row">
+            <div class="search-container col-12 pt-5">
+                <h1>Selecciona el distrito al que perteneces</h1>
+                {{#power-select
+                    allowClear=true
+                    selected=currentDistrito
+                    options=this.distritos
+                    onchange=(queue (action 'selectDistrito') (action 'applyFilter'))
+                    placeholder='Distrito'
+                    noMatchesMessage='Sin resultados'
+                    as |distrito|
+                }}
+                    <strong>{{distrito}}</strong>
+                {{/power-select}}
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    {{!-- Portfolio --}}
+    {{#if model.config.useFrontPortfolioVisualization}}
+    <div class="container-fluid">
+        {{front-porfolio-visualization
+        perfiles=model.perfiles
+        onDidInsertElement=(action 'applyFilter')
+      }}
+    </div>
+    {{/if}}
+
+    {{#if model.config.useFrontTableVisualization}}
+    <table class="table">
+        <tr>
+            {{#each model.frontTableVisualizationConfig as |field|}}
+            <th>{{field.tableTitle}}</th>
+            {{/each}}
+        </tr>
+
+        {{#each model.perfiles as |perfil|}}
+        <tr>
+            {{#each model.frontTableVisualizationConfig as |field|}}
+            <td>
+                {{#if field.isLink}}
+                {{#link-to 'perfil' perfil.id}}
+                {{get perfil field.fieldName}}
+                {{/link-to}}
+                {{else}}
+                {{get perfil field.fieldName}}
+                {{/if}}
+            </td>
+            {{/each}}
+        </tr>
+        {{/each}}
+    </table>
+    {{/if}}
+
+</div>
