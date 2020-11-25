@@ -45,18 +45,22 @@
       {{/link-to}}
     </div>
     <div class="d-block mt-3">
-      <div>
-        <a href={{model.perfil.tw}} target="_blank" rel="noopener">
-          <img src="img/icono-tw.png" alt="Twitter">
-          {{model.perfil.tw}}
-        </a>
-      </div>
-      <div>
-        <a href={{model.perfil.fb}} target="_blank" rel="noopener">
-          <img src="img/icono-fb.png" alt="Facebook">
-          {{model.perfil.nombre}}
-        </a>
-      </div>
+      {{#if model.perfil.tw}}
+        <div>
+          <a href={{model.perfil.tw}} target="_blank" rel="noopener">
+            <img src="img/icono-tw.png" alt="Twitter">
+            {{model.perfil.tw}}
+          </a>
+        </div>
+      {{/if}}
+      {{#if model.perfil.fb}}
+        <div>
+          <a href={{model.perfil.fb}} target="_blank" rel="noopener">
+            <img src="img/icono-fb.png" alt="Facebook">
+            {{model.perfil.nombre}}
+          </a>
+        </div>
+      {{/if}}
     </div>
   </div>
 </div>
@@ -65,15 +69,16 @@
 <div class="row m-1 mt-4 panel perfil-social">
   <div class="col-12 col-md-4">
     <img src="app/img/icon-phone-fulled.png" alt="Icono teléfono.">
-    <p>{{model.perfil.telefono}}</p>
+
+    <p>Teléfono: {{model.perfil.telefono}}</p>
   </div>
   <div class="col-12 col-md-4">
     <img src="app/img/icon-marker-fulled.png" alt="Icono dirección.">
-    <p>{{model.perfil.direccion}}</p>
+    <p>Dirección: {{model.perfil.direccion}}</p>
   </div>
   <div class="col-12 col-md-4">
     <img src="app/img/icon-envelop-fulled.png" alt="Icono correo electrónico.">
-    <p>{{model.perfil.email}}</p>
+    <p>Correo eletrónico: {{model.perfil.email}}</p>
   </div>
 </div>
 

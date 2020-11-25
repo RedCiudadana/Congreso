@@ -6,7 +6,7 @@
         <div class="col-md-3">
           <div id="candidate-img-profile">
             <img
-              src="{{model.partido.fotoUrlPartido}}"
+              src="{{model.miembros.firstObject.fotoUrlPartido}}"
               alt="{{model.partido.nombrepartido}}"
               border="0"
               class="img-responsive center-block py-4"
@@ -57,31 +57,41 @@
 
         <div class="col-md-4 text-left">
           <div class="d-block">
-            <div class="py-2">
-              <i class="fa fa-phone"></i>
-              <strong>{{model.partido.telefono}}</strong>
-            </div>
-            <div class="py-2">
-              <i class="fa fa-map-marker"></i>
-              <strong>{{model.partido.direccion}}</strong>
-            </div>
-            <div class="py-2">
-              <i class="fa fa-envelope"></i>
-              <strong>{{model.partido.email}}</strong>
-            </div>
+            {{#if model.partido.telefono}}
+              <div class="py-2">
+                <i class="fa fa-phone"></i>
+                <strong>{{model.partido.telefono}}</strong>
+              </div>
+            {{/if}}
+            {{#if model.partido.direccion}}
+              <div class="py-2">
+                <i class="fa fa-map-marker"></i>
+                <strong>{{model.partido.direccion}}</strong>
+              </div>
+            {{/if}}
+            {{#if model.partido.email}}
+              <div class="py-2">
+                <i class="fa fa-envelope"></i>
+                <strong>{{model.partido.email}}</strong>
+              </div>
+            {{/if}}
             <div class="d-block mt-3">
-            <div class="py-2">
-              <a href={{model.partido.tw}} target="_blank" rel="noopener">
-                <img src="mi-guatemala/img/icono-tw.png" alt="Twitter">
-                {{model.partido.tw}}
-              </a>
-            </div>
-            <div>
-              <a href={{model.partido.fb}} target="_blank" rel="noopener">
-                <img src="mi-guatemala/img/icono-fb.png" alt="Facebook">
-                {{model.partido.nombrepartido}}
-              </a>
-            </div>
+            {{#if model.partido.tw}}
+              <div class="py-2">
+                <a href={{model.partido.tw}} target="_blank" rel="noopener">
+                  <img src="mi-guatemala/img/icono-tw.png" alt="Twitter">
+                  {{model.partido.tw}}
+                </a>
+              </div>
+            {{/if}}
+            {{#if model.partido.fb}}
+              <div>
+                <a href={{model.partido.fb}} target="_blank" rel="noopener">
+                  <img src="mi-guatemala/img/icono-fb.png" alt="Facebook">
+                  {{model.partido.nombrepartido}}
+                </a>
+              </div>
+            {{/if}}
           </div>
           </div>
         </div>
