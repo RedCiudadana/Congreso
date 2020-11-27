@@ -1092,7 +1092,7 @@ animation: doscaras 4s infinite;
 }
 
 /*video*/
-#videocontainer, canvas {
+#videocontainer canvas {
     position: absolute;
     top: 50%;
     left: 50%;

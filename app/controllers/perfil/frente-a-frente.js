@@ -3,6 +3,24 @@ import { computed } from '@ember/object';
 import { isNone } from '@ember/utils';
 
 export default Controller.extend({
+
+  init() {
+    this._super(...arguments);
+    this.set('chartData', {
+      labels: ['Ausencia', 'Asistencia'],
+      datasets: [
+        {
+          data: [
+            40,
+            60
+          ],
+          backgroundColor: ["#00ac56", "#f6ab40"],
+          hoverBackgroundColor: ["#00ac57", "#f6ab40"]
+        }
+      ]
+    })
+  },
+
   model: null,
 
   frenteAFrenteFields: null,
