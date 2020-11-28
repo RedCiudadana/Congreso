@@ -28,6 +28,36 @@
             </td>
           </tr>
         {{/each-in}}
+        {{#if model.perfil.JuntaDirectiva}}
+        <tr>
+          <td class="p-0">
+            <small class="font-weight-normal">
+              <strong>Junta directiva:</strong>
+              <span class="font-weight-light">{{{model.perfil.JuntaDirectiva}}}</span>
+            </small>
+          </td>
+        </tr>
+        {{/if}}
+        {{#if model.perfil.jefeDeBloque}}
+        <tr>
+          <td class="p-0">
+            <small class="font-weight-normal">
+              <strong>Jefe de bloque:</strong>
+              <span class="font-weight-light">{{{model.perfil.jefeDeBloque}}}</span>
+            </small>
+          </td>
+        </tr>
+        {{/if}}
+        {{#if model.perfil.Comisión}}
+        <tr>
+          <td class="p-0">
+            <small class="font-weight-normal">
+              <strong>Comisión:</strong>
+              <span class="font-weight-light">{{{model.perfil.Comisión}}}</span>
+            </small>
+          </td>
+        </tr>
+        {{/if}}
       </tbody>
     </table>
   </div>
@@ -70,15 +100,15 @@
   <div class="col-12 col-md-4">
     <img src="app/img/icon-phone-fulled.png" alt="Icono teléfono.">
 
-    <p>Teléfono: {{model.perfil.telefono}}</p>
+    <p>Teléfono: <a href="tel:+502{{model.perfil.telefono}}">{{model.perfil.telefono}}</a></p>
   </div>
   <div class="col-12 col-md-4">
     <img src="app/img/icon-marker-fulled.png" alt="Icono dirección.">
-    <p>Dirección: {{model.perfil.direccion}}</p>
+    <p>Dirección: <a target="_blank" href="https://www.google.com/search?q={{model.perfil.direccion}}">{{model.perfil.direccion}}</a></p>
   </div>
   <div class="col-12 col-md-4">
     <img src="app/img/icon-envelop-fulled.png" alt="Icono correo electrónico.">
-    <p>Correo eletrónico: {{model.perfil.email}}</p>
+    <p>Correo eletrónico: <a href="mailto:{{model.perfil.email}}">{{model.perfil.email}}</a></p>
   </div>
 </div>
 
@@ -93,11 +123,10 @@
       <div class="body tabla-gradacion-content no-padding-top-bottom">
         <div class="row">
           <div class="col-xs-3 col-md-2 text-center icon-container">
-            {{!-- <i class="fa fa-graduation-cap"></i> --}}
             <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
           <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
-            PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020
+            APROBACIÓN DE PRESUPUESTO 2021 - INICIATIVA DE LEY 5832 - 17/11/2020
           </div>
           <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
             <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa1}}"></i></span>
@@ -105,11 +134,10 @@
         </div>
         <div class="row">
           <div class="col-xs-3 col-md-2 text-center icon-container">
-            {{!-- <i class="fa fa-graduation-cap"></i> --}}
             <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
           <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
-            REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020
+            SOLICITUD DE DESTITUCIÓN DEL MINISTRO DE GOBERNACIÓN, GENDRI REYES - 25/11/2020
           </div>
           <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
             <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa2}}"></i></span>
@@ -117,11 +145,10 @@
         </div>
         <div class="row">
           <div class="col-xs-3 col-md-2 text-center icon-container">
-            {{!-- <i class="fa fa-graduation-cap"></i> --}}
             <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
           <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
-            PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020
+            PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020
           </div>
           <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
             <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa3}}"></i></span>
@@ -129,26 +156,46 @@
         </div>
         <div class="row">
           <div class="col-xs-3 col-md-2 text-center icon-container">
-            {{!-- <i class="fa fa-graduation-cap"></i> --}}
+            <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
+          </div>
+          <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
+            REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020
+          </div>
+          <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
+            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa4}}"></i></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-md-2 text-center icon-container">
+            <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
+          </div>
+          <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
+            PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020
+          </div>
+          <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
+            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa5}}"></i></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-md-2 text-center icon-container">
             <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
           <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
             ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020
           </div>
           <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
-            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa4}}"></i></span>
+            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa6}}"></i></span>
           </div>
         </div>
         <div class="row border-0">
           <div class="col-xs-3 col-md-2 text-center icon-container">
-            {{!-- <i class="fa fa-graduation-cap"></i> --}}
             <img src="app/img/icon-reformas-materia-antejuicio.png" class="img-responsive center" />
           </div>
           <div class="col-xs-7 col-md-8 col-md-offset-0 text-container text-center m-auto">
             ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020
           </div>
           <div class="col-xs-2 col-md-2 text-center" style="padding-left: 5px; padding-right: 5px;">
-            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa5}}"></i></span>
+            <span class="badge text-white"><i class="{{check-or-times model.perfil.iniciativa7}}"></i></span>
           </div>
         </div>
         <div class="row border-0">

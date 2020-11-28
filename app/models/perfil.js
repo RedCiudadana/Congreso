@@ -30,6 +30,8 @@ export default Model.extend({
   iniciativa3: attr(),
   iniciativa4: attr(),
   iniciativa5: attr(),
+  iniciativa6: attr(),
+  iniciativa7: attr(),
   aFavor: attr(),
   encontra: attr(),
   ausente: attr(),
@@ -55,7 +57,7 @@ export default Model.extend({
     return this.get('estado') === 'Descalificado';
   }),
 
-  selector: computed('iniciativa1', 'iniciativa2', 'iniciativa3', 'iniciativa4', 'iniciativa5', 'sexo', 'distrito', function() {
+  selector: computed('iniciativa3', 'iniciativa4', 'iniciativa5', 'iniciativa6', 'iniciativa7', 'sexo', 'distrito', function() {
     let returnValue = '';
 
     returnValue += ' iniciativa1-' + dasherize(this.get('iniciativa1').toLowerCase());
@@ -63,6 +65,8 @@ export default Model.extend({
     returnValue += ' iniciativa3-' + dasherize(this.get('iniciativa3').toLowerCase());
     returnValue += ' iniciativa4-' + dasherize(this.get('iniciativa4').toLowerCase());
     returnValue += ' iniciativa5-' + dasherize(this.get('iniciativa5').toLowerCase());
+    returnValue += ' iniciativa6-' + dasherize(this.get('iniciativa6').toLowerCase());
+    returnValue += ' iniciativa7-' + dasherize(this.get('iniciativa7').toLowerCase());
 
     if (this.get('sexo') === 'Masculino') {
       returnValue += ' hombre';

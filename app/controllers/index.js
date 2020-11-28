@@ -16,24 +16,32 @@ export default Controller.extend({
     this._super(...arguments);
     this.iniciativaOptions = [
       {
-        label: 'PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020',
+        label: 'APROBACIÓN DE PRESUPUESTO 2021 - INICIATIVA DE LEY 5832 - 17/11/2020',
         value: 'iniciativa1'
       },
       {
-        label: 'REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020',
+        label: 'SOLICITUD DE DESTITUCIÓN DEL MINISTRO DE GOBERNACIÓN, GENDRI REYES - 25/11/2020',
         value: 'iniciativa2'
       },
       {
-        label: 'PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020',
+        label: 'PROPUESTA DIP. AREVALO, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 14/10/2020',
         value: 'iniciativa3'
       },
       {
-        label: 'ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020',
+        label: 'REGRESO A COMISIÓN DE COOPERATIVISMO INICIATIVA 5632 - 14/10/2020',
         value: 'iniciativa4'
       },
       {
-        label: 'ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020',
+        label: 'PROPUESTA DIP. ROMÁN CASTELLANOS, SEMILLA, ADELANTAR ELECCIÓN DE CORTES - 21/10/2020',
         value: 'iniciativa5'
+      },
+      {
+        label: 'ELECCION DE JD. 2021-2022, PLANILLA UNICA - 21/10/2020',
+        value: 'iniciativa6'
+      },
+      {
+        label: 'ACUERDO LEGISLATIVO 15-2020, ELECCION DE JD 2021-2022 - 21/10/2020',
+        value: 'iniciativa7'
       },
     ]
   },
