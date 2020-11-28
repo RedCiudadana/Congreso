@@ -219,7 +219,7 @@
         </div>
       </div>
       {{!-- ASISTENCIA --}}
-      <div class="panel panel-default border d-none">
+      <div class="panel panel-default border">
         <div class="panel-heading d-flex">
           <img src="app/img/icon-asistencia.png" alt="Personas" class="image60x60">
           <h3 class="panel-title my-auto mx-3">
@@ -234,7 +234,7 @@
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
                 <p>
-                  {{ember-chart class="m-2" type='doughnut' data=this.chartData options=model.options width=200 height=100}}
+                  {{ember-chart class="m-2" type='doughnut' data=(pie-data perfilUno) options=model.options width=200 height=100}}
                 </p>
                 <p class="text-right">{{perfilUno.nombre}}</p>
               </div>
@@ -246,7 +246,7 @@
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
                 <p>
-                  {{ember-chart class="m-2" type='doughnut' data=this.chartData options=model.options width=200 height=100}}
+                  {{ember-chart class="m-2" type='doughnut' data=(pie-data perfilDos) options=model.options width=200 height=100}}
                 </p>
                 <p class="text-right">{{perfilDos.nombre}}</p>
               </div>

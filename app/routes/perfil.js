@@ -18,7 +18,15 @@ export default Route.extend({
     const partidoActual = perfil.get('partidoActual');
 
     return hash({
-      // options: { responsive: true, maintainAspectRatio: true },
+      options: {
+        scales: {
+          pointLabels: {
+            callback: function (value, index, values) {
+              return value + ' %';
+            }
+          }
+        }
+      },
       config: {},
       perfil: perfil,
       institucion: institucion,

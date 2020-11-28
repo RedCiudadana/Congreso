@@ -220,14 +220,14 @@
     </div>
   </div>
   {{!-- Asistencia --}}
-  <div class="col-md-6 d-none">
+  <div class="col-md-6">
     {{!-- Gráfica de asistencia --}}
     <div class="panel">
       <div class="header d-flex">
         <img src="app/img/icon-asistencia.png" alt="Asistencia" class="image60x60"><h3 class="my-auto mx-5">Asistencia</h3>
       </div>
       <div class="body pie-chart">
-        {{ember-chart class="m-2" type='doughnut' data=( pie-data model.asistencia.porcentaje) options=model.options width=200 height=100}}
+        {{ember-chart class="m-2" type='doughnut' data=(pie-data model.perfil) options=model.options width=200 height=100}}
       </div>
     </div>
   </div>

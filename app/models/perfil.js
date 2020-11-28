@@ -39,6 +39,9 @@ export default Model.extend({
   total: attr(),
   count: attr(),
 
+  asistencia: attr('number'),
+  noAsistencia: attr('number'),
+
   informacionGeneral: attr('informacion-general'),
 
   recuadros: attr('frente-a-frente'),
