@@ -16,14 +16,14 @@
         </div>
 
         <div class="col-md-5">
-          <h1>{{model.partido.nombre}}</h1>
+          <h1>{{model.partido.nombreCompleto}}</h1>
           <table class="table">
             <tbody>
                 <tr>
                   <td>
                     <small>
                       <strong>Nombre:</strong>
-                      {{model.partido.nombrepartido}}
+                      {{model.partido.nombreCompleto}}
                     </small>
                   </td>
                 </tr>
@@ -39,7 +39,7 @@
                   <td>
                     <small>
                       <strong>Secretario general:</strong>
-                      {{model.partido.secretariogeneral}}
+                      {{model.partido.secretarioGeneral}}
                     </small>
                   </td>
                 </tr>
@@ -69,10 +69,10 @@
                 <strong>{{model.partido.direccion}}</strong>
               </div>
             {{/if}}
-            {{#if model.partido.email}}
+            {{#if model.partido.correo}}
               <div class="py-2">
                 <i class="fa fa-envelope"></i>
-                <strong>{{model.partido.email}}</strong>
+                <strong>{{model.partido.correo}}</strong>
               </div>
             {{/if}}
             <div class="d-block mt-3">
@@ -88,7 +88,7 @@
               <div>
                 <a href={{model.partido.fb}} target="_blank" rel="noopener">
                   <img src="mi-guatemala/img/icono-fb.png" alt="Facebook">
-                  {{model.partido.nombrepartido}}
+                  {{model.partido.nombreCompleto}}
                 </a>
               </div>
             {{/if}}

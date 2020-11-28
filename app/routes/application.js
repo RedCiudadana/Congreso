@@ -118,7 +118,7 @@ export default Route.extend({
     const _routing = this.get('_routing');
 
     return RSVP.hash({
-      partidos: spreadsheet.fetch('partidos'),
+      partidos: this.store.findAll('partido'),
       perfiles: this.store.findAll('perfil'),
       config: spreadsheet.fetchConfig('configuracion')
         .then((configuracion) => {
